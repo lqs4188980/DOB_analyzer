@@ -2,16 +2,16 @@ import sys
 import datetime
 from datetime import date
 
-import request
+import requests
 
 class Query:
     """Providing multiple query functions"""
 
-    def __init__(self, endpoint)
+    def __init__(self, endpoint="https://data.cityofnewyork.us/resource/eabe-havv.json"):
 	self._endpoint = endpoint
 
      
-    def __getAllCaseList(self, paraDict):
+    def getAllCaseList(self, paraDict):
 	# Initialize parameter
 	limit = 50000
 	offset = 0
@@ -24,30 +24,31 @@ class Query:
 	# Construct request and query
 	length = sys.maxint
 	result = []
-	while length == limit:
-	    r = requests.get(self._endpoint, params=p)
+	while length >= limit:
+	    r = requests.get(self._endpoint, params=paraDict)
 	    objList = r.json()
 	    length = len(objList)
 	    result.extend(objList)
-	    p['$offset'] = (offset += limit)
+	    offset += limit
+	    paraDict['$offset'] = offset
 	
 	return result
 
     def getAllClosedCaseSet(self):
 	p = {
 	    "$select": "complaint_number",
-	    "$where": "status = CLOSED", 
+	    "$where": "status = \'CLOSED\'", 
 	} 
 	
-	objList = self.__getAllCaseList(p)
+	objList = self.getAllCaseList(p)
 
 	closeCase = set()
 	for obj in objList:
-	    closeCase.add(obj['complaint_number'])
+	    closeCase.add(obj["complaint_number"])
 
 	return closeCase
 
-    def getLastNDayActiveCaseList(self, nday, status):
+    def getLastNDayCaseList(self, nday, status):
 	# Because the date_entered field is stored as text, so we cannot query 
 	# using > or <. We are going to query day by day   
 	
@@ -56,29 +57,32 @@ class Query:
 	queryDate = date.today() - oneday
 	p = {
 	    "$select": "complaint_number",
-	    "$where": "date_entered = \'" + queryDate.strftime("%m/%d/%y") \
+	    "$where": "date_entered = \'" + queryDate.strftime("%m/%d/%Y") \
 			+ "\' AND status = \'" + status + "\'" 	
 	}
 	
 	objList = []
 	while nday > 0:
-	    objList.extend(self.__getAllCaseList(p))
-	    p['$where'] = "date_entered = \'" \ 
-			    + (queryDate -= oneday).strftime("%m/%d/%y") \
+	    objList.extend(self.getAllCaseList(p))
+	    queryDate -= oneday
+	    p['$where'] = "date_entered = \'" \
+			    + queryDate.strftime("%m/%d/%Y") \
 			    + "\' AND status = \'" + status + "\'"
 	    nday -= 1
 
 	complaintNumList = []
 	for obj in objList:
-	    complaintNumList.add(obj['complaint_number'])
+	    complaintNumList.append(obj['complaint_number'])
 
 	return complaintNumList
 
-    def getRecentCaseNumInARange(self, start, end):
+    def getRecentActiveCaseNum(self, start, end):
 	# Initialization
+	start = str(start)
+	end = str(end)
 	p = {
 	    "$select": "complaint_number", 
-	    "$where": "complaint_number > \'" + start \ 
+	    "$where": "complaint_number > \'" + start \
 		    + "\' AND complaint_number < \'" + end + "\'",
 	    "$order": "complaint_number DESC",
 	    "$limit": 1

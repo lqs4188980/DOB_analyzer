@@ -27,5 +27,5 @@ class ActiveCase(db.Entity):
     complaint_number = PrimaryKey(str, auto=False)
     date_entered = Required(datetime.date)
 
-class ClosedCase(db.Entity):
-    complaint_number = PrimaryKey(str, auto=False)
+#class ClosedCase(db.Entity):
+#    complaint_number = PrimaryKey(str, auto=False)

@@ -69,86 +69,89 @@ class PageAnalyzer (threading.Thread):
    	'ECB Violation #s': '',	
     }
 
-    def __init__ (self, threadID, name, q, fileList):
+    def __init__ (self, threadID, name, rawQ, taskQ):
 	threading.Thread.__init__(self)
 	self.ThreadID = threadID
 	self.Name = name
-	self.JobQueue = q
-	self.queueLock = threading.Lock()
-	self.exit = False
+	self._JobQueue = rawQ
+	self._TaskQueue = taskQ
+	self._queueLock = threading.Lock()
+	self._exit = False
 
 	# Dictionary for store page info
 	self.info = copy.copy(PageAnalyzer.infoTemplate)
 
 	# DB object
-	dbm = DBM()
+	self._dbm = DBM()
+	# self._dbm.initialize()
     
 	# Test file list
-	self.fileList = fileList
+	# self._fileList = fileList
 
-    def testMain(self):
-	for eachEntry in self.fileList:
-	    f = open(eachEntry, 'r')
-	    self.doc = html.fromstring(f.read())
-	    if self.__titleParser():
-		print "************", self.info['Complaint Number'], "*************"
-		self.__mainInfoParser()
-		self.__contentParser()
-		self.printInfo()
-		self.__cleanUp()
+#    def testMain(self):
+#	for eachEntry in self.fileList:
+#	    f = open(eachEntry, 'r')
+#	    self._doc = html.fromstring(f.read())
+#	    if self.__titleParser():
+#		print "************", self.info['Complaint Number'], "*************"
+#		self.__mainInfoParser()
+#		self.__contentParser()
+#		self.printInfo()
+#		self.__cleanUp()
 	    
 
 	
 
     def run(self):
-	while not self.JobQueue.empty():
+	while True:
 
 	    # Get data from Queue
-	    pageContent = self.__getRawDataFromQueue()
+	    self._rawData = self.__getRawDataFromQueue()
 
-	    if pageContent == "":
+	    if self._rawData["text"] == "":
 		# Fail to get raw data, needs to add complaint number back and log
+		logging.error("Cannot get page content for complaint number:", self._rawData["id"])
+		self.__insertToTaskQueue("Cannot get page content")
 		continue
 
 	    # Preprocessing Data
-	    self.doc = html.fromstring(pageContent) 
+	    self._doc = html.fromstring(self._rawData["text"]) 
 	
 	    # Parse title
 	    if self.__titleParser():
 		# If title is valid, get status and decide whether continue parse
-		if self.info['Status'] == "ACTIVE":
-		    # If case is still ACTIVE, we don't need to parse it and put  
-		    # them back into queue
-		    self.__insertToPool(self.info['Complaint Number'])
-		    #self.printInfo()
-		
-		elif self.info['Status'] == "RESOLVED":
+		if self.info['Status'] == "RESOLVED":
 		    # If case if RESOLVED, we need to parse all the infomation and 
 		    # insert into database
-		    self.__mainInfoParser()
-		    self.__contentParser()
-		    self.__insertToDB()
-		    #self.printInfo()		
+		    if self.__mainInfoParser() and self.__contentParser():
+		        self.__insertToDB()
+			self._TaskQueue.task_done()
+		    else:
+			self.__insertToTaskQueue("Fail to parse data")
 
-		self.__cleanUp()	
+		elif self.info['Status'] == "ACTIVE":
+		    # If case is still ACTIVE, we don't need to parse it and put  
+		    # them back into queue
+		    self.__insertToTaskQueue()
+	    else:
+		self.__insertToTaskQueue("Fail to Parse Title")
+		
+	    self.__cleanUp()	
 		    
 		    
 
     def __getRawDataFromQueue(self):
-	self.queueLock.acquire()
-	rawData = self.JobQueue.get().read()
-	self.queueLock.release()
-	self.JobQueue.task_done()
+	rawData = self._JobQueue.get()
 	
 	return rawData
 
     def __titleParser(self):
-	title = self.doc.cssselect('title')
+	title = self._doc.cssselect('title')
 	if len(title) != 0:
 	    m = PageAnalyzer.patternDict['title'].match(title[0].text_content())
 	    if m == None:
 		# If Not Match, there is some error, we need to log error and deal it
-		self.__logError("title", title[0].text_content())
+		self.__logError("Fail to get title")
 		return False
 	    else:
 		self.info['Complaint Number'] = m.group('complaint')
@@ -158,7 +161,7 @@ class PageAnalyzer (threading.Thread):
 	return False
 
     def __mainInfoParser(self):
-	mainInfoList = self.doc.find_class('maininfo')
+	mainInfoList = self._doc.find_class('maininfo')
 	mainInfoPatterns = PageAnalyzer.patternDict['mainInfoList']
 
 	i = 0
@@ -168,14 +171,17 @@ class PageAnalyzer (threading.Thread):
 					    .match(item.text_content())
 		if m == None:
 		   self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
+		   return False
 		else:
-		    self.info[PageAnalyzer.mainInfoFieldList[i]] = m.group(2)
+		   self.info[PageAnalyzer.mainInfoFieldList[i]] = m.group(2)
 		
 		i += 1
 
+	return True
+
 
     def __contentParser(self):
-	contentList = self.doc.find_class('content')
+	contentList = self._doc.find_class('content')
 	contentPatterns = PageAnalyzer.patternDict['contentList']
     
 	index = 0
@@ -192,22 +198,31 @@ class PageAnalyzer (threading.Thread):
 		    m = contentPatterns[field].match(entry.text_content())
 		    if m == None:
 		        self.__logError(field, entry)
+			return False
 		    else:
 		        self.info[field] = m.group(2)
 	    
 	    index += 1
+
+	return True
 	
 		
 	
 
-    def __insertToPool(self, number):
+    def __insertToTaskQueue(self, error=""):
 	# Insert ACTIVE case number back to pool
-	pass
+	task = {
+	    "id": self._rawData["id"],
+	    "url": self._rawData["url"],
+	}
+	if error != "":
+	    task["error"] = error
+	self._TaskQueue.put(task)
 	
 
     def __cleanUp(self):
 	self.info = copy.copy(PageAnalyzer.infoTemplate)
-	self.doc = None
+	self._doc = None
 
     def __logError(self, field, htmlNode):
 	logging.error("Some error happens when parsing " 
@@ -220,7 +235,7 @@ class PageAnalyzer (threading.Thread):
     def __insertToDB(self):
 	# Insert current page info into DB
 	self.__convertDatetime()
-	dbm.put(self.info)
+	self._dbm.putResolve(self.info)
 
     def __convertDatetime(self):
 	if self.info['Received'] != '':

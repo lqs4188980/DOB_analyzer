@@ -9,7 +9,7 @@ from pony.orm import *
 # from xlsxwriter.workbook import Workbook
 
 from models import db, Complaint 
-from models import ActiveCase, ClosedCase
+from models import ActiveCase
 from query.handler import Query
 
 
@@ -17,73 +17,102 @@ class DBM:
     """This module provide database access methods"""
     
     def __init__(self):
-	pass	
-    
+        self.initialize() 
+
+    # putResolve and getResolve uses different dict keys with other method, 
+    # which come from analyzer module
     @db_session
     def putResolve(self, info):
-	Complaint(
-	    complaint_number = info['Complaint Number'],	
-	    status = info['Status'],
-	    bin = info['BIN'],
-	    category = info['Category Code'],
-	    lot = info['Lot'],
-	    block = info['Block'],
-	    zip = info['ZIP'],
-	    received = info['Received'],
-	    dob_violation = info['DOB Violation #'],
-	    comments = info['Comments'],
-	    owner = info['Owner'],
-	    last_inspection = info['Last Inspection'],
-	    borough = info['Borough'],
-	    complaint_at = info['Complaint at'], 
-	    ecb_violation = info["ECB Violation #s"]
-	)	
+	if not exists(p for p in Complaint if p.complaint_number == \
+						    info['Complaint Number']):
+	    Complaint(
+	        complaint_number = info['Complaint Number'],	
+	        status = info['Status'],
+	        bin = info['BIN'],
+	        category = info['Category Code'],
+	        lot = info['Lot'],
+	        block = info['Block'],
+	        zip = info['ZIP'],
+	        received = info['Received'],
+	        dob_violation = info['DOB Violation #'],
+	        comments = info['Comments'],
+	        owner = info['Owner'],
+	        last_inspection = info['Last Inspection'],
+	        borough = info['Borough'],
+	        complaint_at = info['Complaint at'], 
+	        ecb_violation = info["ECB Violation #s"]
+	    )	
 
     @db_session
     def getResolve(self, complaint_number):
-	obj = Complaint.get(complaint_number=complaint_number)
-	info = {
-	    'Complaint Number': obj.complaint_number,
-	    'Status': obj.status,
-	    'BIN': obj.bin,
-	    'Category Code': obj.category,
-	    'Lot': obj.lot,
-	    'Block': obj.block,
-	    'ZIP': obj.zip,
-	    'Received': obj.received,
-	    'DOB Violation #': dob_violation,
-	    'Comments': obj.comments,
-	    'Owner': obj.owner,
-	    'Last Inspection': obj.last_inspection,
-	    'Borough': obj.borough,
-	    'Complaint at': obj.complaint_at, 
-	    'ECB Violation #s': obj.ecb_violation, 
-	}
+	complaint_number = str(complaint_number)
+	info = {}
+	if exists(p for p in Complaint if p.complaint_number == complaint_number):
+	    obj = Complaint.get(complaint_number=complaint_number)
+	    info = {
+	        'Complaint Number': obj.complaint_number,
+	        'Status': obj.status,
+	        'BIN': obj.bin,
+	        'Category Code': obj.category,
+	        'Lot': obj.lot,
+	        'Block': obj.block,
+	        'ZIP': obj.zip,
+	        'Received': obj.received,
+	        'DOB Violation #': obj.dob_violation,
+	        'Comments': obj.comments,
+	        'Owner': obj.owner,
+	        'Last Inspection': obj.last_inspection,
+	        'Borough': obj.borough,
+	        'Complaint at': obj.complaint_at, 
+	        'ECB Violation #s': obj.ecb_violation, 
+	    }
 	return info
 
     @db_session
+    def getAllResolve(self):
+        objs = select(p for p in Complaint)[:]
+        dictList = []
+        for obj in objs:
+            dictList.append({
+	        'Complaint Number': obj.complaint_number,
+	        'Status': obj.status,
+	        'BIN': obj.bin,
+	        'Category Code': obj.category,
+	        'Lot': obj.lot,
+	        'Block': obj.block,
+	        'ZIP': obj.zip,
+	        'Received': obj.received,
+	        'DOB Violation #': obj.dob_violation,
+	        'Comments': obj.comments,
+	        'Owner': obj.owner,
+	        'Last Inspection': obj.last_inspection,
+	        'Borough': obj.borough,
+	        'Complaint at': obj.complaint_at, 
+	        'ECB Violation #s': obj.ecb_violation,  
+            })
+        return dictList
+
+    @db_session
     def putActive(self, activeInfo):
-	ActiveCase(
-	    complaint_number = activeInfo['complaint_number'], 
-	    date_entered = activeInfo['date_entered']
-	)
+	# This method is not for the active case that I parsed out
+	if not exists(p for p in ActiveCase if p.complaint_number == \
+					activeInfo["complaint_number"]):
+	    ActiveCase(
+	        complaint_number = activeInfo["complaint_number"], 
+	        date_entered = activeInfo["date_entered"]
+	    )
 
     @db_session
     def getActive(self, complaintnum):
-	obj = Active.get(complaint_number=complaintnum)	
+	info = {}
+        complaintnum = str(complaintnum)
+	if exists(p for p in ActiveCase if p.complaint_number == complaintnum):
+	    obj = ActiveCase.get(complaint_number=complaintnum)	
 
-	info['complaint_number'] = obj.complaint_number
-	info['date_entered'] = obj.date_entered
+	    info['complaint_number'] = obj.complaint_number
+	    info['date_entered'] = obj.date_entered
 
 	return info	
-
-    @db_session
-    def putClose(self, complaintnum):
-	if not exist(p for p in ClosedCase if p.complaint_number == complaintnum):
-	    ClosedCase(
-		complaint_number = complaintnum
-	    )
-	
 
     def initialize(self):
 	db.bind('mysql', host='localhost', user='root', passwd='', db='DOB')
@@ -104,14 +133,12 @@ class DBM:
 
     @db_session
     def getNewClosedCase(self):
-	q = Query()
+	q = Query("https://data.cityofnewyork.us/resource/eabe-havv.json")
 	newClose = q.getAllClosedCaseSet()
 
 	# Subtract all resolved complaint number
+	#print select(p.complaint_number for p in Complaint)[:]
 	newClose -= set(select(p.complaint_number for p in Complaint)[:])
-
-	# Get all closed case number
-	newClose -= set(select(p.complaint_number for p in ClosedCase)[:])
 
 	return newClose
 
@@ -124,7 +151,12 @@ class DBM:
 
     @db_session
     def getRecentActiveCaseNum(self, start, end):
-	return select(p.complaint_number for p in ActiveCase \
+	start = str(start)
+	end = str(end)
+	base = select(p for p in ActiveCase \
 			    if p.complaint_number > start and \
-				p.complaint_number < end)\
-		.order_by(Complaint.complaint_number.desc()).get()
+				p.complaint_number < end)
+	if base.count() == 0:
+	    return None
+	else:
+	    return base.order_by(desc(ActiveCase.complaint_number)).limit(1)[0].complaint_number
