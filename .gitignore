@@ -1,2 +1,4 @@
 # Ignore all files that in grabPages folder
 grabPages/
+
+*.swp
