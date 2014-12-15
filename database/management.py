@@ -95,7 +95,7 @@ class DBM:
         return dictList
 
     @db_session
-    def getResolveByDateRange(self, startDate, endDate):
+    def getResolveByInspectionDateRange(self, startDate, endDate):
         # This method provide query functions that enable query for a date range
         # if startDate and endDate are not instance of date object, return empty list
         # Return an iterable list sorted by date in descending order
@@ -110,6 +110,15 @@ class DBM:
         for obj in objs:
             results.append(self.__resolveDataPacker(obj))
 
+        return results
+
+    @db_session
+    def getResolveByCategoryCode(self, category):
+        results = []
+        objs = select(p for p in Complaint if p.category == category)
+        for obj in objs:
+            results.append(self.__resolveDataPacker(obj))
+    
         return results
 
     @db_session

@@ -17,7 +17,7 @@ app = Bottle()
 def displayForm():
     return template('templates/form.tpl')
 
-@app.post('/query_complaint')
+@app.post('/query/complaint')
 def getResolve():
     info = dbm.getResolve(request.forms.get('complaint_number'))
     r = []
@@ -26,12 +26,17 @@ def getResolve():
 
     return template('templates/resolve.tpl', infoList=r)
 
-@app.post('/query_daterange')
+@app.post('/query/inspection')
 def getResolveByLastInspection():
     startDate = datetime.strptime(request.forms.get('startDate'), "%Y-%m-%d")
     endDate = datetime.strptime(request.forms.get('endDate'), "%Y-%m-%d")
-    return template('templates/resolve.tpl', infoList = dbm.getResolveByDateRange(\
-                                                                startDate, endDate))
+    return template('templates/resolve.tpl', infoList = \
+        dbm.getResolveByInspectionDateRange(startDate, endDate))
+
+@app.post('/query/category')
+def getResolveByCategory():
+    return template('templates/resolve.tpl', infoList = \
+                        dbm.getResolveByCategoryCode(request.forms.get('category')))
 
 @app.route('/export')
 def export():
