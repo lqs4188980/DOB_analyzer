@@ -25,50 +25,50 @@ class DBM:
     # which come from analyzer module
     @db_session
     def putResolve(self, info):
-	if not exists(p for p in Complaint if p.complaint_number == \
-						    info['Complaint Number']):
-	    Complaint(
-	        complaint_number = info['Complaint Number'],	
-	        status = info['Status'],
-	        bin = info['BIN'],
-	        category = info['Category Code'],
-	        lot = info['Lot'],
-	        block = info['Block'],
-	        zip = info['ZIP'],
-	        received = info['Received'],
-	        dob_violation = info['DOB Violation #'],
-	        comments = info['Comments'],
-	        owner = info['Owner'],
-	        last_inspection = info['Last Inspection'],
-	        borough = info['Borough'],
-	        complaint_at = info['Complaint at'], 
-	        ecb_violation = info["ECB Violation #s"]
-	    )	
+        if not exists(p for p in Complaint if p.complaint_number == \
+                                                    info['Complaint Number']):
+            Complaint(
+                complaint_number = info['Complaint Number'],        
+                status = info['Status'],
+                bin = info['BIN'],
+                category = info['Category Code'],
+                lot = info['Lot'],
+                block = info['Block'],
+                zip = info['ZIP'],
+                received = info['Received'],
+                dob_violation = info['DOB Violation #'],
+                comments = info['Comments'],
+                owner = info['Owner'],
+                last_inspection = info['Last Inspection'],
+                borough = info['Borough'],
+                complaint_at = info['Complaint at'], 
+                ecb_violation = info["ECB Violation #s"]
+            )        
 
     @db_session
     def getResolve(self, complaint_number):
-	complaint_number = str(complaint_number)
-	info = {}
-	if exists(p for p in Complaint if p.complaint_number == complaint_number):
-	    obj = Complaint.get(complaint_number=complaint_number)
-	    info = {
-	        'Complaint Number': obj.complaint_number,
-	        'Status': obj.status,
-	        'BIN': obj.bin,
-	        'Category Code': obj.category,
-	        'Lot': obj.lot,
-	        'Block': obj.block,
-	        'ZIP': obj.zip,
-	        'Received': obj.received,
-	        'DOB Violation #': obj.dob_violation,
-	        'Comments': obj.comments,
-	        'Owner': obj.owner,
-	        'Last Inspection': obj.last_inspection,
-	        'Borough': obj.borough,
-	        'Complaint at': obj.complaint_at, 
-	        'ECB Violation #s': obj.ecb_violation, 
-	    }
-	return info
+        complaint_number = str(complaint_number)
+        info = {}
+        if exists(p for p in Complaint if p.complaint_number == complaint_number):
+            obj = Complaint.get(complaint_number=complaint_number)
+            info = {
+                'Complaint Number': obj.complaint_number,
+                'Status': obj.status,
+                'BIN': obj.bin,
+                'Category Code': obj.category,
+                'Lot': obj.lot,
+                'Block': obj.block,
+                'ZIP': obj.zip,
+                'Received': obj.received,
+                'DOB Violation #': obj.dob_violation,
+                'Comments': obj.comments,
+                'Owner': obj.owner,
+                'Last Inspection': obj.last_inspection,
+                'Borough': obj.borough,
+                'Complaint at': obj.complaint_at, 
+                'ECB Violation #s': obj.ecb_violation, 
+            }
+        return info
 
     @db_session
     def getAllResolve(self):
@@ -76,21 +76,21 @@ class DBM:
         dictList = []
         for obj in objs:
             dictList.append({
-	        'Complaint Number': obj.complaint_number,
-	        'Status': obj.status,
-	        'BIN': obj.bin,
-	        'Category Code': obj.category,
-	        'Lot': obj.lot,
-	        'Block': obj.block,
-	        'ZIP': obj.zip,
-	        'Received': obj.received,
-	        'DOB Violation #': obj.dob_violation,
-	        'Comments': obj.comments,
-	        'Owner': obj.owner,
-	        'Last Inspection': obj.last_inspection,
-	        'Borough': obj.borough,
-	        'Complaint at': obj.complaint_at, 
-	        'ECB Violation #s': obj.ecb_violation,  
+                'Complaint Number': obj.complaint_number,
+                'Status': obj.status,
+                'BIN': obj.bin,
+                'Category Code': obj.category,
+                'Lot': obj.lot,
+                'Block': obj.block,
+                'ZIP': obj.zip,
+                'Received': obj.received,
+                'DOB Violation #': obj.dob_violation,
+                'Comments': obj.comments,
+                'Owner': obj.owner,
+                'Last Inspection': obj.last_inspection,
+                'Borough': obj.borough,
+                'Complaint at': obj.complaint_at, 
+                'ECB Violation #s': obj.ecb_violation,  
             })
         return dictList
 
@@ -123,29 +123,29 @@ class DBM:
 
     @db_session
     def putActive(self, activeInfo):
-	# This method is not for the active case that I parsed out
-	if not exists(p for p in ActiveCase if p.complaint_number == \
-					activeInfo["complaint_number"]):
-	    ActiveCase(
-	        complaint_number = activeInfo["complaint_number"], 
-	        date_entered = activeInfo["date_entered"]
-	    )
+        # This method is not for the active case that I parsed out
+        if not exists(p for p in ActiveCase if p.complaint_number == \
+                                        activeInfo["complaint_number"]):
+            ActiveCase(
+                complaint_number = activeInfo["complaint_number"], 
+                date_entered = activeInfo["date_entered"]
+            )
 
     @db_session
     def getActive(self, complaintnum):
-	info = {}
+        info = {}
         complaintnum = str(complaintnum)
-	if exists(p for p in ActiveCase if p.complaint_number == complaintnum):
-	    obj = ActiveCase.get(complaint_number=complaintnum)	
+        if exists(p for p in ActiveCase if p.complaint_number == complaintnum):
+            obj = ActiveCase.get(complaint_number=complaintnum)        
 
-	    info['complaint_number'] = obj.complaint_number
-	    info['date_entered'] = obj.date_entered
+            info['complaint_number'] = obj.complaint_number
+            info['date_entered'] = obj.date_entered
 
-	return info	
+        return info        
 
     def initialize(self):
-	db.bind('mysql', host='localhost', user='root', passwd='', db='DOB')
-	db.generate_mapping(check_tables=True, create_tables=True)
+        db.bind('mysql', host='localhost', user='root', passwd='', db='DOB')
+        db.generate_mapping(check_tables=True, create_tables=True)
 
     # @db_session
     # def export(self):
@@ -154,59 +154,60 @@ class DBM:
     #         workbook = Workbook(csvfile + '.xlsx')
     #         worksheet = workbook.add_worksheet()
     #         with open(csvfile, 'rb') as f:
-    # 	        reader = csv.reader(f)
-    # 	        for r, row in enumerate(reader):
-    # 	            for c, col in enumerate(row):
-    # 	                worksheet.write(r, c, col)
-    # 	    workbook.close()
+    #                 reader = csv.reader(f)
+    #                 for r, row in enumerate(reader):
+    #                     for c, col in enumerate(row):
+    #                         worksheet.write(r, c, col)
+    #             workbook.close()
 
     @db_session
-    def getNewClosedCase(self):
-	q = Query("https://data.cityofnewyork.us/resource/eabe-havv.json")
-	newClose = q.getAllClosedCaseSet()
+    def getNewClosedCaseFromADate(self, startDate=None):
+        # startDate should be an instance of datetime
+        # Default is NoneType, which lead to return all new closed case
+        q = Query("https://data.cityofnewyork.us/resource/eabe-havv.json")
+        newClose = q.getAllClosedCaseSet(startDate)
 
-	# Subtract all resolved complaint number
-	#print select(p.complaint_number for p in Complaint)[:]
-	newClose -= set(select(p.complaint_number for p in Complaint)[:])
+        # Subtract all resolved complaint number
+        #print select(p.complaint_number for p in Complaint)[:]
+        newClose -= set(select(p.complaint_number for p in Complaint)[:])
 
-	return newClose
+        return newClose
 
     @db_session
     def getNDayActiveCase(self, nday):
-	nday = timedelta(days=int(nday))
-	return select(p.complaint_number for p in ActiveCase \
-			    if p.date_entered >= (date.today() - nday) and \
-				p.date_entered < date.today())[:]
+        nday = timedelta(days=int(nday))
+        return select(p.complaint_number for p in ActiveCase \
+                            if p.date_entered >= (date.today() - nday) and \
+                                p.date_entered < date.today())[:]
 
     @db_session
     def getRecentActiveCaseNum(self, start, end):
-	start = str(start)
-	end = str(end)
-	base = select(p for p in ActiveCase \
-			    if p.complaint_number > start and \
-				p.complaint_number < end)
-	if base.count() == 0:
-	    return None
-	else:
-	    return base.order_by(desc(ActiveCase.complaint_number)).limit(1)[0].complaint_number
+        start = str(start)
+        end = str(end)
+        base = select(p for p in ActiveCase \
+                            if p.complaint_number > start and \
+                                p.complaint_number < end)
+        if base.count() == 0:
+            return None
+        else:
+            return base.order_by(desc(ActiveCase.complaint_number)).limit(1)[0].complaint_number
 
 
     def __resolveDataPacker(self, resolve):
         return {
             'Complaint Number': resolve.complaint_number,
-	    'Status': resolve.status,
-	    'BIN': resolve.bin,
-	    'Category Code': resolve.category,
-	    'Lot': resolve.lot,
-	    'Block': resolve.block,
-	    'ZIP': resolve.zip,
-	    'Received': resolve.received,
-	    'DOB Violation #': resolve.dob_violation,
-	    'Comments': resolve.comments,
-	    'Owner': resolve.owner,
-	    'Last Inspection': resolve.last_inspection,
-	    'Borough': resolve.borough,
-	    'Complaint at': resolve.complaint_at, 
-	    'ECB Violation #s': resolve.ecb_violation,  
-            
+            'Status': resolve.status,
+            'BIN': resolve.bin,
+            'Category Code': resolve.category,
+            'Lot': resolve.lot,
+            'Block': resolve.block,
+            'ZIP': resolve.zip,
+            'Received': resolve.received,
+            'DOB Violation #': resolve.dob_violation,
+            'Comments': resolve.comments,
+            'Owner': resolve.owner,
+            'Last Inspection': resolve.last_inspection,
+            'Borough': resolve.borough,
+            'Complaint at': resolve.complaint_at, 
+            'ECB Violation #s': resolve.ecb_violation,   
         }

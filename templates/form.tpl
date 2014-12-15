@@ -1,12 +1,12 @@
 <html>
     <head>
-	<title>DOB Query</title>
+        <title>DOB Query</title>
     </head>
     <body>
-	<form action="query/complaint" method="post">
-	    Query Resolved Case By Complaint Number: <input name="complaint_number" type="text" /><br />
-	    <input type="submit" value="Query" />
-	</form>
+        <form action="query/complaint" method="post">
+            Query Resolved Case By Complaint Number: <input name="complaint_number" type="text" /><br />
+            <input type="submit" value="Query" />
+        </form>
         <br />
         <form action="query/inspection" method="post">
             Query Resolved Case By Last Inspection Date Range: <br />
@@ -19,6 +19,6 @@
             Category: <input type="text" name="category" /><br />
             <input type="submit" value="Query" />
         </form>
-	<input type="button" value="Export All Resolved Case" id="export" onclick="window.open('/export','_self')" />
+        <input type="button" value="Export All Resolved Case" id="export" onclick="window.open('/export','_self')" />
     </body>
 </html>

@@ -4,7 +4,7 @@ from pony.orm import *
 
 """This module describe database entities"""
 
-db = Database()	    # Use late binding for better compatibility
+db = Database()            # Use late binding for better compatibility
 
 class Complaint(db.Entity):
     complaint_number = PrimaryKey(str, auto=False)
