@@ -1,0 +1,68 @@
+from datetime import date, datetime
+
+from bottle import route, run, template
+from bottle import post, request, Bottle
+from openpyxl import Workbook
+from openpyxl.compat import range
+from openpyxl.cell import get_column_letter
+from pony.orm import *
+
+from database.management import DBM
+from database.models import db, Complaint
+
+dbm = DBM()
+app = Bottle()
+
+@app.route('/')
+def displayForm():
+    return template('templates/form.tpl')
+
+@app.post('/query_complaint')
+def getResolve():
+    info = dbm.getResolve(request.forms.get('complaint_number'))
+    r = []
+    if len(info.keys()) != 0:
+        r.append(info)
+
+    return template('templates/resolve.tpl', infoList=r)
+
+@app.post('/query_daterange')
+def getResolveByLastInspection():
+    startDate = datetime.strptime(request.forms.get('startDate'), "%Y-%m-%d")
+    endDate = datetime.strptime(request.forms.get('endDate'), "%Y-%m-%d")
+    return template('templates/resolve.tpl', infoList = dbm.getResolveByDateRange(\
+                                                                startDate, endDate))
+
+@app.route('/export')
+def export():
+    fileName = date.today().strftime("%m-%d-%Y") + "_Resolved.xlsx"        
+    exportResolve(fileName)
+    return "Succesfully Exported"
+
+def exportResolve(fileName):
+    savePath = "output/" + fileName
+    b = Workbook()
+    s = b.active
+    resolve = dbm.getAllResolve()
+    dataCounts = len(resolve)
+    keys = sorted(resolve[0].keys())
+    keySize = len(keys)
+
+    # Write column head
+    for col_index in range(1, keySize):
+        s.cell("%s1"%get_column_letter(col_index)).value = keys[col_index]
+
+    # Write data from second row
+    i = 0
+    for row_index in range(2, dataCounts):
+	# Reduce index calculation when access a data
+	data = resolve[i]
+        for col_index in range(1, keySize):
+            s.cell("%s%s"%(get_column_letter(col_index), row_index)).value = \
+                        data[keys[col_index]]
+		
+	i += 1
+
+    b.save(filename = savePath)
+
+app.run(host='localhost', port=8080, debug=True)

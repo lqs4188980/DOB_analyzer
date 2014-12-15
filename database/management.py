@@ -2,7 +2,9 @@ import os
 import glob
 import csv
 import sys
-from datetime import date, timedelta
+import datetime
+import logging
+from datetime import date, timedelta, datetime
 
 import requests
 from pony.orm import *
@@ -93,6 +95,24 @@ class DBM:
         return dictList
 
     @db_session
+    def getResolveByDateRange(self, startDate, endDate):
+        # This method provide query functions that enable query for a date range
+        # if startDate and endDate are not instance of date object, return empty list
+        # Return an iterable list sorted by date in descending order
+        if not isinstance(startDate, datetime) or not isinstance(endDate, datetime):
+            logging.error("DB Error@getResolveByDateRange: \
+                                    False argument type; expected datetime type")
+            return []
+        
+        results = []
+        objs = select(p for p in Complaint if p.last_inspection >= startDate and \
+                                p.last_inspection <= endDate)
+        for obj in objs:
+            results.append(self.__resolveDataPacker(obj))
+
+        return results
+
+    @db_session
     def putActive(self, activeInfo):
 	# This method is not for the active case that I parsed out
 	if not exists(p for p in ActiveCase if p.complaint_number == \
@@ -160,3 +180,24 @@ class DBM:
 	    return None
 	else:
 	    return base.order_by(desc(ActiveCase.complaint_number)).limit(1)[0].complaint_number
+
+
+    def __resolveDataPacker(self, resolve):
+        return {
+            'Complaint Number': resolve.complaint_number,
+	    'Status': resolve.status,
+	    'BIN': resolve.bin,
+	    'Category Code': resolve.category,
+	    'Lot': resolve.lot,
+	    'Block': resolve.block,
+	    'ZIP': resolve.zip,
+	    'Received': resolve.received,
+	    'DOB Violation #': resolve.dob_violation,
+	    'Comments': resolve.comments,
+	    'Owner': resolve.owner,
+	    'Last Inspection': resolve.last_inspection,
+	    'Borough': resolve.borough,
+	    'Complaint at': resolve.complaint_at, 
+	    'ECB Violation #s': resolve.ecb_violation,  
+            
+        }
