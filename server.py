@@ -59,7 +59,7 @@ def exportResolve(fileName):
 
     # Write data from second row
     i = 0
-    for row_index in range(2, dataCounts):
+    for row_index in range(2, dataCounts + 1):
 	# Reduce index calculation when access a data
 	data = resolve[i]
         for col_index in range(1, keySize):

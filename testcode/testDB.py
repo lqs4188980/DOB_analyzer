@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 
 import requests
 
@@ -31,19 +31,29 @@ dbm = DBM()
 #print dbm.getNDayActiveCase(3)
 
 print "***************** Test getResolve *****************"
-print dbm.getResolve(4036021)
+print dbm.getResolve(4036026)
 
-print "***************** Test putActive ******************"
-dbm.putActive({'complaint_number': "1111111", 'date_entered': date.today()})
+print "***************** Test getAllResolve **********************"
+print dbm.getAllResolve()
+
+print "***************** Test getResolveByInspectionDateRange *********************"
+print "Test by web access"
+
+print "***************** Test putWarehouseCase ******************"
+dbm.putWarehouseCase({'Complaint Number': "1111111", 'Date Entered': date.today(), 'Status': "CLOSED"})
 
 print "***************** Test getActive ******************"
-print dbm.getActive(1111111)
+print dbm.getWarehouseCase(1111111)
+
+print "***************** Test deleteWarehouseCase *********************"
+dbm.deleteWarehouseCase(1111111)
+print dbm.getWarehouseCase(1111111)
 
 print "***************** Test getNewClosedCase ***********"
-print len(dbm.getNewClosedCase())
+print len(dbm.getNewClosedCaseFromADate(datetime.strptime("12/01/2014", "%m/%d/%Y")))
 
 print "***************** Test getNDayActiveCase **********"
-print len(dbm.getNDayActiveCase(10))
+print len(dbm.getNDayActiveCase(0))
 
 print "***************** Test getRecentActiveCaseNum *******************"
 print dbm.getRecentActiveCaseNum(4000000, 5000000)

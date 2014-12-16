@@ -69,7 +69,7 @@ class PageAnalyzer (threading.Thread):
         'ECB Violation #s': '',        
     }
 
-    def __init__ (self, threadID, name, rawQ, taskQ):
+    def __init__ (self, rawQ, taskQ, threadID=None, name=None):
         threading.Thread.__init__(self)
         self.ThreadID = threadID
         self.Name = name
@@ -110,7 +110,8 @@ class PageAnalyzer (threading.Thread):
 
             if self._rawData["text"] == "":
                 # Fail to get raw data, needs to add complaint number back and log
-                logging.error("Cannot get page content for complaint number:", self._rawData["id"])
+                logging.error("Cannot get page content for complaint number:", \
+                                                                self._rawData["id"])
                 self.__insertToTaskQueue("Cannot get page content")
                 continue
 
@@ -120,25 +121,53 @@ class PageAnalyzer (threading.Thread):
             # Parse title
             if self.__titleParser():
                 # If title is valid, get status and decide whether continue parse
-                if self.info['Status'] == "RESOLVED":
-                    # If case if RESOLVED, we need to parse all the infomation and 
-                    # insert into database
-                    if self.__mainInfoParser() and self.__contentParser():
-                        self.__insertToDB()
-                        self._TaskQueue.task_done()
-                    else:
-                        self.__insertToTaskQueue("Fail to parse data")
-
-                elif self.info['Status'] == "ACTIVE":
-                    # If case is still ACTIVE, we don't need to parse it and put  
-                    # them back into queue
-                    self.__insertToTaskQueue()
+                self.__parseRequiredContent()
             else:
+                # The case format doesn't correct
                 self.__insertToTaskQueue("Fail to Parse Title")
                 
             self.__cleanUp()        
+
+    def __parseRequiredContent(self):
+        if self.info['Status'] == "RESOLVED":
+            # If case if RESOLVED, we need to parse all the infomation and 
+            # insert into database
+            if self.__mainInfoParser() and self.__contentParser(): 
+                # Has any violation #
+                if self.__hasViolationNumber():
+                    self.__insertToComplaint()
+                    # Delete this case from Warehouse
+                    self._dbm.deleteWarehouseCase(self.info['Complaint Number'])
+                else:
+                    # if no violation #, insert into or update Warehouse
+                    # Mark this case as CLOSED
+                    self.info['Status'] = "CLOSED"
+                    self._dbm.putWarehouseCase(self.info)
+
+                self._TaskQueue.task_done()
+            else:
+                # When parsing date error
+                # Mark this case as CLOSED in advance, and if re-parse
+                # success, we will delete it 
+                self.info['Status'] = "CLOSED"
+                self._dbm.putWarehouseCase(self.info)
+                self.__insertToTaskQueue("Fail to parse data")
+
+        elif self.info['Status'] == "ACTIVE":
+            # If case is still ACTIVE, we don't need to parse it
+            # Also, we add it to Warehouse
+            self._dbm.putWarehouseCase(self.info)
+
+        else:
+            # For CLOSED and REFERRED or any other cases, mark as CLOSED 
+            # and put them into Warehouse
+            self.info['Status'] = "CLOSED"
+            self._dbm.putWarehouseCase(self.info)
                     
                     
+    def __hasViolationNumber(self):
+        return (self.info['DOB Violation #'] != '' or \
+                self.info['ECB Violation #s'] != '')
 
     def __getRawDataFromQueue(self):
         rawData = self._JobQueue.get()
@@ -170,10 +199,10 @@ class PageAnalyzer (threading.Thread):
                 m = mainInfoPatterns[PageAnalyzer.mainInfoFieldList[i]] \
                                             .match(item.text_content())
                 if m == None:
-                   self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
-                   return False
+                    self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
+                    return False
                 else:
-                   self.info[PageAnalyzer.mainInfoFieldList[i]] = m.group(2)
+                    self.info[PageAnalyzer.mainInfoFieldList[i]] = m.group(2)
                 
                 i += 1
 
@@ -232,7 +261,7 @@ class PageAnalyzer (threading.Thread):
             + ": " 
             + htmlNode.text_content())
 
-    def __insertToDB(self):
+    def __insertToComplaint(self):
         # Insert current page info into DB
         self.__convertDatetime()
         self._dbm.putResolve(self.info)

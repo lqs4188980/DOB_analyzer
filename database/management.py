@@ -4,6 +4,7 @@ import csv
 import sys
 import datetime
 import logging
+import threading
 from datetime import date, timedelta, datetime
 
 import requests
@@ -11,15 +12,20 @@ from pony.orm import *
 # from xlsxwriter.workbook import Workbook
 
 from models import db, Complaint 
-from models import ActiveCase
+from models import Warehouse
 from query.handler import Query
 
 
 class DBM: 
     """This module provide database access methods"""
-    
+    _isInitialized = False
+    _lock = threading.Lock()
     def __init__(self):
-        self.initialize() 
+        if not DBM._isInitialized:
+            DBM._lock.acquire()
+            self.initialize() 
+            DBM._isInitialized = True
+            DBM._lock.release()
 
     # putResolve and getResolve uses different dict keys with other method, 
     # which come from analyzer module
@@ -122,26 +128,38 @@ class DBM:
         return results
 
     @db_session
-    def putActive(self, activeInfo):
-        # This method is not for the active case that I parsed out
-        if not exists(p for p in ActiveCase if p.complaint_number == \
-                                        activeInfo["complaint_number"]):
-            ActiveCase(
-                complaint_number = activeInfo["complaint_number"], 
-                date_entered = activeInfo["date_entered"]
+    def putWarehouseCase(self, caseInfo):
+        if not exists(p for p in Warehouse if p.complaint_number == \
+                                        caseInfo["Complaint Number"]):
+            Warehouse(
+                complaint_number = caseInfo["Complaint Number"], 
+                date_entered = date.today(),
+                status = caseInfo["Status"]
             )
+        else:
+            obj = get(p for p in Warehouse if p.complaint_number == \
+                                        caseInfo["Complaint Number"])
+            obj.status = caseInfo["Status"]
 
     @db_session
-    def getActive(self, complaintnum):
+    def getWarehouseCase(self, complaintnum):
         info = {}
         complaintnum = str(complaintnum)
-        if exists(p for p in ActiveCase if p.complaint_number == complaintnum):
-            obj = ActiveCase.get(complaint_number=complaintnum)        
+        if exists(p for p in Warehouse if p.complaint_number == complaintnum):
+            obj = Warehouse.get(complaint_number=complaintnum)        
 
-            info['complaint_number'] = obj.complaint_number
-            info['date_entered'] = obj.date_entered
+            info['Complaint Number'] = obj.complaint_number
+            info['Date Entered'] = obj.date_entered
+            info['Status'] = obj.status
 
         return info        
+
+    @db_session
+    def deleteWarehouseCase(self, complaintnum):
+        complaintnum = str(complaintnum)
+        obj = select(p for p in Warehouse if p.complaint_number == complaintnum)
+        if len(obj) == 1:
+            obj.get().delete()
 
     def initialize(self):
         db.bind('mysql', host='localhost', user='root', passwd='', db='DOB')
@@ -170,27 +188,31 @@ class DBM:
         # Subtract all resolved complaint number
         #print select(p.complaint_number for p in Complaint)[:]
         newClose -= set(select(p.complaint_number for p in Complaint)[:])
+        newClose -= set(select(p.complaint_number for p in Warehouse if p.status == "CLOSED")[:])
 
         return newClose
 
     @db_session
     def getNDayActiveCase(self, nday):
         nday = timedelta(days=int(nday))
-        return select(p.complaint_number for p in ActiveCase \
-                            if p.date_entered >= (date.today() - nday) and \
-                                p.date_entered < date.today())[:]
+        return select(p.complaint_number for p in Warehouse \
+                            if p.status == "ACTIVE" and \
+                                p.date_entered >= (date.today() - nday) and \
+                                p.date_entered <= date.today())[:]
 
     @db_session
     def getRecentActiveCaseNum(self, start, end):
         start = str(start)
         end = str(end)
-        base = select(p for p in ActiveCase \
-                            if p.complaint_number > start and \
+        base = select(p for p in Warehouse \
+                            if p.status == "ACTIVE" and \
+                                p.complaint_number > start and \
                                 p.complaint_number < end)
         if base.count() == 0:
             return None
         else:
-            return base.order_by(desc(ActiveCase.complaint_number)).limit(1)[0].complaint_number
+            return base.order_by(desc(Warehouse.complaint_number))\
+                                                        .limit(1)[0].complaint_number
 
 
     def __resolveDataPacker(self, resolve):

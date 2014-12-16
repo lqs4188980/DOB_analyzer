@@ -23,9 +23,10 @@ class Complaint(db.Entity):
     complaint_at = Optional(str)
     ecb_violation = Optional(str)
     
-class ActiveCase(db.Entity):
+class Warehouse(db.Entity):
     complaint_number = PrimaryKey(str, auto=False)
     date_entered = Required(datetime.date)
+    status = Required(str)
 
 #class ClosedCase(db.Entity):
 #    complaint_number = PrimaryKey(str, auto=False)
