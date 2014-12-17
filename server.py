@@ -2,6 +2,7 @@ from datetime import date, datetime
 
 from bottle import route, run, template
 from bottle import post, request, Bottle
+from bottle import static_file
 from openpyxl import Workbook
 from openpyxl.compat import range
 from openpyxl.cell import get_column_letter
@@ -44,7 +45,18 @@ def export():
     exportResolve(fileName)
     return "Succesfully Exported"
 
+@app.route('/static/script/<filecategory:path>/<filename:path>')
+def sendStaticFile(filecategory, filename):
+    return static_file(filecategory + "/" + filename, root='static/script/')
+
+#@app.route('/static/script/css/<cssFile:path>')
+#def sendCSSFile(cssFile):
+#    return static_file(cssFile, root='static/script/css/')
+
 def exportResolve(fileName):
+    if not os.path.exists("output"):
+        os.makedirs("output")
+
     savePath = "output/" + fileName
     b = Workbook()
     s = b.active
