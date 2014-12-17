@@ -126,6 +126,7 @@ class PageAnalyzer (threading.Thread):
                 # The case format doesn't correct
                 self.__insertToTaskQueue("Fail to Parse Title")
                 
+            self._TaskQueue.task_done()
             self.__cleanUp()        
 
     def __parseRequiredContent(self):
@@ -144,7 +145,6 @@ class PageAnalyzer (threading.Thread):
                     self.info['Status'] = "CLOSED"
                     self._dbm.putWarehouseCase(self.info)
 
-                self._TaskQueue.task_done()
             else:
                 # When parsing date error
                 # Mark this case as CLOSED in advance, and if re-parse
