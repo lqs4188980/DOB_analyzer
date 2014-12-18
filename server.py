@@ -44,7 +44,7 @@ def getResolveByCategory():
 def export():
     fileName = date.today().strftime("%m-%d-%Y") + "_Resolved.xlsx"        
     exportResolve(fileName)
-    return "Succesfully Exported"
+    return template('templates/msg.tpl', message="Successfully Exported")
 
 @app.route('/static/script/<filecategory:path>/<filename:path>')
 def sendStaticFile(filecategory, filename):
