@@ -26,7 +26,7 @@ MAX_CRAWL_ERROR = 30
 
 class CrawlerMaster(Process):
     
-    def __init__(self, proxy_queue, pool_sz=50, reset=False, init_date=datetime(2014,12,1)):
+    def __init__(self, proxy_queue, pool_sz=75, reset=False, init_date=datetime(2014,12,1)):
         Process.__init__(self)
         self._proxy_queue = proxy_queue
         self._pool_sz = pool_sz
@@ -54,7 +54,7 @@ class CrawlerMaster(Process):
         # and use the local IP for request task
         try:
             ######################################################
-            self._proxies = self._proxy_queue.get(timeout=600)
+            self._proxies = self._proxy_queue.get(timeout=5)
             ######################################################
         except Exception as e:
             logger_c.warning(e)
@@ -85,7 +85,7 @@ class CrawlerMaster(Process):
                 task = {'id':str(n), \
                         'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(n) +'&requestid=0'}
                 ##############################################
-                print task
+                print task, '@'
                 ##############################################
                 self._task.put(task)
                 
@@ -120,7 +120,7 @@ class CrawlerMaster(Process):
             task = {'id':i, \
                     'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(i) +'&requestid=0'}
             #########################################
-            print task
+            print task, '@'
             #########################################
             self._task.put(task)
         nyc_open = Query()
@@ -168,7 +168,8 @@ class ProxyUpdater(Thread):
             print "Get it"
             #################################
             self._lock.acquire()
-            self._proxies = prx_list
+            del self._proxies[:]
+            self._proxies.extend(prx_list)
             self._lock.release()
 
 
@@ -202,7 +203,7 @@ class Crawler(Thread):
             self._lock.acquire()
             proxy = random.choice(self._proxies)
             ##################################
-            print task['id'], self._task.empty(), proxy
+            print task['id'], proxy
             ##################################
             self._lock.release()
             hold = 2
@@ -222,6 +223,7 @@ class Crawler(Thread):
                     sleep(hold)
                     hold *= 2
             else:
+                logger_c.error('case-'+str(task['id'])+' download failure after 4 re-trys.')
                 task.update({'error':'download error'})
                 self._task.put(task)
                 self._task.task_done()
