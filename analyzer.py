@@ -113,18 +113,18 @@ class PageAnalyzer (threading.Thread):
                 logging.error("Cannot get page content for complaint number:", \
                                                                 self._rawData["id"])
                 self.__insertToTaskQueue("Cannot get page content")
-                continue
 
-            # Preprocessing Data
-            self._doc = html.fromstring(self._rawData["text"]) 
-        
-            # Parse title
-            if self.__titleParser():
-                # If title is valid, get status and decide whether continue parse
-                self.__parseRequiredContent()
             else:
-                # The case format doesn't correct
-                self.__insertToTaskQueue("Fail to Parse Title")
+                # Preprocessing Data
+                self._doc = html.fromstring(self._rawData["text"]) 
+        
+                # Parse title
+                if self.__titleParser():
+                    # If title is valid, get status and decide whether continue parse
+                    self.__parseRequiredContent()
+                else:
+                    # The case format doesn't correct
+                    self.__insertToTaskQueue("Fail to Parse Title")
                 
             self._TaskQueue.task_done()
             self.__cleanUp()        
