@@ -167,7 +167,7 @@ class DBM:
         conf.read('dbconf.txt')
         db_usr = conf.get('mysql', 'user')
         db_pwd = conf.get('mysql', 'passwd')
-        db.bind('mysql', host='localhost', user='root', passwd='Bakemono', db='DOB')
+        db.bind('mysql', host='localhost', user=db_usr, passwd=db_pwd, db='DOB')
         db.generate_mapping(check_tables=True, create_tables=True)
 
     # @db_session
