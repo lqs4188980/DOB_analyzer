@@ -27,6 +27,7 @@ if __name__ == '__main__':
             logger_r.error(repr(e))
         pm.terminate()
     except Exception as e:
+        # logging fatal error
         logger_r.error(e)
         logger_r.error(traceback.format_exc())
         logger_r.error(sys.exc_info())
