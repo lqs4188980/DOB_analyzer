@@ -40,11 +40,27 @@ def getResolveByCategory():
     return template('templates/resolve.tpl', infoList = \
                         dbm.getResolveByCategoryCode(request.forms.get('category')))
 
+@app.route('/output/<filename:path>')
+def downloadLink(filename):
+    return static_file(filename, root='output/', download=filename)
+
+@app.route('/clearup')
+def clearCache():
+    folder = 'output/'
+    for entry in os.listdir(folder):
+        filepath = os.path.join(folder, entry)
+        try:
+            if os.path.isfile(filepath):
+                os.unlink(filepath)
+        except e:
+            print e
+    return template('templates/msg.tpl', filePath="", message="Successfully Cleared")
+
 @app.route('/export')
 def export():
     fileName = date.today().strftime("%m-%d-%Y") + "_Resolved.xlsx"        
     exportResolve(fileName)
-    return template('templates/msg.tpl', message="Successfully Exported")
+    return template('templates/msg.tpl', filePath="output/" + fileName, message="Successfully Exported")
 
 @app.route('/static/script/<filecategory:path>/<filename:path>')
 def sendStaticFile(filecategory, filename):

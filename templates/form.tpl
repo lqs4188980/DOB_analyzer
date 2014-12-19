@@ -20,5 +20,6 @@
             <input type="submit" value="Query" />
         </form>
         <input type="button" value="Export All Resolved Case" id="export" onclick="window.open('/export','_self')" />
+        <input type="button" value="Clear Generated Files" id="clearup" onclick="window.open('/clearup', '_self')" />
     </body>
 </html>
