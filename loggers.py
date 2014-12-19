@@ -6,5 +6,6 @@ Created on Dec 16, 2014
 import logging.config
 
 logging.config.fileConfig('logging.conf')
+logger_r = logging.getLogger('root')
 logger_c = logging.getLogger('crawler')
 logger_p = logging.getLogger('proxy')
