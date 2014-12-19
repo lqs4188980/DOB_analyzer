@@ -127,6 +127,9 @@ class PageAnalyzer (threading.Thread):
                     self.__insertToTaskQueue("Fail to Parse Title")
                 
             self._TaskQueue.task_done()
+            #############################
+            print '*'
+            #############################
             self.__cleanUp()        
 
     def __parseRequiredContent(self):
@@ -247,6 +250,9 @@ class PageAnalyzer (threading.Thread):
         if error != "":
             task["error"] = error
         self._TaskQueue.put(task)
+        #############################
+        print '@'
+        #############################
         
 
     def __cleanUp(self):
