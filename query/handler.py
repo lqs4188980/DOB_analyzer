@@ -4,6 +4,8 @@ from datetime import date, datetime, timedelta
 
 import requests
 
+from loggers import logger_query
+
 class Query:
     """Providing multiple query functions"""
 
@@ -57,7 +59,7 @@ class Query:
                 if datetime.strptime(obj["date_entered"], "%m/%d/%Y") >= startDate:
                     closeCase.add(obj["complaint_number"])
         else:
-            logging.error("Error happend on module \
+            logger_query.error("Error happend on module \
                         query.handler.getAllClosedCaseSet: \
                                 unrecognized type for startDate")
 

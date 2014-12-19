@@ -14,6 +14,7 @@ from pony.orm import *
 from models import db, Complaint 
 from models import Warehouse
 from query.handler import Query
+from loggers import logger_db
 
 
 class DBM: 
@@ -106,7 +107,7 @@ class DBM:
         # if startDate and endDate are not instance of date object, return empty list
         # Return an iterable list sorted by date in descending order
         if not isinstance(startDate, datetime) or not isinstance(endDate, datetime):
-            logging.error("DB Error@getResolveByDateRange: \
+            logger_db.error("DB Error@getResolveByDateRange: \
                                     False argument type; expected datetime type")
             return []
         

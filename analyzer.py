@@ -10,6 +10,7 @@ from time import clock
 from lxml import html
 
 from database.management import DBM
+from loggers import logger_analyzer
 
 class PageAnalyzer (threading.Thread):
     '''Analyze and parse information from DOB pages'''
@@ -110,8 +111,8 @@ class PageAnalyzer (threading.Thread):
 
             if self._rawData["text"] == "":
                 # Fail to get raw data, needs to add complaint number back and log
-                logging.error("Cannot get page content for complaint number:", \
-                                                                self._rawData["id"])
+                logger_analyzer.error("Cannot get page content for complaint \
+                                        number: %s"% self._rawData["id"])
                 self.__insertToTaskQueue("Cannot get page content")
 
             else:
@@ -125,6 +126,8 @@ class PageAnalyzer (threading.Thread):
                 else:
                     # The case format doesn't correct
                     self.__insertToTaskQueue("Fail to Parse Title")
+                    logger_analyzer.error("Fail to Parse Title: %s"% \
+                                                                self._rawData["id"])
                 
             self._TaskQueue.task_done()
             #############################
@@ -155,6 +158,7 @@ class PageAnalyzer (threading.Thread):
                 self.info['Status'] = "CLOSED"
                 self._dbm.putWarehouseCase(self.info)
                 self.__insertToTaskQueue("Fail to parse data")
+                logger_analyzer.error("Fail to parse data: %s"% self._rawData["id"])
 
         elif self.info['Status'] == "ACTIVE":
             # If case is still ACTIVE, we don't need to parse it
@@ -260,7 +264,7 @@ class PageAnalyzer (threading.Thread):
         self._doc = None
 
     def __logError(self, field, htmlNode):
-        logging.error("Some error happens when parsing " 
+        logger_analyzer.error("Some error happens when parsing " 
             + field 
             + " for " 
             + self.info['Complaint Number'] 
