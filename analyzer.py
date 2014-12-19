@@ -110,8 +110,8 @@ class PageAnalyzer (threading.Thread):
 
             if self._rawData["text"] == "":
                 # Fail to get raw data, needs to add complaint number back and log
-                logging.error("Cannot get page content for complaint number:", \
-                                                                self._rawData["id"])
+                logging.error("Cannot get page content for complaint number: ", \
+                                                                str(self._rawData["id"]))
                 self.__insertToTaskQueue("Cannot get page content")
 
             else:
