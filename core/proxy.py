@@ -16,11 +16,11 @@ from time import sleep
 from loggers import logger_p
 from pony.orm import *
 from datetime import date, timedelta
-import requests, time
+import requests, time, ConfigParser
 from math import sqrt
 
 
-db_p = Database('mysql', host='127.0.0.1', user='root', passwd='Bakemono', db='ProxyBackup')
+db_p = Database()
 
 class ProxyManager(Process):
     
@@ -44,7 +44,12 @@ class ProxyManager(Process):
             t = ProxyTester(self._task, self._output, self._broken)
             t.daemon = True
             t.start()
-            
+        
+        conf = ConfigParser.RawConfigParser(allow_no_value=True)
+        conf.read('dbconf.txt')
+        db_usr = conf.get('mysql', 'user')
+        db_pwd = conf.get('mysql', 'passwd')
+        db_p.bind('mysql', host='localhost', user=db_usr, passwd=db_pwd, db='DOB')    
         db_p.generate_mapping(check_tables=True, create_tables=True)
         db_p.create_tables()
         self._drop_old_backup()
