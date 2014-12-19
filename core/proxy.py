@@ -46,7 +46,7 @@ class ProxyManager(Process):
             t.start()
         
         conf = ConfigParser.RawConfigParser(allow_no_value=True)
-        conf.read('dbconf.txt')
+        conf.read('db.conf')
         db_usr = conf.get('mysql', 'user')
         db_pwd = conf.get('mysql', 'passwd')
         db_p.bind('mysql', host='localhost', user=db_usr, passwd=db_pwd, db='DOB')    

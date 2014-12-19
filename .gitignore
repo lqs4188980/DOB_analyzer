@@ -3,4 +3,6 @@ grabPages/
 
 *.swp
 *.pyc
+db.conf
 .gitignore
+

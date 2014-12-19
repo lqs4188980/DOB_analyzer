@@ -54,7 +54,7 @@ class CrawlerMaster(Process):
         # and use the local IP for request task
         try:
             ######################################################
-            self._proxies = self._proxy_queue.get(timeout=5)
+            self._proxies = self._proxy_queue.get(timeout=600)
             ######################################################
         except Exception as e:
             logger_c.warning(e)
@@ -146,10 +146,11 @@ class CrawlerMaster(Process):
             #############################
             print '@'
             #############################
+        nyc_open = Query()
         start_nums = []
-        start_nums.append(int(dbm.getRecentActiveCaseNum(2000000, 2999999)))
-        start_nums.append(int(dbm.getRecentActiveCaseNum(3000000, 3999999)))
-        start_nums.append(int(dbm.getRecentActiveCaseNum(4000000, 4999999)))
+        start_nums.append(max( int(dbm.getRecentActiveCaseNum(2000000, 2999999)), int(nyc_open.getRecentActiveCaseNum(2000000, 2999999)) ))
+        start_nums.append(max( int(dbm.getRecentActiveCaseNum(3000000, 3999999)), int(nyc_open.getRecentActiveCaseNum(3000000, 3999999)) ))
+        start_nums.append(max( int(dbm.getRecentActiveCaseNum(4000000, 4999999)), int(nyc_open.getRecentActiveCaseNum(5000000, 4999999)) ))
         return start_nums
         
     
