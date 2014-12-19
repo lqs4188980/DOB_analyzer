@@ -5,6 +5,7 @@ import sys
 import datetime
 import logging
 import threading
+import ConfigParser
 from datetime import date, timedelta, datetime
 
 import requests
@@ -162,6 +163,10 @@ class DBM:
             obj.get().delete()
 
     def initialize(self):
+        conf = ConfigParser.RawConfigParser(allow_no_value=True)
+        conf.read('dbconf.txt')
+        db_usr = conf.get('mysql', 'user')
+        db_pwd = conf.get('mysql', 'passwd')
         db.bind('mysql', host='localhost', user='root', passwd='Bakemono', db='DOB')
         db.generate_mapping(check_tables=True, create_tables=True)
 
