@@ -50,7 +50,7 @@ class DBM:
                 last_inspection = info['Last Inspection'],
                 borough = info['Borough'],
                 complaint_at = info['Complaint at'], 
-                ecb_violation = info["ECB Violation #s"]
+                ecb_violation = info["ECB Violation #"]
             )        
 
     @db_session
@@ -74,7 +74,7 @@ class DBM:
                 'Last Inspection': obj.last_inspection,
                 'Borough': obj.borough,
                 'Complaint at': obj.complaint_at, 
-                'ECB Violation #s': obj.ecb_violation, 
+                'ECB Violation #': obj.ecb_violation, 
             }
         return info
 
@@ -98,7 +98,7 @@ class DBM:
                 'Last Inspection': obj.last_inspection,
                 'Borough': obj.borough,
                 'Complaint at': obj.complaint_at, 
-                'ECB Violation #s': obj.ecb_violation,  
+                'ECB Violation #': obj.ecb_violation,  
             })
         return dictList
 
@@ -237,5 +237,5 @@ class DBM:
             'Last Inspection': resolve.last_inspection,
             'Borough': resolve.borough,
             'Complaint at': resolve.complaint_at, 
-            'ECB Violation #s': resolve.ecb_violation,   
+            'ECB Violation #': resolve.ecb_violation,   
         }

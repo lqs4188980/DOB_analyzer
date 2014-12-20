@@ -33,7 +33,7 @@ class PageAnalyzer (threading.Thread):
             "Received": re.compile("(\xa0){0,}(?P<received>[0-9/]+)(\xa0){0,}"),
             "Owner": re.compile("(\xa0){0,}(?P<owner>.*)(\xa0){0,}$"),
             "DOB Violation #": re.compile("(\xa0){0,}(?P<dobVio>.*)(\xa0){0,}$"),
-            "ECB Violation #s": re.compile("(\xa0){0,}(?P<ecbVio>.*)(\xa0){0,}$"),
+            "ECB Violation #": re.compile("(\xa0){0,}(?P<ecbVio>.*)(\xa0){0,}$"),
             "Comments": re.compile("(\xa0){0,}(?P<comments>.*)(\xa0){0,}"),
         }
     }   
@@ -49,7 +49,7 @@ class PageAnalyzer (threading.Thread):
         "Last Inspection", 
         "Comments", 
         "DOB Violation #", 
-        "ECB Violation #s"
+        "ECB Violation #"
     ]
 
     infoTemplate = {
@@ -67,7 +67,7 @@ class PageAnalyzer (threading.Thread):
         'Last Inspection': '',
         'Borough': '',
         'Complaint at': '',
-        'ECB Violation #s': '',        
+        'ECB Violation #': '',        
     }
 
     def __init__ (self, rawQ, taskQ, threadID=None, name=None):
@@ -89,16 +89,15 @@ class PageAnalyzer (threading.Thread):
         # Test file list
         # self._fileList = fileList
 
-#    def testMain(self):
-#        for eachEntry in self.fileList:
-#            f = open(eachEntry, 'r')
-#            self._doc = html.fromstring(f.read())
-#            if self.__titleParser():
-#                print "************", self.info['Complaint Number'], "*************"
-#                self.__mainInfoParser()
-#                self.__contentParser()
-#                self.printInfo()
-#                self.__cleanUp()
+    def testMain(self, filename):
+        f = open(filename, 'r')
+        self._doc = html.fromstring(f.read())
+        if self.__titleParser():
+            print "************", self.info['Complaint Number'], "*************"
+            self.__mainInfoParser()
+            self.__contentParser()
+            self.printInfo()
+            self.__cleanUp()
             
 
         
@@ -176,7 +175,7 @@ class PageAnalyzer (threading.Thread):
                     
     def __hasViolationNumber(self):
         return (self.info['DOB Violation #'] != '' or \
-                self.info['ECB Violation #s'] != '')
+                self.info['ECB Violation #'] != '')
 
     def __getRawDataFromQueue(self):
         rawData = self._JobQueue.get()
