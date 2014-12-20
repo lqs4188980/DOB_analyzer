@@ -1,8 +1,10 @@
 # Ignore all files that in grabPages folder
 grabPages/
+output/
+testcode/
 
 *.swp
 *.pyc
 db.conf
 .gitignore
-
+*.xlsx
