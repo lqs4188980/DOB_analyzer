@@ -171,6 +171,24 @@ class DBM:
         db.bind('mysql', host='localhost', user=db_usr, passwd=db_pwd, db='DOB')
         db.generate_mapping(check_tables=True, create_tables=True)
 
+    def cleanUp(self, backup=True):
+        if backup:
+            self.backup()
+        db.drop_all_tables(with_all_data=True)
+
+    @db_session
+    def backup(self):
+        exportPath = datetime.today().strftime("%m-%d-%Y_%H-%M") + "_DB_EXPORT.csv"
+
+        # the export file will be stored at '/usr/local/mysql-someedition/data/' on *nix system
+        if db.execute("SHOW TABLES LIKE \'complaint\'").arraysize > 0:
+            db.execute("SELECT * FROM complaint INTO OUTFILE $exportPath \
+                        FIELDS TERMINATED BY \',\'\
+                        ENCLOSED BY \'\"\'\
+                        LINES TERMINATED BY \'\n\'")
+        
+
+    
     # @db_session
     # def export(self):
     #     db.select('* FROM complaint INTO OUTFILE \'output.csv\' FIELDS TERMINATED BY \',\'')
