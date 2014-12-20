@@ -8249,3 +8249,5 @@
 2014-12-19 11:50:38,924 - crawler - ERROR - case-3500361 download failure after 4 re-trys.
 2014-12-19 11:50:49,519 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='69.162.72.154', port=80): Read timed out. (read timeout=120)",),)
 2014-12-19 11:51:05,525 - crawler - ERROR - case-4607016 download failure after 4 re-trys.
+2014-12-20 18:09:17,879 - analyzer - ERROR - Fail to Parse Title: .4558328.swp
+2014-12-20 18:17:00,699 - analyzer - ERROR - Fail to Parse Title: .4558362.swp

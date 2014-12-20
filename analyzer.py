@@ -29,6 +29,7 @@ class PageAnalyzer (threading.Thread):
             "Block": re.compile(".*?(\xa0){0,}(?P<number>[0-9]*)(\xa0){0,}$"),
             "Lot": re.compile(".*?(\xa0){0,}(?P<number>[0-9]*)(\xa0){0,}$"),
             "Last Inspection": re.compile("(\xa0){0,}(?P<inspectionDate>[0-9/]+)(\xa0){0,}"),
+            "Disposition": re.compile("(\xa0){0,}(?P<disposition>.*)(\xa0){0,}"),
             "Category Code": re.compile("(\xa0){0,}(?P<category>\w{2})(\xa0){0,}"),
             "Received": re.compile("(\xa0){0,}(?P<received>[0-9/]+)(\xa0){0,}"),
             "Owner": re.compile("(\xa0){0,}(?P<owner>.*)(\xa0){0,}$"),
@@ -47,6 +48,7 @@ class PageAnalyzer (threading.Thread):
         "Lot", 
         "Owner", 
         "Last Inspection", 
+        "Disposition",
         "Comments", 
         "DOB Violation #", 
         "ECB Violation #"
@@ -65,6 +67,7 @@ class PageAnalyzer (threading.Thread):
         'Comments': '',
         'Owner': '',
         'Last Inspection': '',
+        'Disposition': '',
         'Borough': '',
         'Complaint at': '',
         'ECB Violation #': '',        

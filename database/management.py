@@ -48,6 +48,7 @@ class DBM:
                 comments = info['Comments'],
                 owner = info['Owner'],
                 last_inspection = info['Last Inspection'],
+                disposition = info['Disposition'],
                 borough = info['Borough'],
                 complaint_at = info['Complaint at'], 
                 ecb_violation = info["ECB Violation #"]
@@ -59,23 +60,7 @@ class DBM:
         info = {}
         if exists(p for p in Complaint if p.complaint_number == complaint_number):
             obj = Complaint.get(complaint_number=complaint_number)
-            info = {
-                'Complaint Number': obj.complaint_number,
-                'Status': obj.status,
-                'BIN': obj.bin,
-                'Category Code': obj.category,
-                'Lot': obj.lot,
-                'Block': obj.block,
-                'ZIP': obj.zip,
-                'Received': obj.received,
-                'DOB Violation #': obj.dob_violation,
-                'Comments': obj.comments,
-                'Owner': obj.owner,
-                'Last Inspection': obj.last_inspection,
-                'Borough': obj.borough,
-                'Complaint at': obj.complaint_at, 
-                'ECB Violation #': obj.ecb_violation, 
-            }
+            info = self.__resolveDataPacker(obj)
         return info
 
     @db_session
@@ -83,23 +68,7 @@ class DBM:
         objs = select(p for p in Complaint)[:]
         dictList = []
         for obj in objs:
-            dictList.append({
-                'Complaint Number': obj.complaint_number,
-                'Status': obj.status,
-                'BIN': obj.bin,
-                'Category Code': obj.category,
-                'Lot': obj.lot,
-                'Block': obj.block,
-                'ZIP': obj.zip,
-                'Received': obj.received,
-                'DOB Violation #': obj.dob_violation,
-                'Comments': obj.comments,
-                'Owner': obj.owner,
-                'Last Inspection': obj.last_inspection,
-                'Borough': obj.borough,
-                'Complaint at': obj.complaint_at, 
-                'ECB Violation #': obj.ecb_violation,  
-            })
+            dictList.append(self.__resolveDataPacker(obj))
         return dictList
 
     @db_session
@@ -253,6 +222,7 @@ class DBM:
             'Comments': resolve.comments,
             'Owner': resolve.owner,
             'Last Inspection': resolve.last_inspection,
+            'Disposition': resolve.disposition,
             'Borough': resolve.borough,
             'Complaint at': resolve.complaint_at, 
             'ECB Violation #': resolve.ecb_violation,   

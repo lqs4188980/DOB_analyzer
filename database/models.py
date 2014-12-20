@@ -19,6 +19,7 @@ class Complaint(db.Entity):
     comments = Optional(str)
     owner = Optional(str)
     last_inspection = Optional(datetime.date)
+    disposition = Optional(str)
     borough = Optional(str)
     complaint_at = Optional(str)
     ecb_violation = Optional(str)
