@@ -1,4 +1,5 @@
 import os
+import re
 import glob
 import csv
 import sys
@@ -88,6 +89,27 @@ class DBM:
             results.append(self.__resolveDataPacker(obj))
 
         return results
+
+    @db_session
+    def getResolveByDisposition(self, startDate, endDate):
+        # This method provide query functions that enable query for a date range
+        # if startDate and endDate are not instance of date object, return empty list
+        # Return an iterable list sorted by date in descending order
+        if not isinstance(startDate, datetime) or not isinstance(endDate, datetime):
+            logger_db.error("DB Error@getResolveByDisposition: \
+                                    False argument type; expected datetime type")
+            return []
+        
+        results = []
+        pattern = re.compile("(\xa0){0,}(?P<dis>[0-9/]+).*")
+        objs = select(p for p in Complaint) 
+        for obj in objs:
+            d = datetime.strptime(pattern.match(obj.disposition).group(2), "%m/%d/%Y")
+            if d >= startDate and d <= endDate:
+                results.append(self.__resolveDataPacker(obj))
+
+        return results
+    
 
     @db_session
     def getResolveByCategoryCode(self, category):

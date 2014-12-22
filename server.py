@@ -1,4 +1,5 @@
 import os
+import re
 from datetime import date, datetime
 
 from bottle import route, run, template
@@ -34,6 +35,13 @@ def getResolveByLastInspection():
     endDate = datetime.strptime(request.forms.get('endDate'), "%Y-%m-%d")
     return template('templates/resolve.tpl', infoList = \
         dbm.getResolveByInspectionDateRange(startDate, endDate))
+
+@app.post('/query/disposition')
+def getResolveByDisposition():
+    startDate = datetime.strptime(request.forms.get('startDate'), "%Y-%m-%d")
+    endDate = datetime.strptime(request.forms.get('endDate'), "%Y-%m-%d")
+    return template('templates/resolve.tpl', infoList = \
+        dbm.getResolveByDisposition(startDate, endDate))
 
 @app.post('/query/category')
 def getResolveByCategory():
@@ -74,10 +82,13 @@ def exportResolve(fileName):
     if not os.path.exists("output"):
         os.makedirs("output")
 
+    disPattern = re.compile("(\xa0){0,}(?P<dis>[0-9/]+).*")
     savePath = "output/" + fileName
     b = Workbook()
     s = b.active
     resolve = dbm.getAllResolve()
+    for case in resolve:
+        case['Disposition Date'] = disPattern.match(case['Disposition']).group(2)
     dataCounts = len(resolve)
     keys = sorted(resolve[0].keys())
     keySize = len(keys)

@@ -8,8 +8,8 @@
             <input type="submit" value="Query" />
         </form>
         <br />
-        <form action="query/inspection" method="post">
-            Query Resolved Case By Last Inspection Date Range: <br />
+        <form action="query/disposition" method="post">
+            Query Resolved Case By Disposition Date Range: <br />
             Start Date: <input type="date" name="startDate" /><br />
             End Date: <input type="date" name="endDate" /><br />
             <input type="submit" value="Query" />

@@ -34,9 +34,10 @@
                     <th>Comments</th>
                     <th>Owner</th>
                     <th>Last Inspection</th>
+                    <th>Disposition</th>
                     <th>Borough</th>
                     <th>Complaint at</th>
-                    <th>ECB Violation #s</th>
+                    <th>ECB Violation #</th>
                 </tr>
             </thead>
 
@@ -54,9 +55,10 @@
                     <th>Comments</th>
                     <th>Owner</th>
                     <th>Last Inspection</th>
+                    <th>Disposition</th>
                     <th>Borough</th>
                     <th>Complaint at</th>
-                    <th>ECB Violation #s</th>
+                    <th>ECB Violation #</th>
                 </tr>
             </tfoot>
 
@@ -75,6 +77,7 @@
                     <td>{{info['Comments']}}</td>
                     <td>{{info['Owner']}}</td>
                     <td>{{info['Last Inspection']}}</td>
+                    <td>{{info['Disposition']}}</td>
                     <td>{{info['Borough']}}</td>
                     <td>{{info['Complaint at']}}</td>
                     <td>{{info['ECB Violation #']}}</td>
