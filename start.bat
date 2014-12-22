@@ -1,3 +1,3 @@
-update.bat
+call update.bat
 python main.py
-upload_log.bat
+call upload_log.bat
