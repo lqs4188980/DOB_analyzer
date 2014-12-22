@@ -28,11 +28,15 @@ class Query:
         result = []
         while length >= limit:
             r = requests.get(self._endpoint, params=paraDict)
-            objList = r.json()
-            length = len(objList)
-            result.extend(objList)
-            offset += limit
-            paraDict['$offset'] = offset
+            if r.status_code == 200:
+                objList = r.json()
+                length = len(objList)
+                result.extend(objList)
+                offset += limit
+                paraDict['$offset'] = offset
+            else:
+                logger_query.error("Error when getting cases@getAllCaseList")
+                return []
         
         return result
 
@@ -106,7 +110,7 @@ class Query:
         }        
 
         r = requests.get(self._endpoint, params=p)
-        if len(r.json()) > 0:
+        if r.status_code == 200 and len(r.json()) > 0:
             return r.json()[0]['complaint_number']
         else:
             return None
