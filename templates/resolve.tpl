@@ -77,7 +77,7 @@
                     <td>{{info['Last Inspection']}}</td>
                     <td>{{info['Borough']}}</td>
                     <td>{{info['Complaint at']}}</td>
-                    <td>{{info['ECB Violation #s']}}</td>
+                    <td>{{info['ECB Violation #']}}</td>
                 </tr>
             % end
             </tbody>
