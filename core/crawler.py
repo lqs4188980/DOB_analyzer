@@ -53,7 +53,7 @@ class CrawlerMaster(Process):
         # and use the local IP for request task
         try:
             ######################################################
-            self._proxies = self._proxy_queue.get(timeout=6)
+            self._proxies = self._proxy_queue.get(timeout=600)
             ######################################################
         except Exception as e:
             logger_c.warning(e)
