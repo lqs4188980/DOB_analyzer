@@ -44,17 +44,16 @@ class CrawlerMaster(Process):
         # schedule the daily tasks
         if self._reset:
             start_nums = self._first_schedule()
-            pass
         else:
             start_nums = self._daily_schedule()
-            pass
+        
         
         # wait for the first proxy list for 10 minutes
         # if it is not ready after 10 minutes, we will proceed
         # and use the local IP for request task
         try:
             ######################################################
-            self._proxies = self._proxy_queue.get(timeout=600)
+            self._proxies = self._proxy_queue.get(timeout=6)
             ######################################################
         except Exception as e:
             logger_c.warning(e)
@@ -125,9 +124,12 @@ class CrawlerMaster(Process):
             self._task.put(task)
         nyc_open = Query()
         start_nums = []
-        start_nums.append(int(nyc_open.getRecentActiveCaseNum(2000000, 2999999)))
-        start_nums.append(int(nyc_open.getRecentActiveCaseNum(3000000, 3999999)))
-        start_nums.append(int(nyc_open.getRecentActiveCaseNum(4000000, 4999999)))        
+        n2 = nyc_open.getRecentActiveCaseNum(2000000, 2999999)
+        n3 = nyc_open.getRecentActiveCaseNum(3000000, 3999999)
+        n4 = nyc_open.getRecentActiveCaseNum(4000000, 4999999)
+        start_nums.append(int(n2 if n2 else 0))
+        start_nums.append(int(n3 if n3 else 0))
+        start_nums.append(int(n4 if n4 else 0))
         return start_nums
     
     def _daily_schedule(self):
@@ -148,9 +150,15 @@ class CrawlerMaster(Process):
             #############################
         nyc_open = Query()
         start_nums = []
-        start_nums.append(max( int(dbm.getRecentActiveCaseNum(2000000, 2999999)), int(nyc_open.getRecentActiveCaseNum(2000000, 2999999)) ))
-        start_nums.append(max( int(dbm.getRecentActiveCaseNum(3000000, 3999999)), int(nyc_open.getRecentActiveCaseNum(3000000, 3999999)) ))
-        start_nums.append(max( int(dbm.getRecentActiveCaseNum(4000000, 4999999)), int(nyc_open.getRecentActiveCaseNum(5000000, 4999999)) ))
+        r2 = dbm.getRecentActiveCaseNum(2000000, 2999999)
+        r3 = dbm.getRecentActiveCaseNum(3000000, 3999999)
+        r4 = dbm.getRecentActiveCaseNum(4000000, 4999999)
+        n2 = nyc_open.getRecentActiveCaseNum(2000000, 2999999)
+        n3 = nyc_open.getRecentActiveCaseNum(3000000, 3999999)
+        n4 = nyc_open.getRecentActiveCaseNum(4000000, 4999999)
+        start_nums.append(max( int(r2 if r2 else 0), int(n2 if n2 else 0) ))
+        start_nums.append(max( int(r3 if r3 else 0), int(n3 if n3 else 0) ))
+        start_nums.append(max( int(r4 if r4 else 0), int(n4 if n4 else 0) ))
         return start_nums
         
     
