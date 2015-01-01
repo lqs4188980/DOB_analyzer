@@ -94,7 +94,7 @@ def exportResolve(fileName):
         case['Disposition Date'] = disPattern.match(case['Disposition']).group(2)
     dataCounts = len(resolve)
     if dataCounts == 0:
-        return   
+        return False   
     keys = sorted(resolve[0].keys())
     keySize = len(keys)
 
@@ -114,5 +114,6 @@ def exportResolve(fileName):
         i += 1
 
     b.save(filename = savePath)
+    return True
 
 app.run(host='localhost', port=8080, debug=True)
