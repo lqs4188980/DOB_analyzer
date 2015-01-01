@@ -67,8 +67,11 @@ def clearCache():
 @app.route('/export')
 def export():
     fileName = date.today().strftime("%m-%d-%Y") + "_Resolved.xlsx"        
-    exportResolve(fileName)
-    return template('templates/msg.tpl', filePath="output/" + fileName, message="Successfully Exported")
+    success = exportResolve(fileName)
+    if success:
+        return template('templates/msg.tpl', filePath="output/" + fileName, message="Successfully Exported")
+    else:
+        return template('templates/msg.tpl', filePath="", message="There is no resolved cases in database")
 
 @app.route('/static/script/<filecategory:path>/<filename:path>')
 def sendStaticFile(filecategory, filename):
@@ -90,6 +93,8 @@ def exportResolve(fileName):
     for case in resolve:
         case['Disposition Date'] = disPattern.match(case['Disposition']).group(2)
     dataCounts = len(resolve)
+    if dataCounts == 0:
+        return   
     keys = sorted(resolve[0].keys())
     keySize = len(keys)
 
