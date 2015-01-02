@@ -202,30 +202,37 @@ class PageAnalyzer (threading.Thread):
 
     def __mainInfoParser(self):
         mainInfoList = self._doc.find_class('maininfo')
+        if len(mainInfoList) == 0:
+            return False
         mainInfoPatterns = PageAnalyzer.patternDict['mainInfoList']
+        fieldList = copy.copy(PageAnalyzer.mainInfoFieldList)
 
-        i = 0
         for item in mainInfoList:
-            if PageAnalyzer.mainInfoFieldList[i] in item.text_content():
-                m = mainInfoPatterns[PageAnalyzer.mainInfoFieldList[i]] \
-                                            .match(item.text_content())
-                if m == None:
-                    self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
-                    return False
-                else:
-                    self.info[PageAnalyzer.mainInfoFieldList[i]] = m.group(2)
-                
-                i += 1
+            foundField = ""
+            for field in fieldList:
+                if field in item.text_content():
+                    foundField = field
+                    m = mainInfoPatterns[field].match(item.text_content())
+                    if m == None:
+                        self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
+                        return False
+                    else:
+                        self.info[field] = m.group(2)
+                        break
+            if foundField != "":
+                fieldList.remove(foundField)
 
         return True
 
 
     def __contentParser(self):
         contentList = self._doc.find_class('content')
+        length = len(contentList)
+        if length == 0:
+            return False
         contentPatterns = PageAnalyzer.patternDict['contentList']
     
         index = 0
-        length = len(contentList)
         while index < length:
             entry = contentList[index]
             m = PageAnalyzer.fieldPattern.match(entry.text_content())
