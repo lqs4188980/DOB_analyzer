@@ -191,7 +191,7 @@ class PageAnalyzer (threading.Thread):
             m = PageAnalyzer.patternDict['title'].match(title[0].text_content())
             if m == None:
                 # If Not Match, there is some error, we need to log error and deal it
-                self.__logError("title", "Fail to get title")
+                self.__logError("title", title[0])
                 return False
             else:
                 self.info['Complaint Number'] = m.group('complaint')
