@@ -5,10 +5,9 @@ import Queue
 import logging
 import datetime
 import copy
+import sys, traceback
 from time import clock
-
 from lxml import html
-
 from database.management import DBM
 from loggers import logger_analyzer
 
