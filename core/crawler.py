@@ -18,6 +18,7 @@ from analyzer import PageAnalyzer
 from loggers import logger_c
 import random
 import requests
+import sys, traceback
 
 
 
@@ -47,7 +48,9 @@ class CrawlerMaster(Process):
         else:
             start_nums = self._daily_schedule()
         
-        
+        ##############################################
+        print "Waiting for proxy list..." 
+        ##############################################
         # wait for the first proxy list for 10 minutes
         # if it is not ready after 10 minutes, we will proceed
         # and use the local IP for request task
@@ -64,7 +67,7 @@ class CrawlerMaster(Process):
         prx_updater.start()
          
         ##############################################
-        print "Search" 
+        print "Search..." 
         ##############################################
         search_threads = []
         latest_queue = Queue()
@@ -84,7 +87,7 @@ class CrawlerMaster(Process):
                 task = {'id':str(n), \
                         'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(n) +'&requestid=0'}
                 ##############################################
-                print task, '@'
+                print '@' + str(task['id'])
                 ##############################################
                 self._task.put(task)
                 
@@ -92,22 +95,26 @@ class CrawlerMaster(Process):
         # dispatching the daily tasks
         # initialize crawler thread pool
         ##############################################
-        print len(self._proxies)
-        print "Crawling Begin!"
+        print "Available proxies: " + str(len(self._proxies))
+        print "Initializing crawler thread pool..."
         ##############################################
         for _ in range(self._pool_sz):
             t = Crawler(self._task, self._output, self._proxies, self._lock, self._error_case)
             t.daemon = True
             t.start()
         
-        print "Analyzing Begin!"    
+        ##############################################
+        print "Initializing analyzer thread pool..."
+        ##############################################
         for _ in range(5):
             t = PageAnalyzer(self._output, self._task)
             t.daemon = True
             t.start()
             
         self._task.join()
+        ##############################################
         print "Daily tasks done!"
+        ##############################################
         
         
     def _first_schedule(self):
@@ -119,7 +126,7 @@ class CrawlerMaster(Process):
             task = {'id':i, \
                     'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(i) +'&requestid=0'}
             #########################################
-            print task, '@'
+            print '@' + str(task['id'])
             #########################################
             self._task.put(task)
         nyc_open = Query()
@@ -141,12 +148,9 @@ class CrawlerMaster(Process):
                 continue
             task = {'id':i, \
                     'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(i) +'&requestid=0'}
-            #########################################
-            print task
-            #########################################
             self._task.put(task)
             #############################
-            print '@'
+            print '@' + str(task['id'])
             #############################
         nyc_open = Query()
         start_nums = []
@@ -173,12 +177,12 @@ class ProxyUpdater(Thread):
     def run(self):
         while True:
             prx_list = self._proxy_queue.get()
-            ############################################
-            print "Get it"
-            #################################
             self._lock.acquire()
             del self._proxies[:]
             self._proxies.extend(prx_list)
+            ############################################
+            print "Proxy list updated!"
+            #################################
             self._lock.release()
 
 
@@ -196,51 +200,57 @@ class Crawler(Thread):
     
     def run(self):
         while True:
-            task = self._task.get()
-            if 'error' in task:
-                if task['id'] in self._error_case:
-                    self._error_case[task['id']] += 1
-                    if self._error_case[task['id']] > MAX_CRAWL_ERROR:
-                        logger_c.error('downloading case-' + str(task['id']) + ' exceeds the max number of re-try')
-                        self._task.task_done()
-                        #############################
-                        print '*'
-                        #############################
-                        continue
-                else:
-                    self._error_case.update({task['id']:1})
-            self._lock.acquire()
-            proxy = random.choice(self._proxies)
-            ##################################
-            print task['id'], proxy
-            ##################################
-            self._lock.release()
-            hold = 2
-            for _ in range(self._reconn):
-                try:
-                    res = requests.get(task['url'], proxies={'http':proxy}, timeout=self._timeout)
-                    if res.status_code == 200:
-                        task.update({'text':res.text})
-                        self._output.put(task)
-                        break
+            try:
+                task = self._task.get()
+                if 'error' in task:
+                    if task['id'] in self._error_case:
+                        self._error_case[task['id']] += 1
+                        if self._error_case[task['id']] > MAX_CRAWL_ERROR:
+                            logger_c.error('downloading case-' + str(task['id']) + ' exceeds the max number of re-try')
+                            self._task.task_done()
+                            #############################
+                            print '*' + str(task["id"])
+                            #############################
+                            continue
                     else:
-                        logger_c.error('code ' + str(res.status_code) + ' error when connecting to ' + task['url'])
+                        self._error_case.update({task['id']:1})
+                self._lock.acquire()
+                proxy = random.choice(self._proxies)
+                ##################################
+                print "Fetching " + str(task['id']) + " via " + proxy
+                ##################################
+                self._lock.release()
+                hold = 2
+                for _ in range(self._reconn):
+                    try:
+                        res = requests.get(task['url'], proxies={'http':proxy}, timeout=self._timeout)
+                        if res.status_code == 200:
+                            task.update({'text':res.text})
+                            self._output.put(task)
+                            break
+                        else:
+                            logger_c.error('code ' + str(res.status_code) + ' error when connecting to ' + task['url'])
+                            sleep(hold)
+                            hold *= 2
+                    except Exception as e:
+                        logger_c.error(repr(e))
                         sleep(hold)
                         hold *= 2
-                except Exception as e:
-                    logger_c.error(repr(e))
-                    sleep(hold)
-                    hold *= 2
-            else:
-                logger_c.error('case-'+str(task['id'])+' download failure after 4 re-trys.')
-                task.update({'error':'download error'})
-                self._task.put(task)
-                self._task.task_done()
-                #############################
-                print '@'
-                print '*'
-                #############################
-                
+                else:
+                    logger_c.error('case-'+str(task['id'])+' download failure after 4 re-trys.')
+                    task.update({'error':'download error'})
+                    self._task.put(task)
+                    self._task.task_done()
+                    #############################
+                    print '*' + str(task['id'])
+                    print '@' + str(task['id'])
+                    #############################
+            except Exception as e:
+                logger_c.error("Critical error, Crawler thread failed.")
+                logger_c.error(repr(e))
+                logger_c.error(traceback.format_exc())
+                logger_c.error(sys.exc_info())
+
 
 class LatestCaseFinder(Thread):
     ''' This thread finds the latest active case number with a given starting number. '''
@@ -283,7 +293,7 @@ class LatestCaseFinder(Thread):
             try:
                 ###############################
                 LatestCaseFinder.lock.acquire()
-                print num
+                print "try id " + str(num)
                 LatestCaseFinder.lock.release()
                 ###############################
                 self._lock.acquire()

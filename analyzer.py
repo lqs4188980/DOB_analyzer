@@ -107,37 +107,42 @@ class PageAnalyzer (threading.Thread):
 
     def run(self):
         while True:
+            try:
+                # Get data from Queue
+                self._rawData = self.__getRawDataFromQueue()
 
-            # Get data from Queue
-            self._rawData = self.__getRawDataFromQueue()
+                if self._rawData["text"] == "":
+                    # Fail to get raw data, needs to add complaint number back and log
+                    logger_analyzer.error("Cannot get page content for complaint \
+                                            number: %s"% self._rawData["id"])
+                    logging.error("Cannot get page content for complaint number: ", \
+                                                                str(self._rawData["id"]))
+                    self.__insertToTaskQueue("Cannot get page content")
 
-            if self._rawData["text"] == "":
-                # Fail to get raw data, needs to add complaint number back and log
-                logger_analyzer.error("Cannot get page content for complaint \
-                                        number: %s"% self._rawData["id"])
-                logging.error("Cannot get page content for complaint number: ", \
-                                                            str(self._rawData["id"]))
-                self.__insertToTaskQueue("Cannot get page content")
-
-            else:
-                # Preprocessing Data
-                self._doc = html.fromstring(self._rawData["text"]) 
-        
-                # Parse title
-                if self.__titleParser():
-                    # If title is valid, get status and decide whether continue parse
-                    self.__parseRequiredContent()
                 else:
-                    # The case format doesn't correct
-                    self.__insertToTaskQueue("Fail to Parse Title")
-                    logger_analyzer.error("Fail to Parse Title: %s"% \
-                                                                self._rawData["id"])
-                
-            self._TaskQueue.task_done()
-            #############################
-            print '*'
-            #############################
-            self.__cleanUp()        
+                    # Preprocessing Data
+                    self._doc = html.fromstring(self._rawData["text"]) 
+            
+                    # Parse title
+                    if self.__titleParser():
+                        # If title is valid, get status and decide whether continue parse
+                        self.__parseRequiredContent()
+                    else:
+                        # The case format doesn't correct
+                        self.__insertToTaskQueue("Fail to Parse Title")
+                        logger_analyzer.error("Fail to Parse Title: %s"% \
+                                                                    self._rawData["id"])
+                    
+                self._TaskQueue.task_done()
+                #############################
+                print '*' + str(self._rawData['id'])
+                #############################
+                self.__cleanUp()
+            except Exception as e:
+                logger_c.error("Critical error, Analyzer thread failed.")
+                logger_c.error(repr(e))
+                logger_c.error(traceback.format_exc())
+                logger_c.error(sys.exc_info())
 
     def __parseRequiredContent(self):
         if self.info['Status'] == "RESOLVED":
@@ -266,7 +271,7 @@ class PageAnalyzer (threading.Thread):
             task["error"] = error
         self._TaskQueue.put(task)
         #############################
-        print '@'
+        print '@' + task['id']
         #############################
         
 
