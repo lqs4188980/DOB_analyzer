@@ -195,7 +195,10 @@ class PageAnalyzer (threading.Thread):
             m = PageAnalyzer.patternDict['title'].match(title[0].text_content())
             if m == None:
                 # If Not Match, there is some error, we need to log error and deal it
-                self.__logError("title", title[0])
+                if "CAPTCHA" in self._doc.text_content():
+                    logger_analyzer.error("Get CAPTCHA page for " + self._rawData['id'])
+                else:
+                    self.__logError("title", title[0])
                 return False
             else:
                 self.info['Complaint Number'] = m.group('complaint')
@@ -218,7 +221,7 @@ class PageAnalyzer (threading.Thread):
                     foundField = field
                     m = mainInfoPatterns[field].match(item.text_content())
                     if m == None:
-                        self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
+                        self.__logError(field, item) 
                         return False
                     else:
                         self.info[field] = m.group(2)
