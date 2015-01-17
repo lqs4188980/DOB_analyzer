@@ -13,3 +13,5 @@ logger_p = logging.getLogger('proxy')
 logger_analyzer = logging.getLogger('analyzer')
 logger_db = logging.getLogger('db')
 logger_query = logging.getLogger('query')
+
+logger_prt = logging.getLogger('console')
