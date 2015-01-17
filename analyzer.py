@@ -194,7 +194,7 @@ class PageAnalyzer (threading.Thread):
             if m == None:
                 # If Not Match, there is some error, we need to log error and deal it
                 if "CAPTCHA" in self._doc.text_content():
-                    logger_analyzer.error("Get CAPTCHA page for " + self._rawData['id'])
+                    logger_analyzer.error("Get CAPTCHA page for %s" % self._rawData['id'])
                 else:
                     self.__logError("title", title[0])
                 return False
