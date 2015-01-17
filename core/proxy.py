@@ -13,7 +13,7 @@ from multiprocessing import Process, Queue, JoinableQueue
 from lxml import etree
 from lxml.cssselect import CSSSelector
 from time import sleep
-from loggers import logger_p
+from loggers import logger_p, logger_prt
 from pony.orm import *
 from datetime import date, timedelta
 import requests, time, ConfigParser
@@ -40,6 +40,7 @@ class ProxyManager(Process):
     
     def run(self):        
         # initialize tester thread pool
+        logger_prt.debug('Initializing proxy tester pool...')
         for _ in range(self._pool_sz):
             t = ProxyTester(self._task, self._output, self._broken)
             t.daemon = True
@@ -114,6 +115,7 @@ class ProxyManager(Process):
                 ip_set.add('http://%s:%s' % (t[0].text, t[1].text))
         # put proxies into test task queue  
         for ip in ip_set:
+            logger_prt.debug('Parsed proxy: ' + ip)
             self._task.put(ip)
         
         return True
@@ -149,6 +151,7 @@ class ProxyManager(Process):
     def _get_backup(self):
         prxs = ProxyRecord.select()
         for p in prxs:
+            logger_prt.debug('Retrieved backup proxy: ' + p.ip)
             self._task.put(p.ip)
     
     @db_session
@@ -193,6 +196,7 @@ class ProxyTester(Thread):
     def run(self):
         while True:
             ip = self._task.get()
+            logger_prt.debug('Testing proxy: ' + ip)
             proxy = {'http' : ip}
             ping = []
             for _ in range(self._reconn):

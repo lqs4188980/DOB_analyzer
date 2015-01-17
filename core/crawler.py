@@ -15,7 +15,7 @@ from datetime import datetime
 from database.management import DBM
 from query.handler import Query
 from analyzer import PageAnalyzer
-from loggers import logger_c
+from loggers import logger_c, logger_prt
 import random
 import requests
 import sys, traceback
@@ -23,7 +23,7 @@ import sys, traceback
 
 
 
-MAX_CRAWL_ERROR = 30
+MAX_CRAWL_ERROR = 32
 
 class CrawlerMaster(Process):
     
@@ -48,16 +48,11 @@ class CrawlerMaster(Process):
         else:
             start_nums = self._daily_schedule()
         
-        ##############################################
-        print "Waiting for proxy list..." 
-        ##############################################
         # wait for the first proxy list for 10 minutes
         # if it is not ready after 10 minutes, we will proceed
         # and use the local IP for request task
         try:
-            ######################################################
             self._proxies = self._proxy_queue.get(timeout=600)
-            ######################################################
         except Exception as e:
             logger_c.warning(e)
             logger_c.warning("Warning: CrawlerMaster did not get the proxy list after 10 minutes. Proceed by using local IP requests.")
@@ -66,9 +61,7 @@ class CrawlerMaster(Process):
         prx_updater.daemon = True
         prx_updater.start()
          
-        ##############################################
-        print "Search..." 
-        ##############################################
+        logger_prt.debug("Searching for the latest id...")
         search_threads = []
         latest_queue = Queue()
         for n in start_nums:
@@ -86,35 +79,28 @@ class CrawlerMaster(Process):
             for n in range(i, j+1):
                 task = {'id':str(n), \
                         'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(n) +'&requestid=0'}
-                ##############################################
-                print '@' + str(task['id'])
-                ##############################################
+                logger_prt.debug('Adding ' + str(task['id']))
                 self._task.put(task)
                 
         
         # dispatching the daily tasks
         # initialize crawler thread pool
-        ##############################################
-        print "Available proxies: " + str(len(self._proxies))
-        print "Initializing crawler thread pool..."
-        ##############################################
+        logger_prt.debug('Number of available proxies: ' + str(len(self._proxies)))
+        logger_prt.debug('Initializing crawler thread pool...')
         for _ in range(self._pool_sz):
             t = Crawler(self._task, self._output, self._proxies, self._lock, self._error_case)
             t.daemon = True
             t.start()
         
-        ##############################################
-        print "Initializing analyzer thread pool..."
-        ##############################################
+        logger_prt.debug("Initializing analyzer thread pool...")
         for _ in range(5):
             t = PageAnalyzer(self._output, self._task)
             t.daemon = True
             t.start()
             
         self._task.join()
-        ##############################################
-        print "Daily tasks done!"
-        ##############################################
+        logger_prt.debug("Daily tasks done!")
+        
         
         
     def _first_schedule(self):
@@ -125,9 +111,7 @@ class CrawlerMaster(Process):
                 continue
             task = {'id':i, \
                     'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(i) +'&requestid=0'}
-            #########################################
-            print '@' + str(task['id'])
-            #########################################
+            logger_prt.debug('Adding ' + str(task['id']))
             self._task.put(task)
         nyc_open = Query()
         start_nums = []
@@ -149,9 +133,7 @@ class CrawlerMaster(Process):
             task = {'id':i, \
                     'url':'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(i) +'&requestid=0'}
             self._task.put(task)
-            #############################
-            print '@' + str(task['id'])
-            #############################
+            logger_prt.debug('Adding ' + str(task['id']))
         nyc_open = Query()
         start_nums = []
         r2 = dbm.getRecentActiveCaseNum(2000000, 2999999)
@@ -180,9 +162,7 @@ class ProxyUpdater(Thread):
             self._lock.acquire()
             del self._proxies[:]
             self._proxies.extend(prx_list)
-            ############################################
-            print "Proxy list updated!"
-            #################################
+            logger_prt.debug("Proxy list updated!")
             self._lock.release()
 
 
@@ -208,17 +188,13 @@ class Crawler(Thread):
                         if self._error_case[task['id']] > MAX_CRAWL_ERROR:
                             logger_c.error('downloading case-' + str(task['id']) + ' exceeds the max number of re-try')
                             self._task.task_done()
-                            #############################
-                            print '*' + str(task["id"])
-                            #############################
+                            logger_prt.debug('Task done ' + str(task["id"]))
                             continue
                     else:
                         self._error_case.update({task['id']:1})
                 self._lock.acquire()
-                proxy = random.choice(self._proxies)
-                ##################################
-                print "Fetching " + str(task['id']) + " via " + proxy
-                ##################################
+                proxy = random.choice(self._proxies)                
+                logger_prt.debug("Fetching " + str(task['id']) + " via " + proxy)
                 self._lock.release()
                 hold = 2
                 for _ in range(self._reconn):
@@ -241,10 +217,8 @@ class Crawler(Thread):
                     task.update({'error':'download error'})
                     self._task.put(task)
                     self._task.task_done()
-                    #############################
-                    print '*' + str(task['id'])
-                    print '@' + str(task['id'])
-                    #############################
+                    logger_prt.debug('Task done ' + str(task['id']))
+                    logger_prt.debug('Adding ' + str(task['id']))
             except Exception as e:
                 logger_c.error("Critical error, Crawler thread failed.")
                 logger_c.error(repr(e))
@@ -291,11 +265,9 @@ class LatestCaseFinder(Thread):
         url = 'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(num) +'&requestid=0'
         while True:
             try:
-                ###############################
                 LatestCaseFinder.lock.acquire()
-                print "try id " + str(num)
+                logger_prt.debug("Trying id " + str(num))
                 LatestCaseFinder.lock.release()
-                ###############################
                 self._lock.acquire()
                 proxy = {'http:':random.choice(self._proxies)}
                 self._lock.release()

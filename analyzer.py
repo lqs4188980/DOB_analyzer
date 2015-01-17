@@ -9,7 +9,7 @@ import sys, traceback
 from time import clock
 from lxml import html
 from database.management import DBM
-from loggers import logger_analyzer
+from loggers import logger_analyzer, logger_prt
 
 class PageAnalyzer (threading.Thread):
     '''Analyze and parse information from DOB pages'''
@@ -133,15 +133,13 @@ class PageAnalyzer (threading.Thread):
                                                                     self._rawData["id"])
                     
                 self._TaskQueue.task_done()
-                #############################
-                print '*' + str(self._rawData['id'])
-                #############################
+                logger_prt.debug('Task done ' + str(self._rawData['id']))
                 self.__cleanUp()
             except Exception as e:
-                logger_c.error("Critical error, Analyzer thread failed.")
-                logger_c.error(repr(e))
-                logger_c.error(traceback.format_exc())
-                logger_c.error(sys.exc_info())
+                logger_analyzer.error("Critical error, Analyzer thread failed.")
+                logger_analyzer.error(repr(e))
+                logger_analyzer.error(traceback.format_exc())
+                logger_analyzer.error(sys.exc_info())
 
     def __parseRequiredContent(self):
         if self.info['Status'] == "RESOLVED":
@@ -218,7 +216,7 @@ class PageAnalyzer (threading.Thread):
                     foundField = field
                     m = mainInfoPatterns[field].match(item.text_content())
                     if m == None:
-                        self.__logError(PageAnalyzer.mainInfoFieldList[i], item) 
+                        self.__logError(PageAnalyzer.mainInfoFieldList[field], item) 
                         return False
                     else:
                         self.info[field] = m.group(2)
@@ -269,9 +267,7 @@ class PageAnalyzer (threading.Thread):
         if error != "":
             task["error"] = error
         self._TaskQueue.put(task)
-        #############################
-        print '@' + task['id']
-        #############################
+        logger_prt.debug('Adding ' + task['id'])
         
 
     def __cleanUp(self):
