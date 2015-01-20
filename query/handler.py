@@ -47,9 +47,9 @@ class Query:
             "$where": "status = \'CLOSED\'", 
         } 
 
-        if startDate != None and isinstance(startDate, datetime):
-            p["$where"] = p["$where"] + " AND date_entered >= \'" + \
-                                                startDate.strftime("%m/%d/%Y") + "\'"
+        #if startDate != None and isinstance(startDate, datetime):
+        #    p["$where"] = p["$where"] + " AND date_entered >= \'" + \
+        #                                        startDate.strftime("%m/%d/%Y") + "\'"
         
         objList = self.getAllCaseList(p)
 
