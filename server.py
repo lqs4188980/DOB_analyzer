@@ -20,6 +20,11 @@ app = Bottle()
 def displayForm():
     return template('templates/form.tpl')
 
+@app.route('/delete')
+def deleteAllResolve():
+    dbm.deleteAllResolve()
+    return template('templates/msg.tpl', filePath="", message="All Resolved cases have been deleted")
+
 @app.post('/query/complaint')
 def getResolve():
     info = dbm.getResolve(request.forms.get('complaint_number'))

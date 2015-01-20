@@ -29,7 +29,7 @@ class PageAnalyzer (threading.Thread):
             "Lot": re.compile(".*?(\xa0){0,}(?P<number>[0-9]*)(\xa0){0,}$"),
             "Last Inspection": re.compile("(\xa0){0,}(?P<inspectionDate>[0-9/]+)(\xa0){0,}"),
             "Disposition": re.compile("(\xa0){0,}(?P<disposition>.*)(\xa0){0,}"),
-            "Category Code": re.compile("(\xa0){0,}(?P<category>\w{2})(\xa0){0,}"),
+            "Category Code": re.compile("(\xa0){0,}(?P<category>\w{2,})(\xa0){0,}"),
             "Received": re.compile("(\xa0){0,}(?P<received>[0-9/]+)(\xa0){0,}"),
             "Owner": re.compile("(\xa0){0,}(?P<owner>.*)(\xa0){0,}$"),
             "DOB Violation #": re.compile("(\xa0){0,}(?P<dobVio>.*)(\xa0){0,}$"),
@@ -149,22 +149,17 @@ class PageAnalyzer (threading.Thread):
                 # Has any violation #
                 if self.__hasViolationNumber():
                     self.__insertToComplaint()
-                    # Delete this case from Warehouse
-                    self._dbm.deleteWarehouseCase(self.info['Complaint Number'])
-                else:
-                    # if no violation #, insert into or update Warehouse
-                    # Mark this case as CLOSED
-                    self.info['Status'] = "CLOSED"
-                    self._dbm.putWarehouseCase(self.info)
 
             else:
                 # When parsing date error
-                # Mark this case as CLOSED in advance, and if re-parse
-                # success, we will delete it 
-                self.info['Status'] = "CLOSED"
-                self._dbm.putWarehouseCase(self.info)
+                # Mark this case as CLOSED in advance
                 self.__insertToTaskQueue("Fail to parse data")
                 logger_analyzer.error("Fail to parse data: %s"% self._rawData["id"])
+
+            # Insert into or update Warehouse mark this case as CLOSED
+            self.info['Status'] = "CLOSED"
+            self._dbm.putWarehouseCase(self.info)
+            
 
         elif self.info['Status'] == "ACTIVE":
             # If case is still ACTIVE, we don't need to parse it

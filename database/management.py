@@ -177,6 +177,10 @@ class DBM:
                         FIELDS TERMINATED BY \',\'\
                         ENCLOSED BY \'\"\'\
                         LINES TERMINATED BY \'\n\'")
+
+    @db_session
+    def deleteAllResolve(self):
+        db.execute("DELETE FROM complaint")
         
 
     

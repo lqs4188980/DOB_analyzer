@@ -1,6 +1,14 @@
 <html>
     <head>
         <title>DOB Query</title>
+        <script>
+            function getConfirm() { 
+                var r = confirm("Do you want to delete all the resolved cases?");
+                if (r == true) {
+                    window.open('/delete', '_self')
+                }
+            }
+        </script>
     </head>
     <body>
         <form action="query/complaint" method="post">
@@ -21,5 +29,10 @@
         </form>
         <input type="button" value="Export All Resolved Case" id="export" onclick="window.open('/export','_self')" />
         <input type="button" value="Clear Generated Files" id="clearup" onclick="window.open('/clearup', '_self')" />
+
+        <br />
+        <br />
+        <input type="button" value="Delete All Resolved Cases" id="delete" onclick="getConfirm()" />
+
     </body>
 </html>
