@@ -20,8 +20,7 @@ def rotateLogFile(filename, maxByte=8388608, rotate=5):
     rt_fils = []
     for i in range(rotate):
         if not os.path.isfile(filename+'.bak'+str(i)):
-            with open(filename+'.bak'+str(i), 'w') as fil:
-                pass
+            os.rename(filename, filename+'.bak'+str(i))
             return
         else:
             rt_fils.append((filename+'.bak'+str(i), os.stat(filename+'.bak'+str(i)).st_mtime))
