@@ -32,7 +32,7 @@ def rotateLogFile(filename, maxByte=8388608, rotate=5):
 
 if __name__ == '__main__':
     if os.path.isfile('app.log'):
-        rotateLogFile()
+        rotateLogFile('app.log')
     try:
         shared_queue = Queue()
         pm = ProxyManager(shared_queue)
