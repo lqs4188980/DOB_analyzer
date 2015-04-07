@@ -11,9 +11,29 @@ from time import time
 from loggers import logger_r
 import traceback
 import sys
+import os
+
+
+def rotateLogFile(filename, maxByte=8388608, rotate=5):
+    if os.stat(filename).st_size < maxByte:
+        return
+    rt_fils = []
+    for i in range(rotate):
+        if not os.path.isfile(filename+'.bak'+str(i)):
+            with open(filename+'.bak'+str(i), 'w') as fil:
+                pass
+            return
+        else:
+            rt_fils.append((filename+'.bak'+str(i), os.stat(filename+'.bak'+str(i)).st_mtime))
+    srt_fils = sorted(rt_fils, key=lambda x: x[1])
+    # remove oldest log
+    os.remove(srt_fils[0][0])
+    os.rename(filename, srt_fils[0][0])
 
 
 if __name__ == '__main__':
+    if os.path.isfile('app.log'):
+        rotateLogFile()
     try:
         shared_queue = Queue()
         pm = ProxyManager(shared_queue)
