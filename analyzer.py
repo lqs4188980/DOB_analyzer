@@ -110,7 +110,7 @@ class PageAnalyzer (threading.Thread):
                 # Get data from Queue
                 self._rawData = self.__getRawDataFromQueue()
 
-                if self._rawData["text"] == "":
+                if self._rawData["text"] == "" and self._rawData["text"] == None:
                     # Fail to get raw data, needs to add complaint number back and log
                     logger_analyzer.error("Cannot get page content for complaint \
                                             number: %s"% self._rawData["id"])
