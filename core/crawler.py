@@ -265,9 +265,7 @@ class LatestCaseFinder(Thread):
         url = 'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(num) +'&requestid=0'
         while True:
             try:
-                LatestCaseFinder.lock.acquire()
                 logger_prt.debug("Trying id " + str(num))
-                LatestCaseFinder.lock.release()
                 self._lock.acquire()
                 proxy = {'http:':random.choice(self._proxies)}
                 self._lock.release()
