@@ -162,8 +162,8 @@ class ProxyUpdater(Thread):
             self._lock.acquire()
             del self._proxies[:]
             self._proxies.extend(prx_list)
-            logger_prt.debug("Proxy list updated!")
             self._lock.release()
+            logger_prt.debug("Proxy list updated!")
 
 
 class Crawler(Thread):
@@ -194,8 +194,8 @@ class Crawler(Thread):
                         self._error_case.update({task['id']:1})
                 self._lock.acquire()
                 proxy = random.choice(self._proxies)                
-                logger_prt.debug("Fetching " + str(task['id']) + " via " + proxy)
                 self._lock.release()
+                logger_prt.debug("Fetching " + str(task['id']) + " via " + proxy)
                 hold = 2
                 for _ in range(self._reconn):
                     try:
