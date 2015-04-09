@@ -159,11 +159,11 @@ class ProxyUpdater(Thread):
     def run(self):
         while True:
             prx_list = self._proxy_queue.get()
+            logger_prt.info("Proxy list updated!")
             self._lock.acquire()
             del self._proxies[:]
             self._proxies.extend(prx_list)
             self._lock.release()
-            logger_prt.debug("Proxy list updated!")
 
 
 class Crawler(Thread):
