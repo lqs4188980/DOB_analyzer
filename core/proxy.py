@@ -61,7 +61,7 @@ class ProxyManager(Process):
             
             # wait for proxy testing
             self._task.join()
-            logger_prt('proxy test finished')
+            logger_prt.info('proxy test finished')
             tmp_list = []
             while not self._output.empty():
                 tmp_list.append(self._output.get())
@@ -69,7 +69,7 @@ class ProxyManager(Process):
             # prioritize the proxy list
             self._prioritize()
             self._shared_queue.put(self.priority_list[:])
-            logger_prt('proxy list pushed')
+            logger_prt.info('proxy list pushed')
             # back up available proxies
             self._backup()
             sleep(self._update_freq)
