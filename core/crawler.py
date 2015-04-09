@@ -159,11 +159,12 @@ class ProxyUpdater(Thread):
     def run(self):
         while True:
             prx_list = self._proxy_queue.get()
-            logger_prt.info("Proxy list updated!")
+            logger_prt.info("Proxy list get")
             self._lock.acquire()
             del self._proxies[:]
             self._proxies.extend(prx_list)
             self._lock.release()
+            logger_prt.info("Proxy list updated!")
 
 
 class Crawler(Thread):
@@ -265,10 +266,10 @@ class LatestCaseFinder(Thread):
         url = 'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(num) +'&requestid=0'
         while True:
             try:
-                logger_prt.debug("Trying id " + str(num))
                 self._lock.acquire()
                 proxy = {'http:':random.choice(self._proxies)}
                 self._lock.release()
+                logger_prt.debug("Trying id " + str(num) + ' @ ' + proxy['http'])
                 res = requests.get(url, timeout=self._timeout, proxies=proxy)
                 if res.status_code != 200:
                     logger_c.error("status code " + str(res.status_code) + " error")
