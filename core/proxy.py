@@ -35,7 +35,7 @@ class ProxyManager(Process):
         self._output = Queue()
         self._broken = Queue()
         self.prx_list = []
-        self.priority_list = [] # add two empty proxies for local IP request 
+        self.priority_list = [] 
         
     
     def run(self):        
@@ -137,7 +137,8 @@ class ProxyManager(Process):
         for p in self.prx_list:
             stdv += (p[1] - mean) ** 2
         stdv = sqrt(stdv / float(num))
-        tmp_list = ['', '', '', '']  # add two empty proxies for local IP request 
+#         tmp_list = ['', '', '', '']  # add two empty proxies for local IP request 
+        tmp_list = []
         for p in self.prx_list:
             if p[1] <= mean - 0.5 * stdv:
                 tmp_list.extend([p[0]] * 4)
