@@ -69,7 +69,7 @@ class ProxyManager(Process):
             # prioritize the proxy list
             self._prioritize()
             self._shared_queue.put(self.priority_list[:])
-            logger_prt.info('proxy list pushed')
+            logger_prt.info('%d proxies pushed' % len(self.priority_list))
             # back up available proxies
             self._backup()
             sleep(self._update_freq)
