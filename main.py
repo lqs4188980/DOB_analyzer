@@ -23,6 +23,7 @@ if __name__ == '__main__':
             cm = CrawlerMaster(shared_queue, reset=True)
         else:
             cm = CrawlerMaster(shared_queue)
+        cm.set_proxy_queue(shared_queue)
         cm.start()
         try:
             cm.join(timeout=28800)

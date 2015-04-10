@@ -39,6 +39,9 @@ class CrawlerMaster(Process):
         self._lock = None
         self._proxies = ['', ''] # add two empty proxies for local IP requests
         
+    def set_proxy_queue(self, proxy_queue):
+        self._proxy_queue = proxy_queue
+        
     def run(self):
         self._lock =  Lock()   
         
@@ -266,6 +269,7 @@ class LatestCaseFinder(Thread):
         url = 'http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno='+ str(num) +'&requestid=0'
         while True:
             try:
+                sleep(2)
                 self._lock.acquire()
                 proxy = random.choice(self._proxies)
                 self._lock.release()
