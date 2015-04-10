@@ -267,10 +267,10 @@ class LatestCaseFinder(Thread):
         while True:
             try:
                 self._lock.acquire()
-                proxy = {'http:':random.choice(self._proxies)}
+                proxy = random.choice(self._proxies)
                 self._lock.release()
-                logger_prt.debug("Trying id " + str(num) + ' @ ' + proxy['http'])
-                res = requests.get(url, timeout=self._timeout, proxies=proxy)
+                logger_prt.debug("Trying id " + str(num) + ' @ ' + proxy)
+                res = requests.get(url, timeout=self._timeout, proxies={'http':proxy})
                 if res.status_code != 200:
                     logger_c.error("status code " + str(res.status_code) + " error")
                     continue
