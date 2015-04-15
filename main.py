@@ -12,9 +12,13 @@ from loggers import logger_r
 import traceback
 import sys
 
+from loggers import rotateLogFile
+
 
 if __name__ == '__main__':
     try:
+        if os.path.isfile('app.log'):
+            rotateLogFile('app.log')
         shared_queue = Queue()
         pm = ProxyManager(shared_queue)
         pm.start()
