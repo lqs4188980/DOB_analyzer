@@ -21,8 +21,6 @@ def rotateLogFile(filename, maxByte=8388608, rotate=5):
     os.remove(srt_fils[0][0])
     os.rename(filename, srt_fils[0][0])
     
-if os.path.isfile('app.log'):
-        rotateLogFile('app.log')
 
 logging.config.fileConfig('logging.conf')
 logger_r = logging.getLogger('root')

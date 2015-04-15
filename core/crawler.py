@@ -55,7 +55,7 @@ class CrawlerMaster(Process):
         # if it is not ready after 10 minutes, we will proceed
         # and use the local IP for request task
         try:
-            self._proxies = self._proxy_queue.get(timeout=600)
+            self._proxies = self._proxy_queue.get(timeout=3600)
         except Exception as e:
             logger_c.warning(e)
             logger_c.warning("Warning: CrawlerMaster did not get the proxy list after 10 minutes. Proceed by using local IP requests.")
