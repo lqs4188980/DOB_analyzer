@@ -5,10 +5,17 @@ Created on Dec 16, 2014
 '''
 import logging.config
 import os
+import psutil
 
 def rotateLogFile(filename, maxByte=8388608, rotate=5):
     if os.stat(filename).st_size < maxByte:
         return
+    
+    for pid in psutil.pids():
+        p = psutil.Process(pid)
+        if 'server.py' in p.cmdline():
+            p.terminate()
+            
     rt_fils = []
     for i in range(rotate):
         if not os.path.isfile(filename+'.bak'+str(i)):
