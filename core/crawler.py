@@ -228,6 +228,8 @@ class Crawler(Thread):
                 logger_c.error(repr(e))
                 logger_c.error(traceback.format_exc())
                 logger_c.error(sys.exc_info())
+                self._task.task_done()
+                logger_prt.debug('Task done ' + str(task['id']))
 
 
 class LatestCaseFinder(Thread):
