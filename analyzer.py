@@ -140,6 +140,8 @@ class PageAnalyzer (threading.Thread):
                 logger_analyzer.error(repr(e))
                 logger_analyzer.error(traceback.format_exc())
                 logger_analyzer.error(sys.exc_info())
+                self._TaskQueue.task_done()
+                logger_prt.debug('Critical Error: Task done ' + str(self._rawData['id']))
 
     def __parseRequiredContent(self):
         if self.info['Status'] == "RESOLVED":
