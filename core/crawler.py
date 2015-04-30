@@ -162,7 +162,7 @@ class ProxyUpdater(Thread):
     def run(self):
         while True:
             prx_list = self._proxy_queue.get()
-            logger_prt.info("%d proxies get" % prx_list)
+            logger_prt.info("%d proxies get" % len(prx_list))
             self._lock.acquire()
             del self._proxies[:]
             self._proxies.extend(prx_list)
