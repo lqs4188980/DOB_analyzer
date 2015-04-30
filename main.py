@@ -8,18 +8,14 @@ from multiprocessing import Queue
 from core.crawler import CrawlerMaster
 from core.proxy import ProxyManager
 from time import time
-from loggers import logger_r
 import traceback
 import sys
 import os
-
-from loggers import rotateLogFile
+from loggers import logger_r
 
 
 if __name__ == '__main__':
-    try:
-        if os.path.isfile('app.log'):
-            rotateLogFile('app.log')
+    try:  
         shared_queue = Queue()
         pm = ProxyManager(shared_queue)
         pm.start()
