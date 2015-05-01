@@ -216,8 +216,9 @@ class PageAnalyzer (threading.Thread):
                     foundField = field
                     m = mainInfoPatterns[field].match(item.text_content())
                     if m == None:
-                        self.__logError(field, item) 
-                        return False
+                        #self.__logError(field, item) 
+                        #return False
+                        self.info[field] = ''
                     else:
                         self.info[field] = m.group(2)
                         break
@@ -246,8 +247,9 @@ class PageAnalyzer (threading.Thread):
                         entry = contentList[index]
                     m = contentPatterns[field].match(entry.text_content())
                     if m == None:
-                        self.__logError(field, entry)
-                        return False
+                        #self.__logError(field, entry)
+                        #return False
+                        self.info[field] = ''
                     else:
                         self.info[field] = m.group(2)
             
