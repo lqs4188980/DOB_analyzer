@@ -16,7 +16,7 @@ class Complaint(db.Entity):
     zip = Optional(str)
     received = Optional(datetime.date)
     dob_violation = Optional(str)
-    comments = Optional(str)
+    comments = Optional(str, 512)
     owner = Optional(str)
     last_inspection = Optional(datetime.date)
     disposition = Optional(str)
