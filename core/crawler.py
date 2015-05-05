@@ -282,20 +282,19 @@ class LatestCaseFinder(Thread):
                     continue
                 else:
                     # try to find returned error message in the page
-                    sel = CSSSelector('.errormsg')
+                    sel = CSSSelector('.mainhdg')
                     html = etree.HTML(res.text)
                     td = sel(html)
                     # test if this case number exists
                     if (len(td) != 0):
-                        if ('COMPLAINT NOT FOUND' in td[0].text):
-                            return False
-                        # catch error other than COMPLAINT NOT FOUND
+                        if ('Overview for Complaint' in td[0].text):
+                            return True
+                        # not a valid case
                         else:
-                            logger_c.error('Uncatched case ' + str(num) + 'request error. ' + td[0].text)
-                            continue
-                    # if the case number exists, return true
+                            return False
+                    # if the case number does not exists, return false
                     else:
-                        return True
+                        return False
             except Exception as e:
                 logger_c.error(repr(e))
                 continue
