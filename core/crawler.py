@@ -287,8 +287,11 @@ class LatestCaseFinder(Thread):
                     td = sel(html)
                     # test if this case number exists
                     if (len(td) != 0):
-                        if ('Overview for Complaint' in td[0].text):
-                            return True
+                        if 'Overview for Complaint' in td[0].text:
+                            if str(num) in td[0].text:
+                                return True
+                            else:
+                                return False
                         # not a valid case
                         else:
                             return False
