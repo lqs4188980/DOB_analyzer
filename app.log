@@ -8642,3 +8642,759 @@ CommitException: Object Complaint[u'2212844'] cannot be stored in the database. 
 2015-06-22 01:04:42,046 - crawler - ERROR - case-4622352 download failure after 4 re-trys.
 2015-06-22 01:04:42,282 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
 2015-06-22 01:04:42,282 - analyzer - ERROR - Fail to Parse Title: 4622352
+2015-06-22 13:00:08,036 - query - ERROR - Error when getting cases@getAllCaseList
+2015-06-22 13:01:35,746 - crawler - ERROR - status code 503 error
+2015-06-22 13:02:07,269 - crawler - ERROR - status code 403 error
+2015-06-22 13:02:10,035 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2213031&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:04:01,012 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='69.77.131.130', port=3128): Read timed out. (read timeout=120)",),)
+2015-06-22 13:04:24,065 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622445&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:26,098 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='69.77.131.130', port=3128): Read timed out. (read timeout=120)",),)
+2015-06-22 13:06:29,407 - analyzer - ERROR - Some error happens when parsing title for : Access Denied
+2015-06-22 13:06:29,595 - analyzer - ERROR - Fail to Parse Title: 3519592
+2015-06-22 13:06:30,588 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212942&requestid=0
+2015-06-22 13:06:30,618 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519384&requestid=0
+2015-06-22 13:06:32,094 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:32,094 - analyzer - ERROR - Fail to Parse Title: 4622310
+2015-06-22 13:06:32,641 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212942&requestid=0
+2015-06-22 13:06:32,671 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519384&requestid=0
+2015-06-22 13:06:33,046 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:33,046 - analyzer - ERROR - Fail to Parse Title: 3519370
+2015-06-22 13:06:33,312 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.37', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519374&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:33,328 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.36', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519399&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:33,500 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:33,500 - analyzer - ERROR - Fail to Parse Title: 3519611
+2015-06-22 13:06:33,828 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.36', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519616&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:34,000 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519462&requestid=0
+2015-06-22 13:06:34,134 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212981&requestid=0
+2015-06-22 13:06:34,305 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.37', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212982&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:34,697 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.36', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212985&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:35,223 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519465&requestid=0
+2015-06-22 13:06:35,457 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.37', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519374&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:35,489 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.36', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519399&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:35,983 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.36', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519616&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:36,459 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.37', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212982&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:36,522 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.37', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519532&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:36,694 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212942&requestid=0
+2015-06-22 13:06:36,724 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519384&requestid=0
+2015-06-22 13:06:36,849 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.36', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212985&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:37,663 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519587&requestid=0
+2015-06-22 13:06:37,742 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.200.120.37', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519584&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:37,773 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:37,773 - analyzer - ERROR - Fail to Parse Title: 4622177
+2015-06-22 13:06:38,466 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:38,466 - analyzer - ERROR - Fail to Parse Title: 4622294
+2015-06-22 13:06:38,732 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622293&requestid=0
+2015-06-22 13:06:39,732 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519587&requestid=0
+2015-06-22 13:06:39,779 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622226&requestid=0
+2015-06-22 13:06:39,857 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622227&requestid=0
+2015-06-22 13:06:40,846 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622293&requestid=0
+2015-06-22 13:06:40,894 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519447&requestid=0
+2015-06-22 13:06:41,832 - analyzer - ERROR - Some error happens when parsing title for : Access Denied
+2015-06-22 13:06:41,848 - analyzer - ERROR - Fail to Parse Title: 4622226
+2015-06-22 13:06:42,066 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622227&requestid=0
+2015-06-22 13:06:43,782 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519587&requestid=0
+2015-06-22 13:06:44,775 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212942&requestid=0
+2015-06-22 13:06:44,789 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519384&requestid=0
+2015-06-22 13:06:44,930 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622293&requestid=0
+2015-06-22 13:06:49,569 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212912&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:06:49,601 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='54.163.238.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519390&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:49,631 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519494&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:49,663 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622322&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:49,694 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622241&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:50,224 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519357&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:50,585 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519434&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:50,677 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519349&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:50,974 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622216&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:51,085 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622213&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:51,242 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519331&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:51,507 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='54.163.238.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212943&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:51,851 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519587&requestid=0
+2015-06-22 13:06:52,342 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:52,342 - analyzer - ERROR - XMLSyntaxError(u"line 140: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:52,358 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519477&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:52,358 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:52,358 - analyzer - ERROR - XMLSyntaxError(u"line 140: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:52,374 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:52,374 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:52,374 - analyzer - ERROR - XMLSyntaxError(u"line 137: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:52,374 - analyzer - ERROR - XMLSyntaxError(u"line 137: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:52,483 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 137: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:52,483 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 140: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:52,483 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 137: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:52,483 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 140: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:52,483 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 137: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03B061C0>)
+2015-06-22 13:06:52,483 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 140: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03AFDDF0>)
+2015-06-22 13:06:52,483 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 137: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03B01FD0>)
+2015-06-22 13:06:52,483 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 140: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03B018A0>)
+2015-06-22 13:06:52,483 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:52,483 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:52,499 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:52,499 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03A5F7B0>)
+2015-06-22 13:06:52,515 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:52,515 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:52,529 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:52,529 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03B10350>)
+2015-06-22 13:06:52,967 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622293&requestid=0
+2015-06-22 13:06:53,421 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:53,421 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:53,437 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:53,437 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x0383AD28>)
+2015-06-22 13:06:53,734 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:54,224 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:54,224 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:54,240 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:54,240 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x038F5AF8>)
+2015-06-22 13:06:54,677 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519615&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:54,990 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:54,990 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:55,006 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:55,006 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x0390A760>)
+2015-06-22 13:06:55,147 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212980&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:55,726 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:55,726 - analyzer - ERROR - Fail to Parse Title: 3519516
+2015-06-22 13:06:56,312 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622275&requestid=0
+2015-06-22 13:06:56,967 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:56,967 - analyzer - ERROR - Fail to Parse Title: 4622372
+2015-06-22 13:06:57,171 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:57,171 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:57,187 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:57,187 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x0399D030>)
+2015-06-22 13:06:58,348 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212917&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:58,365 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:58,365 - analyzer - ERROR - XMLSyntaxError(u"line 140: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:06:58,365 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 140: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:06:58,365 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 140: htmlParseEntityRef: expecting ';'",), <traceback object at 0x0399F148>)
+2015-06-22 13:06:58,615 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:06:58,615 - analyzer - ERROR - Fail to Parse Title: 4622209
+2015-06-22 13:06:59,161 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622299&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:06:59,990 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:06:59,990 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:00,005 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:00,005 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x0383A0F8>)
+2015-06-22 13:07:00,052 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:00,052 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:00,052 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:00,052 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03996288>)
+2015-06-22 13:07:00,115 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:07:00,115 - analyzer - ERROR - Fail to Parse Title: 2213033
+2015-06-22 13:07:00,385 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622220&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:00,776 - crawler - ERROR - case-2212942 download failure after 4 re-trys.
+2015-06-22 13:07:00,808 - crawler - ERROR - case-3519384 download failure after 4 re-trys.
+2015-06-22 13:07:00,980 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519321&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:01,058 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519636&requestid=0
+2015-06-22 13:07:01,714 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519444&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:02,121 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519652&requestid=0
+2015-06-22 13:07:02,151 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:07:02,167 - analyzer - ERROR - Fail to Parse Title: 3519653
+2015-06-22 13:07:02,267 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622390&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:02,565 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='54.163.238.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519565&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:02,799 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:02,799 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:02,799 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:02,799 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03A67F80>)
+2015-06-22 13:07:02,908 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212927&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:02,986 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519666&requestid=0
+2015-06-22 13:07:03,128 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519636&requestid=0
+2015-06-22 13:07:03,267 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:03,267 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:03,299 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:03,299 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03A6BEE0>)
+2015-06-22 13:07:03,440 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-06-22 13:07:03,440 - analyzer - ERROR - Fail to Parse Title: 3519674
+2015-06-22 13:07:03,783 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:03,783 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:03,799 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:03,815 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03A58F08>)
+2015-06-22 13:07:03,908 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:03,908 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:03,924 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:03,924 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03C32288>)
+2015-06-22 13:07:04,572 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622395&requestid=0
+2015-06-22 13:07:04,665 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622267&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:04,822 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622399&requestid=0
+2015-06-22 13:07:05,191 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519666&requestid=0
+2015-06-22 13:07:05,503 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622412&requestid=0
+2015-06-22 13:07:06,035 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:06,066 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:06,066 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:06,066 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x0348E2D8>)
+2015-06-22 13:07:06,607 - analyzer - ERROR - Some error happens when parsing title for : Access Denied
+2015-06-22 13:07:06,622 - analyzer - ERROR - Fail to Parse Title: 4622395
+2015-06-22 13:07:06,763 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519366&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:06,872 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622399&requestid=0
+2015-06-22 13:07:07,184 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519636&requestid=0
+2015-06-22 13:07:07,559 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622412&requestid=0
+2015-06-22 13:07:07,872 - crawler - ERROR - case-3519587 download failure after 4 re-trys.
+2015-06-22 13:07:08,092 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:08,092 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:08,107 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:08,107 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x045D9300>)
+2015-06-22 13:07:08,301 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519524&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:08,989 - crawler - ERROR - case-4622293 download failure after 4 re-trys.
+2015-06-22 13:07:10,069 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:10,069 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:10,069 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:10,069 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x033D8C60>)
+2015-06-22 13:07:10,497 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:10,497 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:10,497 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:10,497 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x031F1AF8>)
+2015-06-22 13:07:10,765 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:10,765 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:10,765 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:10,765 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03A73558>)
+2015-06-22 13:07:10,921 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622399&requestid=0
+2015-06-22 13:07:11,226 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:11,226 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:11,226 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:11,226 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x038E37B0>)
+2015-06-22 13:07:11,614 - analyzer - ERROR - Some error happens when parsing title for : Access Denied
+2015-06-22 13:07:11,630 - analyzer - ERROR - Fail to Parse Title: 4622412
+2015-06-22 13:07:12,720 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622241&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:12,720 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622322&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:13,267 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519357&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:13,714 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519349&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:14,121 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622213&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:14,269 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519331&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:15,230 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519636&requestid=0
+2015-06-22 13:07:16,770 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:16,802 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622159&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:17,484 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='69.77.131.130', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519423&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:18,114 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.41.176.161', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519359&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:18,191 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212980&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:18,986 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622399&requestid=0
+2015-06-22 13:07:19,684 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:19,684 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:19,684 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:19,684 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03C3BAD0>)
+2015-06-22 13:07:21,109 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519619&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:21,296 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519624&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:21,811 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:21,811 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:21,811 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:21,811 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03497738>)
+2015-06-22 13:07:22,308 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-06-22 13:07:22,861 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.41.176.161', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519646&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:22,878 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.41.176.161', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519649&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:22,878 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.41.176.161', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519647&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:23,352 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519658&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:24,730 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519444&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:24,855 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519685&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:25,312 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622390&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:25,967 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212927&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:26,217 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622408&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:26,907 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622417&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:26,907 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:27,411 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:27,411 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:27,411 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:27,411 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03C12E90>)
+2015-06-22 13:07:27,951 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:27,951 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:27,951 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:27,967 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x03903080>)
+2015-06-22 13:07:28,858 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.41.176.161', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519516&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:29,828 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519366&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:30,217 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-06-22 13:07:31,256 - crawler - ERROR - case-3519636 download failure after 4 re-trys.
+2015-06-22 13:07:31,599 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:31,599 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:31,615 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:31,615 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x033D2E90>)
+2015-06-22 13:07:31,647 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-06-22 13:07:31,647 - analyzer - ERROR - XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",)
+2015-06-22 13:07:31,663 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 123, in run
+    self._doc = html.fromstring(self._rawData["text"])
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 723, in fromstring
+    doc = document_fromstring(html, parser=parser, base_url=base_url, **kw)
+  File "C:\Python27\lib\site-packages\lxml\html\__init__.py", line 613, in document_fromstring
+    value = etree.fromstring(html, parser, **kw)
+  File "lxml.etree.pyx", line 3092, in lxml.etree.fromstring (src\lxml\lxml.etree.c:70473)
+  File "parser.pxi", line 1828, in lxml.etree._parseMemoryDocument (src\lxml\lxml.etree.c:106307)
+  File "parser.pxi", line 1709, in lxml.etree._parseDoc (src\lxml\lxml.etree.c:105010)
+  File "parser.pxi", line 1047, in lxml.etree._BaseParser._parseUnicodeDoc (src\lxml\lxml.etree.c:99438)
+  File "parser.pxi", line 580, in lxml.etree._ParserContext._handleParseResultDoc (src\lxml\lxml.etree.c:94254)
+  File "parser.pxi", line 690, in lxml.etree._handleParseResult (src\lxml\lxml.etree.c:95690)
+  File "parser.pxi", line 629, in lxml.etree._raiseParseError (src\lxml\lxml.etree.c:94919)
+XMLSyntaxError: line 133: htmlParseEntityRef: expecting ';'
+
+2015-06-22 13:07:31,663 - analyzer - ERROR - (<class 'lxml.etree.XMLSyntaxError'>, XMLSyntaxError(u"line 133: htmlParseEntityRef: expecting ';'",), <traceback object at 0x033D2558>)
+2015-06-22 13:07:34,990 - crawler - ERROR - case-4622399 download failure after 4 re-trys.
+2015-06-22 13:07:37,848 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622322&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:38,160 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.41.176.161', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519458&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:07:38,301 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519357&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:38,734 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519349&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:39,322 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519331&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:39,838 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622159&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:41,799 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:43,223 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212980&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:44,163 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519619&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:44,351 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519624&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:44,992 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622159&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:07:47,897 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519685&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:48,950 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519632&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:07:49,279 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622408&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:49,507 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519624&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:07:49,966 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:50,997 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212927&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:52,109 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519632&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:07:53,026 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519685&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:07:54,118 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622159&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:07:54,865 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519366&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:07:57,257 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519632&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:07:58,780 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519624&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:08:02,309 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519685&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:08:05,710 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519437&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:08:06,913 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622322&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:07,341 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519357&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:07,763 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519349&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:09,187 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519619&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:10,131 - crawler - ERROR - case-4622159 download failure after 4 re-trys.
+2015-06-22 13:08:10,861 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:12,244 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212980&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:12,680 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='54.163.238.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519387&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-06-22 13:08:14,315 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622408&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:14,798 - crawler - ERROR - case-3519624 download failure after 4 re-trys.
+2015-06-22 13:08:15,032 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:18,309 - crawler - ERROR - case-3519685 download failure after 4 re-trys.
+2015-06-22 13:08:20,045 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2212927&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:22,914 - crawler - ERROR - case-4622322 download failure after 4 re-trys.
+2015-06-22 13:08:23,342 - crawler - ERROR - case-3519357 download failure after 4 re-trys.
+2015-06-22 13:08:23,773 - crawler - ERROR - case-3519349 download failure after 4 re-trys.
+2015-06-22 13:08:23,881 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519366&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:26,864 - crawler - ERROR - case-3519378 download failure after 4 re-trys.
+2015-06-22 13:08:28,244 - crawler - ERROR - case-2212980 download failure after 4 re-trys.
+2015-06-22 13:08:36,046 - crawler - ERROR - case-2212927 download failure after 4 re-trys.
+2015-06-22 13:08:38,237 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519619&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:39,888 - crawler - ERROR - case-3519366 download failure after 4 re-trys.
+2015-06-22 13:08:41,190 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='69.77.131.130', port=3128): Read timed out. (read timeout=120)",),)
+2015-06-22 13:08:42,237 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='69.77.131.130', port=3128): Read timed out. (read timeout=120)",),)
+2015-06-22 13:08:44,082 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='198.1.89.11', port=9090): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-06-22 13:08:54,247 - crawler - ERROR - case-3519619 download failure after 4 re-trys.
+2015-06-22 13:09:00,095 - crawler - ERROR - case-4622416 download failure after 4 re-trys.
+2015-06-22 13:09:01,233 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:09:04,358 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:09:09,499 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='65.79.168.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4622416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-06-22 13:09:22,542 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='69.77.131.130', port=3128): Read timed out. (read timeout=120)",),)
+2015-06-22 13:09:50,805 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='54.163.238.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3519387&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
