@@ -15010,3 +15010,697 @@ CommitException: Object Complaint[u'3525281'] cannot be stored in the database. 
 2015-08-19 01:04:58,826 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.96.142.53', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4619254&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
 2015-08-19 01:05:00,325 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
 2015-08-19 01:05:03,553 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.96.142.55', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526818&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:02:34,489 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527115&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:04:48,444 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-08-19 13:05:34,927 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:34,927 - analyzer - ERROR - Fail to Parse Title: 4628422
+2015-08-19 13:05:35,302 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:35,302 - analyzer - ERROR - Fail to Parse Title: 4628308
+2015-08-19 13:05:35,621 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:35,621 - analyzer - ERROR - Fail to Parse Title: 3526755
+2015-08-19 13:05:35,823 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:35,823 - analyzer - ERROR - Fail to Parse Title: 3526797
+2015-08-19 13:05:35,823 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:35,823 - analyzer - ERROR - Fail to Parse Title: 3526770
+2015-08-19 13:05:35,927 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:35,927 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215323'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:35,943 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215323'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:35,943 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215323'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A324D78>)
+2015-08-19 13:05:36,082 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:36,082 - analyzer - ERROR - Fail to Parse Title: 3526750
+2015-08-19 13:05:36,193 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:36,193 - analyzer - ERROR - CommitException(u"Object Complaint[u'2212844'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:36,193 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2212844'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:36,193 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2212844'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x099F1AF8>)
+2015-08-19 13:05:36,207 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:36,223 - analyzer - ERROR - Fail to Parse Title: 3526886
+2015-08-19 13:05:36,318 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:36,318 - analyzer - ERROR - Fail to Parse Title: 3526946
+2015-08-19 13:05:36,411 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:36,411 - analyzer - ERROR - CommitException(u"Object Complaint[u'3519691'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:36,427 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3519691'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:36,427 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3519691'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x099EA440>)
+2015-08-19 13:05:36,473 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:36,473 - analyzer - ERROR - CommitException(u"Object Complaint[u'3507365'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:36,473 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3507365'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:36,473 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3507365'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x099EE030>)
+2015-08-19 13:05:36,615 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:36,615 - analyzer - ERROR - CommitException(u"Object Complaint[u'4621491'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:36,615 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'4621491'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:36,615 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'4621491'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x099EEAA8>)
+2015-08-19 13:05:37,177 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:37,177 - analyzer - ERROR - Fail to Parse Title: 3526981
+2015-08-19 13:05:37,302 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:37,302 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:37,302 - analyzer - ERROR - Fail to Parse Title: 2215480
+2015-08-19 13:05:37,302 - analyzer - ERROR - Fail to Parse Title: 4628236
+2015-08-19 13:05:37,668 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:37,668 - analyzer - ERROR - Fail to Parse Title: 2215485
+2015-08-19 13:05:37,668 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:37,668 - analyzer - ERROR - Fail to Parse Title: 3525430
+2015-08-19 13:05:37,778 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:37,778 - analyzer - ERROR - Fail to Parse Title: 2215504
+2015-08-19 13:05:37,793 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:37,793 - analyzer - ERROR - Fail to Parse Title: 4628324
+2015-08-19 13:05:37,809 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:37,809 - analyzer - ERROR - Fail to Parse Title: 3527016
+2015-08-19 13:05:38,105 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:38,105 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:38,105 - analyzer - ERROR - Fail to Parse Title: 4628215
+2015-08-19 13:05:38,105 - analyzer - ERROR - Fail to Parse Title: 4628405
+2015-08-19 13:05:38,184 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:38,200 - analyzer - ERROR - Fail to Parse Title: 3526687
+2015-08-19 13:05:38,230 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:38,230 - analyzer - ERROR - Fail to Parse Title: 3526771
+2015-08-19 13:05:38,404 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:38,404 - analyzer - ERROR - Fail to Parse Title: 2215523
+2015-08-19 13:05:38,920 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:38,920 - analyzer - ERROR - Fail to Parse Title: 3526891
+2015-08-19 13:05:39,029 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:39,045 - analyzer - ERROR - Fail to Parse Title: 4628251
+2015-08-19 13:05:39,357 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:39,357 - analyzer - ERROR - Fail to Parse Title: 3526896
+2015-08-19 13:05:39,408 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:39,408 - analyzer - ERROR - Fail to Parse Title: 3526928
+2015-08-19 13:05:39,815 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:39,815 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215014'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:39,815 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215014'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:39,815 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215014'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A205198>)
+2015-08-19 13:05:39,908 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:39,924 - analyzer - ERROR - Fail to Parse Title: 2215546
+2015-08-19 13:05:40,049 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:40,065 - analyzer - ERROR - Fail to Parse Title: 3526852
+2015-08-19 13:05:40,065 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:40,065 - analyzer - ERROR - CommitException(u"Object Complaint[u'3525498'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:40,065 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3525498'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:40,065 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3525498'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A20F760>)
+2015-08-19 13:05:40,065 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:40,065 - analyzer - ERROR - CommitException(u"Object Complaint[u'3516007'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:40,065 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3516007'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:40,065 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3516007'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A20A238>)
+2015-08-19 13:05:40,221 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,221 - analyzer - ERROR - Fail to Parse Title: 3526893
+2015-08-19 13:05:40,378 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:40,394 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:40,394 - analyzer - ERROR - Fail to Parse Title: 3526704
+2015-08-19 13:05:40,394 - analyzer - ERROR - Fail to Parse Title: 3523635
+2015-08-19 13:05:40,456 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,456 - analyzer - ERROR - Fail to Parse Title: 4628250
+2015-08-19 13:05:40,471 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,471 - analyzer - ERROR - Fail to Parse Title: 4628271
+2015-08-19 13:05:40,519 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,519 - analyzer - ERROR - Fail to Parse Title: 4628355
+2015-08-19 13:05:40,519 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:40,519 - analyzer - ERROR - Fail to Parse Title: 3526708
+2015-08-19 13:05:40,549 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,549 - analyzer - ERROR - Fail to Parse Title: 4628279
+2015-08-19 13:05:40,753 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,753 - analyzer - ERROR - Fail to Parse Title: 3526858
+2015-08-19 13:05:40,815 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,815 - analyzer - ERROR - Fail to Parse Title: 4628350
+2015-08-19 13:05:40,971 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:40,971 - analyzer - ERROR - Fail to Parse Title: 3526878
+2015-08-19 13:05:41,065 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:41,065 - analyzer - ERROR - Fail to Parse Title: 4628426
+2015-08-19 13:05:41,237 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:41,237 - analyzer - ERROR - Fail to Parse Title: 4628212
+2015-08-19 13:05:41,362 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:41,362 - analyzer - ERROR - Fail to Parse Title: 4628376
+2015-08-19 13:05:41,667 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:41,667 - analyzer - ERROR - Fail to Parse Title: 3526819
+2015-08-19 13:05:41,760 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:41,760 - analyzer - ERROR - Fail to Parse Title: 4628291
+2015-08-19 13:05:41,823 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:41,823 - analyzer - ERROR - Fail to Parse Title: 3526726
+2015-08-19 13:05:42,105 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:42,105 - analyzer - ERROR - Fail to Parse Title: 4628438
+2015-08-19 13:05:42,183 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:42,183 - analyzer - ERROR - Fail to Parse Title: 4628432
+2015-08-19 13:05:42,480 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:42,480 - analyzer - ERROR - Fail to Parse Title: 3526832
+2015-08-19 13:05:42,621 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:42,621 - analyzer - ERROR - Fail to Parse Title: 3526722
+2015-08-19 13:05:42,635 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:42,635 - analyzer - ERROR - Fail to Parse Title: 2215453
+2015-08-19 13:05:42,635 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:42,635 - analyzer - ERROR - Fail to Parse Title: 2215457
+2015-08-19 13:05:42,667 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:42,667 - analyzer - ERROR - Fail to Parse Title: 4628459
+2015-08-19 13:05:42,963 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:42,963 - analyzer - ERROR - Fail to Parse Title: 3526993
+2015-08-19 13:05:43,026 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:43,026 - analyzer - ERROR - Fail to Parse Title: 4628439
+2015-08-19 13:05:43,674 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:43,674 - analyzer - ERROR - Fail to Parse Title: 3526763
+2015-08-19 13:05:43,769 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:43,769 - analyzer - ERROR - Fail to Parse Title: 3526976
+2015-08-19 13:05:44,160 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:44,160 - analyzer - ERROR - Fail to Parse Title: 3526958
+2015-08-19 13:05:44,269 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:44,269 - analyzer - ERROR - Fail to Parse Title: 3526781
+2015-08-19 13:05:44,331 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:44,331 - analyzer - ERROR - Fail to Parse Title: 3526686
+2015-08-19 13:05:44,503 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:44,503 - analyzer - ERROR - Fail to Parse Title: 3526856
+2015-08-19 13:05:44,596 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:44,596 - analyzer - ERROR - Fail to Parse Title: 3526956
+2015-08-19 13:05:44,674 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:44,674 - analyzer - ERROR - Fail to Parse Title: 4628390
+2015-08-19 13:05:45,854 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:45,854 - analyzer - ERROR - Fail to Parse Title: 3526917
+2015-08-19 13:05:45,901 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:45,901 - analyzer - ERROR - Fail to Parse Title: 3527011
+2015-08-19 13:05:46,072 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:46,072 - analyzer - ERROR - Fail to Parse Title: 4628450
+2015-08-19 13:05:46,088 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:46,088 - analyzer - ERROR - Fail to Parse Title: 2215492
+2015-08-19 13:05:46,151 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:46,151 - analyzer - ERROR - Fail to Parse Title: 3526910
+2015-08-19 13:05:46,167 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:46,167 - analyzer - ERROR - Fail to Parse Title: 3526911
+2015-08-19 13:05:46,183 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:46,183 - analyzer - ERROR - Fail to Parse Title: 3526975
+2015-08-19 13:05:46,308 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:46,308 - analyzer - ERROR - Fail to Parse Title: 3526786
+2015-08-19 13:05:47,260 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:47,260 - analyzer - ERROR - Fail to Parse Title: 3527001
+2015-08-19 13:05:48,736 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:48,736 - analyzer - ERROR - CommitException(u"Object Complaint[u'3523855'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:48,736 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3523855'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:48,736 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3523855'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A591D50>)
+2015-08-19 13:05:48,782 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:48,798 - analyzer - ERROR - Fail to Parse Title: 4628206
+2015-08-19 13:05:48,970 - analyzer - ERROR - Some error happens when parsing title for 3523855: Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:48,986 - analyzer - ERROR - Fail to Parse Title: 4628453
+2015-08-19 13:05:49,361 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:49,361 - analyzer - ERROR - Fail to Parse Title: 4628263
+2015-08-19 13:05:49,726 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:49,726 - analyzer - ERROR - Fail to Parse Title: 4628260
+2015-08-19 13:05:49,960 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:49,976 - analyzer - ERROR - Fail to Parse Title: 2215553
+2015-08-19 13:05:50,631 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:50,631 - analyzer - ERROR - Fail to Parse Title: 4628244
+2015-08-19 13:05:51,069 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:51,069 - analyzer - ERROR - CommitException(u"Object Complaint[u'3522594'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:51,069 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3522594'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:51,069 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3522594'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A5A13C8>)
+2015-08-19 13:05:51,101 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:51,101 - analyzer - ERROR - Fail to Parse Title: 2215539
+2015-08-19 13:05:51,404 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:51,404 - analyzer - ERROR - CommitException(u"Object Complaint[u'3521103'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:51,404 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3521103'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:51,404 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3521103'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A5A4670>)
+2015-08-19 13:05:51,716 - analyzer - ERROR - Some error happens when parsing title for 3521103: Site Blocked
+2015-08-19 13:05:51,716 - analyzer - ERROR - Fail to Parse Title: 3526868
+2015-08-19 13:05:52,325 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:52,325 - analyzer - ERROR - Fail to Parse Title: 3526715
+2015-08-19 13:05:53,091 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:53,091 - analyzer - ERROR - Fail to Parse Title: 4628281
+2015-08-19 13:05:53,598 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526824&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-08-19 13:05:53,802 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628341&requestid=0
+2015-08-19 13:05:54,395 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:54,395 - analyzer - ERROR - CommitException(u"Object Complaint[u'3525281'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:54,395 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3525281'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:54,395 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3525281'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A5AE828>)
+2015-08-19 13:05:54,395 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:05:54,395 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215105'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:05:54,395 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215105'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:05:54,395 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215105'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A5AEAA8>)
+2015-08-19 13:05:54,911 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:54,911 - analyzer - ERROR - Fail to Parse Title: 3526739
+2015-08-19 13:05:55,209 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:55,209 - analyzer - ERROR - Fail to Parse Title: 2215576
+2015-08-19 13:05:55,542 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628368&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:05:55,621 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526930&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:05:55,637 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.208.49.45', port=3127): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628302&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:05:55,667 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628442&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:05:56,309 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:56,309 - analyzer - ERROR - Fail to Parse Title: 3527021
+2015-08-19 13:05:56,388 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:56,388 - analyzer - ERROR - Fail to Parse Title: 3527022
+2015-08-19 13:05:56,701 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526887&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:05:56,733 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:56,733 - analyzer - ERROR - Fail to Parse Title: 3526802
+2015-08-19 13:05:57,693 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:57,707 - analyzer - ERROR - Fail to Parse Title: 4628302
+2015-08-19 13:05:58,256 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:05:58,256 - analyzer - ERROR - Fail to Parse Title: 3527048
+2015-08-19 13:05:58,490 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215500&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:05:58,819 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:58,819 - analyzer - ERROR - Fail to Parse Title: 3527067
+2015-08-19 13:05:59,052 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:59,052 - analyzer - ERROR - Fail to Parse Title: 3527070
+2015-08-19 13:05:59,559 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:05:59,559 - analyzer - ERROR - Fail to Parse Title: 3527075
+2015-08-19 13:06:00,765 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526870&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:01,061 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:01,061 - analyzer - ERROR - Fail to Parse Title: 3527101
+2015-08-19 13:06:01,819 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526818&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:01,944 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:01,944 - analyzer - ERROR - Fail to Parse Title: 3527109
+2015-08-19 13:06:02,055 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526721&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,257 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215473&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,273 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628416&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,305 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628411&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,414 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:02,414 - analyzer - ERROR - Fail to Parse Title: 3527113
+2015-08-19 13:06:02,460 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628311&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,460 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628312&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,523 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:02,523 - analyzer - ERROR - Fail to Parse Title: 3527068
+2015-08-19 13:06:02,632 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:02,632 - analyzer - ERROR - Fail to Parse Title: 3527123
+2015-08-19 13:06:02,773 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215455&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:02,914 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:02,914 - analyzer - ERROR - Fail to Parse Title: 4628481
+2015-08-19 13:06:03,023 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:03,023 - analyzer - ERROR - Fail to Parse Title: 4628472
+2015-08-19 13:06:03,844 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:03,844 - analyzer - ERROR - Fail to Parse Title: 4628490
+2015-08-19 13:06:04,219 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:04,219 - analyzer - ERROR - Fail to Parse Title: 4628492
+2015-08-19 13:06:04,328 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:04,328 - analyzer - ERROR - Fail to Parse Title: 4628493
+2015-08-19 13:06:05,391 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:05,391 - analyzer - ERROR - Fail to Parse Title: 4628520
+2015-08-19 13:06:05,555 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.174.177', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526688&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:05,555 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628393&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:05,569 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:05,569 - analyzer - ERROR - Fail to Parse Title: 4628512
+2015-08-19 13:06:05,601 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628392&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:06,226 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:06,226 - analyzer - ERROR - Fail to Parse Title: 4628518
+2015-08-19 13:06:06,382 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526916&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:06,382 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:06,382 - analyzer - ERROR - Fail to Parse Title: 4628524
+2015-08-19 13:06:06,585 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:06,601 - analyzer - ERROR - Fail to Parse Title: 4628496
+2015-08-19 13:06:07,055 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:07,055 - analyzer - ERROR - Fail to Parse Title: 3526770
+2015-08-19 13:06:07,546 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.167.152', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2214796&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:07,576 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.167.152', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527000&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:07,780 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527004&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:08,562 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:08,578 - analyzer - ERROR - Fail to Parse Title: 4628516
+2015-08-19 13:06:08,594 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:08,594 - analyzer - ERROR - Fail to Parse Title: 4628405
+2015-08-19 13:06:08,608 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628201&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:08,905 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:08,905 - analyzer - ERROR - Fail to Parse Title: 3523635
+2015-08-19 13:06:08,953 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628204&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:10,413 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:06:10,413 - analyzer - ERROR - CommitException(u"Object Complaint[u'2214796'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:06:10,413 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2214796'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:06:10,413 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2214796'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x079CFE90>)
+2015-08-19 13:06:11,194 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:11,194 - analyzer - ERROR - Fail to Parse Title: 4628459
+2015-08-19 13:06:11,240 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:11,240 - analyzer - ERROR - Fail to Parse Title: 3526993
+2015-08-19 13:06:11,497 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:11,497 - analyzer - ERROR - Fail to Parse Title: 3527125
+2015-08-19 13:06:12,561 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:12,561 - analyzer - ERROR - Fail to Parse Title: 4628260
+2015-08-19 13:06:12,763 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:12,763 - analyzer - ERROR - Fail to Parse Title: 4628244
+2015-08-19 13:06:13,540 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:13,540 - analyzer - ERROR - Fail to Parse Title: 3527101
+2015-08-19 13:06:14,056 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:14,056 - analyzer - ERROR - Fail to Parse Title: 4628206
+2015-08-19 13:06:14,401 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.167.152', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628348&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:14,697 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526803&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:14,790 - analyzer - ERROR - Some error happens when parsing title for : Site Blocked
+2015-08-19 13:06:14,790 - analyzer - ERROR - Fail to Parse Title: 4628459
+2015-08-19 13:06:15,276 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.174.177', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526738&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:15,431 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215573&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:15,796 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215578&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:16,016 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527029&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-08-19 13:06:16,344 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:16,344 - analyzer - ERROR - Fail to Parse Title: 4628490
+2015-08-19 13:06:16,776 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-08-19 13:06:16,776 - analyzer - ERROR - Fail to Parse Title: 4628496
+2015-08-19 13:06:16,855 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527024&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:17,263 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:06:17,263 - analyzer - ERROR - CommitException(u"Object Complaint[u'3523635'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:06:17,263 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3523635'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:06:17,263 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3523635'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A3B4AA8>)
+2015-08-19 13:06:17,894 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527038&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:18,585 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628368&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:18,694 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628442&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:19,272 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527057&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:19,763 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526887&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:23,642 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.208.49.45', port=3127): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628479&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:24,861 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526818&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:25,308 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215473&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:25,323 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628411&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:25,500 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628311&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:25,516 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.14.230', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628312&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:25,819 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215455&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:26,753 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.174.177', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628527&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:27,358 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-08-19 13:06:27,358 - analyzer - ERROR - CommitException(u"Object Complaint[u'3525430'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-08-19 13:06:27,358 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3525430'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-08-19 13:06:27,358 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3525430'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x079C2788>)
+2015-08-19 13:06:29,273 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.167.152', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628251&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:31,971 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628204&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:35,595 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527101&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:37,391 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628490&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:38,328 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.174.177', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526738&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:39,888 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527024&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:43,622 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628368&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:52,332 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='165.225.167.152', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628251&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:06:58,621 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527101&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:07:04,921 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527024&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-08-19 13:07:19,543 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.151.53.242', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3526953&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-08-19 13:07:42,559 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-08-19 13:07:43,193 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-08-19 13:07:46,730 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-08-19 13:07:52,411 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-08-19 13:08:00,799 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-08-19 13:08:00,799 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-08-19 13:08:00,815 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-08-19 13:08:00,829 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-08-19 13:08:00,829 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-08-19 13:08:00,892 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2015-08-19 13:08:03,471 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628280&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-08-19 13:08:03,936 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4628520&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2015-08-19 13:08:13,187 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='67.151.53.242', port=3128): Read timed out. (read timeout=120)",),)
