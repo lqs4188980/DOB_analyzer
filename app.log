@@ -5996,3 +5996,994 @@ CommitException: Object Complaint[u'2215014'] cannot be stored in the database. 
 2015-09-02 01:16:20,907 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.162.36.14', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528597&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
 2015-09-02 01:16:27,801 - crawler - ERROR - case-4629702 download failure after 4 re-trys.
 2015-09-02 01:16:36,914 - crawler - ERROR - case-3528597 download failure after 4 re-trys.
+2015-09-02 13:02:41,392 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216644&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:02:50,614 - crawler - ERROR - status code 502 error
+2015-09-02 13:02:56,691 - crawler - ERROR - status code 503 error
+2015-09-02 13:03:04,454 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216644&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:03:27,230 - crawler - ERROR - status code 502 error
+2015-09-02 13:03:35,101 - crawler - ERROR - status code 503 error
+2015-09-02 13:03:40,994 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216196&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:04:06,901 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.208.49.45', port=3127): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629910&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:04:45,940 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216160&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:04:48,957 - crawler - ERROR - status code 502 error
+2015-09-02 13:05:08,986 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.7.124.149', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216160&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:01,703 - crawler - ERROR - status code 503 error
+2015-09-02 13:06:03,892 - crawler - ERROR - status code 500 error
+2015-09-02 13:06:29,328 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216158&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:32,046 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:32,062 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:32,062 - analyzer - ERROR - Fail to Parse Title: 2216062
+2015-09-02 13:06:32,062 - analyzer - ERROR - Fail to Parse Title: 4629771
+2015-09-02 13:06:32,062 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:32,062 - analyzer - ERROR - Fail to Parse Title: 3528628
+2015-09-02 13:06:32,078 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:32,078 - analyzer - ERROR - Fail to Parse Title: 3528624
+2015-09-02 13:06:32,092 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629802&requestid=0
+2015-09-02 13:06:32,125 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528411&requestid=0
+2015-09-02 13:06:32,171 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528629&requestid=0
+2015-09-02 13:06:32,625 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:32,625 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:32,625 - analyzer - ERROR - CommitException(u"Object Complaint[u'4621491'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:32,625 - analyzer - ERROR - CommitException(u"Object Complaint[u'3524624'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:32,640 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'4621491'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:32,640 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3524624'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:32,640 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'4621491'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A3B0EB8>)
+2015-09-02 13:06:32,640 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3524624'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A3BA080>)
+2015-09-02 13:06:32,703 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216093&requestid=0
+2015-09-02 13:06:32,703 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216091&requestid=0
+2015-09-02 13:06:32,969 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629570&requestid=0
+2015-09-02 13:06:33,302 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528588&requestid=0
+2015-09-02 13:06:34,296 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629802&requestid=0
+2015-09-02 13:06:34,312 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528411&requestid=0
+2015-09-02 13:06:34,358 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528629&requestid=0
+2015-09-02 13:06:34,881 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216093&requestid=0
+2015-09-02 13:06:34,881 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216091&requestid=0
+2015-09-02 13:06:35,022 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:35,022 - analyzer - ERROR - Fail to Parse Title: 3528417
+2015-09-02 13:06:35,163 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629570&requestid=0
+2015-09-02 13:06:35,209 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629706&requestid=0
+2015-09-02 13:06:35,275 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:35,275 - analyzer - ERROR - CommitException(u"Object Complaint[u'2214834'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:35,275 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2214834'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:35,275 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2214834'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x097F1850>)
+2015-09-02 13:06:35,482 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528588&requestid=0
+2015-09-02 13:06:36,420 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216057&requestid=0
+2015-09-02 13:06:36,654 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:36,654 - analyzer - ERROR - Fail to Parse Title: 3528423
+2015-09-02 13:06:36,670 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:36,670 - analyzer - ERROR - CommitException(u"Object Complaint[u'2214253'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:36,670 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2214253'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:36,670 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2214253'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A353030>)
+2015-09-02 13:06:36,684 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528420&requestid=0
+2015-09-02 13:06:37,078 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629837&requestid=0
+2015-09-02 13:06:37,395 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629706&requestid=0
+2015-09-02 13:06:38,482 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629802&requestid=0
+2015-09-02 13:06:38,513 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528411&requestid=0
+2015-09-02 13:06:38,575 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528629&requestid=0
+2015-09-02 13:06:38,638 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216057&requestid=0
+2015-09-02 13:06:38,793 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:38,793 - analyzer - ERROR - CommitException(u"Object Complaint[u'3525498'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:38,793 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3525498'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:38,793 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3525498'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A347EE0>)
+2015-09-02 13:06:38,857 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528420&requestid=0
+2015-09-02 13:06:39,091 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216093&requestid=0
+2015-09-02 13:06:39,091 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216091&requestid=0
+2015-09-02 13:06:39,315 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629837&requestid=0
+2015-09-02 13:06:39,348 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629570&requestid=0
+2015-09-02 13:06:39,676 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528588&requestid=0
+2015-09-02 13:06:40,128 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528638&requestid=0
+2015-09-02 13:06:41,573 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629706&requestid=0
+2015-09-02 13:06:42,315 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528638&requestid=0
+2015-09-02 13:06:42,720 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528673&requestid=0
+2015-09-02 13:06:42,815 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216057&requestid=0
+2015-09-02 13:06:43,065 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528420&requestid=0
+2015-09-02 13:06:43,477 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629837&requestid=0
+2015-09-02 13:06:44,477 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:44,493 - analyzer - ERROR - CommitException(u"Object Complaint[u'3519691'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:44,493 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3519691'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:44,493 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3519691'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A38C468>)
+2015-09-02 13:06:44,648 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216080&requestid=0
+2015-09-02 13:06:44,914 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528673&requestid=0
+2015-09-02 13:06:45,273 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528574&requestid=0
+2015-09-02 13:06:45,467 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:45,467 - analyzer - ERROR - CommitException(u"Object Complaint[u'2214796'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:45,467 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2214796'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:45,467 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2214796'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A3612D8>)
+2015-09-02 13:06:46,388 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:46,388 - analyzer - ERROR - CommitException(u"Object Complaint[u'2214997'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:46,388 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2214997'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:46,388 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2214997'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A361AF8>)
+2015-09-02 13:06:46,483 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528638&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:46,576 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629549&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:46,654 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629802&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:46,686 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528411&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:46,749 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528629&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:46,828 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216080&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:47,280 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216093&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:47,280 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216091&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:47,490 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528574&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:47,522 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629570&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:47,897 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528588&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:48,026 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:48,026 - analyzer - ERROR - Fail to Parse Title: 3528389
+2015-09-02 13:06:48,743 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629549&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:49,086 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528673&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:49,134 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2214851&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:49,408 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:49,408 - analyzer - ERROR - CommitException(u"Object Complaint[u'3516007'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:49,408 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3516007'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:49,408 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3516007'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A6C4508>)
+2015-09-02 13:06:49,517 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:49,517 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215609'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:49,517 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215609'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:49,517 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215609'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A3BF580>)
+2015-09-02 13:06:49,611 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:49,611 - analyzer - ERROR - CommitException(u"Object Complaint[u'3523855'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:49,611 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3523855'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:49,611 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3523855'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A730030>)
+2015-09-02 13:06:49,769 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629706&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:50,065 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:06:50,065 - analyzer - ERROR - Fail to Parse Title: 4629713
+2015-09-02 13:06:50,894 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629779&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:51,019 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216080&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:51,019 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216057&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:51,128 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:51,128 - analyzer - ERROR - CommitException(u"Object Complaint[u'3528069'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:51,128 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3528069'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:51,144 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3528069'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x097CC670>)
+2015-09-02 13:06:51,253 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528420&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:51,299 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2214851&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:51,665 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629837&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:51,665 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528574&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:52,102 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:06:52,102 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215105'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:06:52,102 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215105'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:06:52,102 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215105'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0803A490>)
+2015-09-02 13:06:52,938 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629549&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:52,954 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216061&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:52,986 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216065&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:53,493 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528502&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:53,805 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629576&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:53,914 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629573&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:54,132 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629756&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:54,414 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528584&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:54,507 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528586&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:54,680 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528638&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:54,914 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216041&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:55,132 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528581&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:55,483 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2214851&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:56,131 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629705&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:56,242 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:56,273 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528503&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:56,319 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629756&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:56,775 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.42.102.182', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3523635&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:56,822 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:57,102 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216041&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:57,259 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528673&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:57,388 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216055&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:57,499 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:57,749 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629835&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:58,030 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629831&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:58,155 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629788&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:06:59,200 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216080&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:06:59,845 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528574&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:00,174 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:00,174 - analyzer - ERROR - Fail to Parse Title: 4629831
+2015-09-02 13:07:00,486 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629756&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:00,736 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528427&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:01,128 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629549&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:01,299 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216041&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:02,217 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:02,572 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629668&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:02,681 - crawler - ERROR - case-4629802 download failure after 4 re-trys.
+2015-09-02 13:07:02,713 - crawler - ERROR - case-3528411 download failure after 4 re-trys.
+2015-09-02 13:07:02,713 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629661&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:02,759 - crawler - ERROR - case-3528629 download failure after 4 re-trys.
+2015-09-02 13:07:02,947 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629820&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:03,290 - crawler - ERROR - case-2216093 download failure after 4 re-trys.
+2015-09-02 13:07:03,290 - crawler - ERROR - case-2216091 download failure after 4 re-trys.
+2015-09-02 13:07:03,549 - crawler - ERROR - case-4629570 download failure after 4 re-trys.
+2015-09-02 13:07:03,657 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2214851&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:03,813 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629829&requestid=0
+2015-09-02 13:07:03,829 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629821&requestid=0
+2015-09-02 13:07:03,907 - crawler - ERROR - case-3528588 download failure after 4 re-trys.
+2015-09-02 13:07:04,986 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3524531&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:05,095 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629546&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:05,141 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216085&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:05,523 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216082&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:05,664 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629700&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:05,789 - crawler - ERROR - case-4629706 download failure after 4 re-trys.
+2015-09-02 13:07:06,256 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629821&requestid=0
+2015-09-02 13:07:06,256 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629829&requestid=0
+2015-09-02 13:07:06,365 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:06,365 - analyzer - ERROR - Fail to Parse Title: 4629825
+2015-09-02 13:07:06,849 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629547&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:07,038 - crawler - ERROR - case-2216057 download failure after 4 re-trys.
+2015-09-02 13:07:07,256 - crawler - ERROR - case-3528420 download failure after 4 re-trys.
+2015-09-02 13:07:07,667 - crawler - ERROR - case-4629837 download failure after 4 re-trys.
+2015-09-02 13:07:08,252 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:08,252 - analyzer - ERROR - CommitException(u"Object Complaint[u'2212844'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:08,252 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2212844'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:08,252 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2212844'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A5C1418>)
+2015-09-02 13:07:09,038 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216089&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:10,451 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:10,451 - analyzer - ERROR - Fail to Parse Title: 3528331
+2015-09-02 13:07:10,499 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629821&requestid=0
+2015-09-02 13:07:10,499 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629829&requestid=0
+2015-09-02 13:07:10,686 - crawler - ERROR - case-3528638 download failure after 4 re-trys.
+2015-09-02 13:07:10,874 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629711&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:13,279 - crawler - ERROR - case-3528673 download failure after 4 re-trys.
+2015-09-02 13:07:13,917 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629779&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:15,203 - crawler - ERROR - case-2216080 download failure after 4 re-trys.
+2015-09-02 13:07:15,865 - crawler - ERROR - case-3528574 download failure after 4 re-trys.
+2015-09-02 13:07:15,990 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216061&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:16,490 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:16,490 - analyzer - ERROR - Fail to Parse Title: 4629651
+2015-09-02 13:07:16,506 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528502&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:17,147 - crawler - ERROR - case-4629549 download failure after 4 re-trys.
+2015-09-02 13:07:17,444 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528584&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:17,559 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528586&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:17,763 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:17,763 - analyzer - ERROR - CommitException(u"Object Complaint[u'3525430'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:17,763 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3525430'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:17,763 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3525430'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x090BEBE8>)
+2015-09-02 13:07:18,701 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629821&requestid=0
+2015-09-02 13:07:18,701 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629829&requestid=0
+2015-09-02 13:07:19,326 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528503&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:19,678 - crawler - ERROR - case-2214851 download failure after 4 re-trys.
+2015-09-02 13:07:19,819 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.42.102.182', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3523635&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:19,867 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:21,181 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629788&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:21,798 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:21,798 - analyzer - ERROR - CommitException(u"Object Complaint[u'3507365'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:21,812 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3507365'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:21,812 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3507365'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x06627148>)
+2015-09-02 13:07:22,734 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:22,734 - analyzer - ERROR - Fail to Parse Title: 4629858
+2015-09-02 13:07:23,234 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:23,234 - analyzer - ERROR - Fail to Parse Title: 4629855
+2015-09-02 13:07:23,812 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629823&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:24,447 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528377&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:25,265 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:25,615 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629668&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:25,726 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629661&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:26,217 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528418&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:26,233 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:26,563 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216082&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:27,173 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:27,173 - analyzer - ERROR - CommitException(u"Object Complaint[u'3524531'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:27,187 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3524531'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:27,187 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3524531'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x06643198>)
+2015-09-02 13:07:27,947 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:27,947 - analyzer - ERROR - Fail to Parse Title: 4629727
+2015-09-02 13:07:27,963 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528609&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:28,167 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629546&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:29,607 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528334&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:29,904 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629547&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:29,918 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:29,918 - analyzer - ERROR - Fail to Parse Title: 2216031
+2015-09-02 13:07:31,029 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528444&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:31,482 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528642&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:31,529 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629813&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:32,079 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216089&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:33,207 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528444&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:33,487 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629815&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:33,697 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629813&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:33,931 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629711&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:34,717 - crawler - ERROR - case-4629829 download failure after 4 re-trys.
+2015-09-02 13:07:34,717 - crawler - ERROR - case-4629821 download failure after 4 re-trys.
+2015-09-02 13:07:35,154 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:35,154 - analyzer - ERROR - CommitException(u"Object Complaint[u'2214682'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:35,154 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2214682'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:35,154 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2214682'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x08ECF378>)
+2015-09-02 13:07:35,671 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629815&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:37,377 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='136.0.16.217', port=7808): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528444&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:39,260 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528322&requestid=0
+2015-09-02 13:07:39,736 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629700&requestid=0
+2015-09-02 13:07:39,815 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.42.102.182', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528566&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:40,533 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528488&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:40,767 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:40,767 - analyzer - ERROR - Fail to Parse Title: 3528334
+2015-09-02 13:07:41,549 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528502&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:41,993 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:41,993 - analyzer - ERROR - Fail to Parse Title: 3528320
+2015-09-02 13:07:44,901 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:45,513 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:45,513 - analyzer - ERROR - Fail to Parse Title: 4629566
+2015-09-02 13:07:46,221 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629788&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:46,582 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629720&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:46,862 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629823&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:47,410 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:47,410 - analyzer - ERROR - Fail to Parse Title: 3528598
+2015-09-02 13:07:47,471 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528377&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:48,713 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629668&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:49,275 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:49,477 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:49,477 - analyzer - ERROR - CommitException(u"Object Complaint[u'4619920'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:49,477 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'4619920'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:49,477 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'4619920'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x06823D50>)
+2015-09-02 13:07:50,288 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:50,381 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:50,381 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215323'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:50,397 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215323'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:50,397 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215323'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0682B440>)
+2015-09-02 13:07:50,772 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629661&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:51,335 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:51,335 - analyzer - ERROR - CommitException(u"Object Complaint[u'3522594'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:51,335 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3522594'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:51,335 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3522594'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x068340A8>)
+2015-09-02 13:07:51,747 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528586&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:51,763 - analyzer - ERROR - Some error happens when parsing title for 3522594: Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:51,763 - analyzer - ERROR - Fail to Parse Title: 4629720
+2015-09-02 13:07:52,217 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528447&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:52,936 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629547&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:07:53,186 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629546&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:55,338 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:07:55,338 - analyzer - ERROR - Fail to Parse Title: 2216136
+2015-09-02 13:07:55,740 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216078&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:56,163 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216077&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:57,015 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216076&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:57,112 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216089&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:57,535 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:07:57,535 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215014'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:07:57,535 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215014'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:07:57,535 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215014'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A109BE8>)
+2015-09-02 13:07:57,980 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629760&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:58,183 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629595&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:07:59,319 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216074&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:01,125 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:08:01,125 - analyzer - ERROR - CommitException(u"Object Complaint[u'3521103'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:08:01,125 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3521103'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:08:01,125 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3521103'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0981FD78>)
+2015-09-02 13:08:02,131 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528657&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:02,694 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528681&requestid=0
+2015-09-02 13:08:02,694 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:08:02,694 - analyzer - ERROR - CommitException(u"Object Complaint[u'2215113'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:08:02,694 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'2215113'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:08:02,694 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'2215113'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x0A60D3F0>)
+2015-09-02 13:08:04,796 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629700&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:04,890 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528681&requestid=0
+2015-09-02 13:08:05,421 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629685&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:05,960 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528550&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:06,194 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:06,194 - analyzer - ERROR - Fail to Parse Title: 3528725
+2015-09-02 13:08:06,288 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:06,288 - analyzer - ERROR - Fail to Parse Title: 3528698
+2015-09-02 13:08:06,476 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='96.47.232.224', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629565&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:08,591 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='152.179.42.178', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528596&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:10,075 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:10,075 - analyzer - ERROR - Fail to Parse Title: 4629876
+2015-09-02 13:08:10,890 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528681&requestid=0
+2015-09-02 13:08:12,230 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528378&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:12,355 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:12,355 - analyzer - ERROR - Fail to Parse Title: 4629883
+2015-09-02 13:08:13,931 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:15,743 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216134&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:16,391 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216138&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:17,303 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:18,759 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216082&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:19,184 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528681&requestid=0
+2015-09-02 13:08:19,592 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216153&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:19,733 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528502&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:19,795 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629661&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:20,066 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216076&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:20,875 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629871&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:21,000 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2015-09-02 13:08:21,000 - analyzer - ERROR - CommitException(u"Object Complaint[u'3523635'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",)
+2015-09-02 13:08:21,000 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 153, in __parseRequiredContent
+    self.__insertToComplaint()
+  File "C:\DOBProject\analyzer.py", line 290, in __insertToComplaint
+    self._dbm.putResolve(self.info)
+  File "<auto generated wrapper of putResolve() function>", line 2, in putResolve
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 358, in new_func
+    finally: self.__exit__(exc_type, exc, tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 390, in __exit__
+    commit()
+  File "<auto generated wrapper of commit() function>", line 2, in commit
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 81, in cut_traceback
+    reraise(exc_type, exc, last_pony_tb)
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 3926, in _save_created_
+    % (obj, e.__class__.__name__, msg), e)
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 105, in throw
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+CommitException: Object Complaint[u'3523635'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1
+
+2015-09-02 13:08:21,000 - analyzer - ERROR - (<class 'pony.orm.core.CommitException'>, CommitException(u"Object Complaint[u'3523635'] cannot be stored in the database. DataError: 1406 Data too long for column 'comments' at row 1",), <traceback object at 0x068ADFA8>)
+2015-09-02 13:08:22,142 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216156&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:22,421 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216134&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:22,592 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216020&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:22,640 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528420&requestid=0
+2015-09-02 13:08:22,796 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528685&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:23,243 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528687&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:23,749 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528694&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:24,256 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:24,256 - analyzer - ERROR - Fail to Parse Title: 2216076
+2015-09-02 13:08:24,601 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528574&requestid=0
+2015-09-02 13:08:24,631 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528702&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:24,796 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528704&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:25,171 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528657&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:25,391 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528730&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:26,240 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.42.102.182', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528716&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:28,358 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528737&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:28,707 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.7.124.149', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629866&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:28,917 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:28,917 - analyzer - ERROR - Fail to Parse Title: 3528598
+2015-09-02 13:08:29,012 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528550&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:29,276 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216020&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:29,940 - crawler - ERROR - case-4629749 download failure after 4 re-trys.
+2015-09-02 13:08:29,940 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.7.124.149', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629873&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:32,030 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:32,030 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:32,062 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:32,062 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:32,094 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:32,094 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:32,990 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:33,319 - crawler - ERROR - case-3528621 download failure after 4 re-trys.
+2015-09-02 13:08:35,190 - crawler - ERROR - case-3528681 download failure after 4 re-trys.
+2015-09-02 13:08:35,753 - crawler - ERROR - case-3528502 download failure after 4 re-trys.
+2015-09-02 13:08:35,799 - crawler - ERROR - case-4629661 download failure after 4 re-trys.
+2015-09-02 13:08:36,398 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528727&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:36,648 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629905&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:36,772 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='168.63.24.174', port=8121): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:38,061 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528628&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:38,282 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:38,984 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528424&requestid=0
+2015-09-02 13:08:39,926 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:42,624 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216153&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:44,451 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:45,694 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.7.124.149', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629855&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:45,803 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.222.11.146', port=9000): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629727&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:47,480 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216134&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:47,818 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='208.111.40.160', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216082&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:48,436 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528730&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:50,227 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528657&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:52,881 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:08:52,881 - analyzer - ERROR - Fail to Parse Title: 3528730
+2015-09-02 13:08:54,010 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629836&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:08:54,329 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216020&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:54,329 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.42.102.182', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:08:58,696 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:08:58,845 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:01,109 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528628&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:09:02,415 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:03,831 - crawler - ERROR - case-2216082 download failure after 4 re-trys.
+2015-09-02 13:09:04,921 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:09:04,921 - analyzer - ERROR - Fail to Parse Title: 2216153
+2015-09-02 13:09:07,174 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:07,283 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:08,700 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528424&requestid=0
+2015-09-02 13:09:08,700 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528574&requestid=0
+2015-09-02 13:09:08,841 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528498&requestid=0
+2015-09-02 13:09:09,094 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528366&requestid=0
+2015-09-02 13:09:14,046 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:17,375 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.42.102.182', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528621&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:09:19,285 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528657&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:09:23,052 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528730&requestid=0
+2015-09-02 13:09:25,342 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216134&requestid=0
+2015-09-02 13:09:26,174 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528628&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:09:32,336 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:09:32,507 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2216020&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:09:35,288 - crawler - ERROR - case-3528657 download failure after 4 re-trys.
+2015-09-02 13:09:38,141 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:41,364 - crawler - ERROR - case-2216134 download failure after 4 re-trys.
+2015-09-02 13:09:43,359 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:44,365 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:46,454 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528559&requestid=0
+2015-09-02 13:09:48,526 - crawler - ERROR - case-2216020 download failure after 4 re-trys.
+2015-09-02 13:09:55,203 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528628&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:09:58,098 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:09:59,325 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='192.241.181.108', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2015-09-02 13:10:04,421 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='64.62.250.38', port=80): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:05,028 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:05,828 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='64.62.250.38', port=80): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:06,660 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='64.62.250.38', port=80): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:11,207 - crawler - ERROR - case-3528628 download failure after 4 re-trys.
+2015-09-02 13:10:15,000 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:15,339 - crawler - ERROR - case-4629787 download failure after 4 re-trys.
+2015-09-02 13:10:20,174 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:21,831 - crawler - ERROR - case-4629668 download failure after 4 re-trys.
+2015-09-02 13:10:21,894 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2015-09-02 13:10:21,894 - analyzer - ERROR - Fail to Parse Title: 4629668
+2015-09-02 13:10:24,957 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:25,313 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:28,996 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:29,667 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:29,683 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.62.250.38', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528701&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:10:30,644 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:30,834 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:32,052 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:33,822 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:34,078 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:34,125 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:35,022 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:50,841 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='50.7.124.149', port=3128): Read timed out. (read timeout=120)",),)
+2015-09-02 13:10:52,023 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.7.124.149', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4629720&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:10:52,687 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.7.124.149', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3528698&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2015-09-02 13:11:14,180 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='192.241.181.108', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:11:40,186 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:11:50,489 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
+2015-09-02 13:12:21,940 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='72.162.36.14', port=8080): Read timed out. (read timeout=120)",),)
