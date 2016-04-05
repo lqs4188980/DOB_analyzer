@@ -4793,3 +4793,100 @@ CommitException: Object Complaint[u'2214107'] cannot be stored in the database. 
 2016-04-03 10:43:08,877 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.47.114.124', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2215046&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
 2016-04-03 10:43:12,006 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='64.47.114.124', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553104&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
 2016-04-03 10:44:54,525 - crawler - ERROR - ConnectionError(ReadTimeoutError("HTTPConnectionPool(host='98.198.18.194', port=3128): Read timed out.",),)
+2016-04-05 08:29:35,319 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.243.243.191', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648915&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:29:53,414 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:53,492 - analyzer - ERROR - Fail to Parse Title: 2224994
+2016-04-05 08:29:53,617 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:53,617 - analyzer - ERROR - Fail to Parse Title: 4648611
+2016-04-05 08:29:53,992 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:53,992 - analyzer - ERROR - Fail to Parse Title: 3531904
+2016-04-05 08:29:55,891 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:55,891 - analyzer - ERROR - Fail to Parse Title: 4648694
+2016-04-05 08:29:56,535 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:56,535 - analyzer - ERROR - Fail to Parse Title: 2224995
+2016-04-05 08:29:57,086 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:57,086 - analyzer - ERROR - Fail to Parse Title: 3553100
+2016-04-05 08:29:57,618 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:57,618 - analyzer - ERROR - Fail to Parse Title: 2225046
+2016-04-05 08:29:58,072 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:58,072 - analyzer - ERROR - Fail to Parse Title: 3553156
+2016-04-05 08:29:58,525 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:58,525 - analyzer - ERROR - Fail to Parse Title: 2225057
+2016-04-05 08:29:58,664 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:58,664 - analyzer - ERROR - Fail to Parse Title: 4648698
+2016-04-05 08:29:59,203 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:59,203 - analyzer - ERROR - Fail to Parse Title: 3553145
+2016-04-05 08:29:59,719 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:59,719 - analyzer - ERROR - Fail to Parse Title: 2225035
+2016-04-05 08:29:59,734 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:29:59,734 - analyzer - ERROR - Fail to Parse Title: 3553260
+2016-04-05 08:30:00,052 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:00,052 - analyzer - ERROR - Fail to Parse Title: 3553258
+2016-04-05 08:30:00,661 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:00,661 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:00,661 - analyzer - ERROR - Fail to Parse Title: 3553292
+2016-04-05 08:30:00,661 - analyzer - ERROR - Fail to Parse Title: 3529933
+2016-04-05 08:30:00,802 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:00,802 - analyzer - ERROR - Fail to Parse Title: 3553297
+2016-04-05 08:30:00,834 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:00,849 - analyzer - ERROR - Fail to Parse Title: 3553267
+2016-04-05 08:30:00,944 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:00,944 - analyzer - ERROR - Fail to Parse Title: 2225069
+2016-04-05 08:30:01,450 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:01,450 - analyzer - ERROR - Fail to Parse Title: 3552291
+2016-04-05 08:30:02,107 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:02,107 - analyzer - ERROR - Fail to Parse Title: 2225081
+2016-04-05 08:30:02,371 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:02,371 - analyzer - ERROR - Fail to Parse Title: 3553351
+2016-04-05 08:30:03,487 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:03,487 - analyzer - ERROR - Fail to Parse Title: 3553131
+2016-04-05 08:30:04,068 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:04,068 - analyzer - ERROR - Fail to Parse Title: 4648780
+2016-04-05 08:30:04,207 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553338&requestid=0
+2016-04-05 08:30:04,270 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:04,270 - analyzer - ERROR - Fail to Parse Title: 4648779
+2016-04-05 08:30:05,059 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553124&requestid=0
+2016-04-05 08:30:06,829 - analyzer - ERROR - Some error happens when parsing title for : Access Denied
+2016-04-05 08:30:06,829 - analyzer - ERROR - Fail to Parse Title: 3553338
+2016-04-05 08:30:07,540 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553124&requestid=0
+2016-04-05 08:30:09,517 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:09,533 - analyzer - ERROR - Fail to Parse Title: 4648611
+2016-04-05 08:30:10,111 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:10,158 - analyzer - ERROR - Fail to Parse Title: 3553266
+2016-04-05 08:30:11,914 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553124&requestid=0
+2016-04-05 08:30:13,055 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:13,055 - analyzer - ERROR - Fail to Parse Title: 4648892
+2016-04-05 08:30:13,816 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.53.213.196', port=8083): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553140&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:15,119 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.204', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648672&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:15,611 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:15,611 - analyzer - ERROR - Fail to Parse Title: 4648847
+2016-04-05 08:30:16,346 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:16,362 - analyzer - ERROR - Fail to Parse Title: 4648898
+2016-04-05 08:30:16,644 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.142.117', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3543267&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:16,971 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.209.124.226', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2211029&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:17,096 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.236.220.70', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2224983&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:17,259 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.198', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3552702&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:19,250 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.142.115', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2225093&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:19,500 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.236.220.70', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553220&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:20,188 - crawler - ERROR - code 403 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553124&requestid=0
+2016-04-05 08:30:20,565 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.210', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553256&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:20,878 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.204', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553271&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:21,905 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.209.124.226', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553301&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:21,937 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.142.117', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553307&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:23,740 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3553154&requestid=0
+2016-04-05 08:30:24,115 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.210', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648762&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:24,677 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3527306&requestid=0
+2016-04-05 08:30:25,559 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.218', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648801&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:26,678 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.218', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648839&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:27,230 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2225056&requestid=0
+2016-04-05 08:30:27,341 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.142.117', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648849&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:27,848 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='162.209.124.226', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648858&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2016-04-05 08:30:32,446 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:32,446 - analyzer - ERROR - Fail to Parse Title: 3553271
+2016-04-05 08:30:32,664 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:32,664 - analyzer - ERROR - Fail to Parse Title: 4648697
+2016-04-05 08:30:36,210 - crawler - ERROR - case-3553124 download failure after 4 re-trys.
+2016-04-05 08:30:38,075 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2016-04-05 08:30:38,075 - analyzer - ERROR - Fail to Parse Title: 4648801
+2016-04-05 08:30:38,638 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648875&requestid=0
+2016-04-05 08:30:49,710 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.151.136.218', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4648839&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
