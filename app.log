@@ -3851,3 +3851,295 @@ KeyError: (0, 'caseInfo')
 2017-01-17 01:07:38,404 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='172.99.115.144', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588411&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
 2017-01-17 01:07:51,019 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='216.68.76.27', port=80): Read timed out. (read timeout=120)",),)
 2017-01-17 01:07:54,405 - crawler - ERROR - case-3588411 download failure after 4 re-trys.
+2017-01-17 13:06:33,217 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:06:44,076 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://dish_fiber.dedicated/alogin?dst=http%3A%2F%2Fa810-bisweb.nyc.gov%2Fbisweb%2FOverviewForComplaintServlet%3Fcomplaintno%3D3588473%26requestid%3D0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:07:23,982 - crawler - ERROR - status code 502 error
+2017-01-17 13:07:36,825 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='96.239.193.241', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679156&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:07:41,960 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588487&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:07:47,233 - crawler - ERROR - status code 404 error
+2017-01-17 13:07:55,858 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='205.234.15.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588489&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:08:20,138 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.27', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679153&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:08:22,348 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:08:24,641 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.17.92.18', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238615&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:08:50,767 - crawler - ERROR - status code 503 error
+2017-01-17 13:10:40,303 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:11:12,351 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:12,381 - analyzer - ERROR - Fail to Parse Title: 4679081
+2017-01-17 13:11:12,381 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:12,381 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:12,381 - analyzer - ERROR - Fail to Parse Title: 4679082
+2017-01-17 13:11:12,381 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:12,381 - analyzer - ERROR - Fail to Parse Title: 2238092
+2017-01-17 13:11:12,398 - analyzer - ERROR - Fail to Parse Title: 4679084
+2017-01-17 13:11:12,398 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:12,414 - analyzer - ERROR - Fail to Parse Title: 3588320
+2017-01-17 13:11:12,428 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:12,428 - analyzer - ERROR - Fail to Parse Title: 3588321
+2017-01-17 13:11:12,539 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:12,539 - analyzer - ERROR - Fail to Parse Title: 2238098
+2017-01-17 13:11:12,585 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:12,585 - analyzer - ERROR - Fail to Parse Title: 2238095
+2017-01-17 13:11:12,585 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:12,585 - analyzer - ERROR - Fail to Parse Title: 4678942
+2017-01-17 13:11:12,960 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:13,325 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:13,325 - analyzer - ERROR - Fail to Parse Title: 3588224
+2017-01-17 13:11:13,513 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:13,513 - analyzer - ERROR - Fail to Parse Title: 2238046
+2017-01-17 13:11:13,825 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:13,825 - analyzer - ERROR - Fail to Parse Title: 4678914
+2017-01-17 13:11:15,332 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:15,895 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588392&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:16,036 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:16,036 - analyzer - ERROR - Fail to Parse Title: 3588391
+2017-01-17 13:11:16,066 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:16,066 - analyzer - ERROR - Fail to Parse Title: 4679067
+2017-01-17 13:11:16,082 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:16,082 - analyzer - ERROR - Fail to Parse Title: 3588276
+2017-01-17 13:11:16,582 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:16,582 - analyzer - ERROR - Fail to Parse Title: 4678968
+2017-01-17 13:11:16,582 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://dish_fiber.dedicated/alogin?dst=http%3A%2F%2Fa810-bisweb.nyc.gov%2Fbisweb%2FOverviewForComplaintServlet%3Fcomplaintno%3D3588277%26requestid%3D0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:16,723 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:16,723 - analyzer - ERROR - Fail to Parse Title: 2238036
+2017-01-17 13:11:17,746 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:17,823 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='205.234.15.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588347&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:17,871 - analyzer - ERROR - Some error happens when parsing title for : Overview for Complaint #: = 
+2017-01-17 13:11:17,871 - analyzer - ERROR - Fail to Parse Title: 2238103
+2017-01-17 13:11:17,933 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679066&requestid=0
+2017-01-17 13:11:18,433 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238093&requestid=0
+2017-01-17 13:11:18,558 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678935&requestid=0
+2017-01-17 13:11:18,714 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588289&requestid=0
+2017-01-17 13:11:19,121 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:19,134 - analyzer - ERROR - Fail to Parse Title: 3588288
+2017-01-17 13:11:20,270 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:20,270 - analyzer - ERROR - Fail to Parse Title: 3588292
+2017-01-17 13:11:20,348 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238063&requestid=0
+2017-01-17 13:11:20,380 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:20,380 - analyzer - ERROR - Fail to Parse Title: 3588368
+2017-01-17 13:11:20,536 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='205.234.15.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238031&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:20,661 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:20,661 - analyzer - ERROR - Fail to Parse Title: 3588333
+2017-01-17 13:11:20,911 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:20,911 - analyzer - ERROR - Fail to Parse Title: 3588421
+2017-01-17 13:11:21,052 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679060&requestid=0
+2017-01-17 13:11:21,052 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678945&requestid=0
+2017-01-17 13:11:21,052 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679085&requestid=0
+2017-01-17 13:11:21,243 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588289&requestid=0
+2017-01-17 13:11:21,403 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:21,403 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:21,403 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:22,762 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679042&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:22,934 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:22,934 - analyzer - ERROR - Fail to Parse Title: 2238057
+2017-01-17 13:11:23,736 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238052&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:24,220 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:24,236 - analyzer - ERROR - Fail to Parse Title: 4678988
+2017-01-17 13:11:24,581 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678936&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:24,799 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:24,799 - analyzer - ERROR - Fail to Parse Title: 4678985
+2017-01-17 13:11:24,892 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679012&requestid=0
+2017-01-17 13:11:25,352 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:25,352 - analyzer - ERROR - Fail to Parse Title: 4679091
+2017-01-17 13:11:26,040 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:26,290 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:26,727 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:26,727 - analyzer - ERROR - Fail to Parse Title: 2238087
+2017-01-17 13:11:26,822 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678936&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:26,838 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://dish_fiber.dedicated/alogin?dst=http%3A%2F%2Fa810-bisweb.nyc.gov%2Fbisweb%2FOverviewForComplaintServlet%3Fcomplaintno%3D4678979%26requestid%3D0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:26,884 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588241&requestid=0
+2017-01-17 13:11:26,900 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238099&requestid=0
+2017-01-17 13:11:27,891 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588403&requestid=0
+2017-01-17 13:11:28,094 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588220&requestid=0
+2017-01-17 13:11:28,421 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679012&requestid=0
+2017-01-17 13:11:28,562 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:28,594 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588360&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:28,609 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://dish_fiber.dedicated/alogin?dst=http%3A%2F%2Fa810-bisweb.nyc.gov%2Fbisweb%2FOverviewForComplaintServlet%3Fcomplaintno%3D3588381%26requestid%3D0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:28,780 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:28,780 - analyzer - ERROR - Fail to Parse Title: 2238089
+2017-01-17 13:11:28,875 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588349&requestid=0
+2017-01-17 13:11:29,078 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678995&requestid=0
+2017-01-17 13:11:29,094 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:29,094 - analyzer - ERROR - Fail to Parse Title: 2238099
+2017-01-17 13:11:29,569 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588387&requestid=0
+2017-01-17 13:11:29,648 - crawler - ERROR - code 500 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588232&requestid=0
+2017-01-17 13:11:30,069 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:30,069 - analyzer - ERROR - Fail to Parse Title: 4679045
+2017-01-17 13:11:31,069 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:31,085 - analyzer - ERROR - Fail to Parse Title: 3588381
+2017-01-17 13:11:31,163 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:31,163 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:31,163 - analyzer - ERROR - Fail to Parse Title: 3588371
+2017-01-17 13:11:31,163 - analyzer - ERROR - Fail to Parse Title: 2238076
+2017-01-17 13:11:31,295 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:31,295 - analyzer - ERROR - Fail to Parse Title: 4678936
+2017-01-17 13:11:31,342 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:31,342 - analyzer - ERROR - Fail to Parse Title: 4678979
+2017-01-17 13:11:31,388 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:31,388 - analyzer - ERROR - Fail to Parse Title: 3588384
+2017-01-17 13:11:32,186 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:32,201 - analyzer - ERROR - Fail to Parse Title: 4679079
+2017-01-17 13:11:32,311 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:32,311 - analyzer - ERROR - Fail to Parse Title: 2238103
+2017-01-17 13:11:32,561 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238102&requestid=0
+2017-01-17 13:11:32,608 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:32,608 - analyzer - ERROR - Fail to Parse Title: 2238107
+2017-01-17 13:11:32,701 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588243&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:32,717 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238029&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:32,763 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588322&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:32,795 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679088&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:32,811 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588218&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:33,108 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:33,108 - analyzer - ERROR - Fail to Parse Title: 2238110
+2017-01-17 13:11:33,334 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588311&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:33,334 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678937&requestid=0
+2017-01-17 13:11:33,661 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588406&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:34,145 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:34,145 - analyzer - ERROR - Fail to Parse Title: 2238122
+2017-01-17 13:11:34,584 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588344&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:34,661 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588343&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:35,020 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:35,542 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:35,558 - analyzer - ERROR - Fail to Parse Title: 4678937
+2017-01-17 13:11:35,573 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.17.92.18', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588435&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:36,211 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679046&requestid=0
+2017-01-17 13:11:36,651 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.27', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588275&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:37,535 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679034&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:37,987 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='107.17.92.18', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588435&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:38,144 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:38,144 - analyzer - ERROR - Fail to Parse Title: 2238135
+2017-01-17 13:11:39,025 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:39,039 - analyzer - ERROR - Fail to Parse Title: 3588436
+2017-01-17 13:11:39,055 - crawler - ERROR - code 404 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588450&requestid=0
+2017-01-17 13:11:39,640 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588277&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:41,030 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588261&requestid=0
+2017-01-17 13:11:41,552 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238086&requestid=0
+2017-01-17 13:11:42,709 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='13.88.183.184', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588254&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:43,240 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:43,240 - analyzer - ERROR - Fail to Parse Title: 3588261
+2017-01-17 13:11:43,980 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:44,010 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588236&requestid=0
+2017-01-17 13:11:44,026 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:44,026 - analyzer - ERROR - Fail to Parse Title: 4679076
+2017-01-17 13:11:44,105 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588241&requestid=0
+2017-01-17 13:11:44,480 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588351&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:45,154 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588403&requestid=0
+2017-01-17 13:11:45,799 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://dish_fiber.dedicated/alogin?dst=http%3A%2F%2Fa810-bisweb.nyc.gov%2Fbisweb%2FOverviewForComplaintServlet%3Fcomplaintno%3D3588450%26requestid%3D0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:46,003 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:46,003 - analyzer - ERROR - Fail to Parse Title: 4679119
+2017-01-17 13:11:46,160 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679092&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:46,160 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588349&requestid=0
+2017-01-17 13:11:46,618 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679074&requestid=0
+2017-01-17 13:11:46,961 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:46,961 - analyzer - ERROR - Fail to Parse Title: 3588351
+2017-01-17 13:11:47,243 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679127&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:47,594 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:11:47,766 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238109&requestid=0
+2017-01-17 13:11:49,428 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:49,430 - analyzer - ERROR - Fail to Parse Title: 4679138
+2017-01-17 13:11:49,489 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:49,489 - analyzer - ERROR - Fail to Parse Title: 4679139
+2017-01-17 13:11:49,752 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238102&requestid=0
+2017-01-17 13:11:49,877 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588237&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:49,892 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588230&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:50,220 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588432&requestid=0
+2017-01-17 13:11:52,092 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.27', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588375&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:52,217 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.73', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588277&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:52,312 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588379&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:52,826 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:52,826 - analyzer - ERROR - Fail to Parse Title: 4679067
+2017-01-17 13:11:54,947 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238127&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:56,250 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='13.88.183.184', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588433&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:56,655 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-01-17 13:11:57,427 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588439&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:11:57,839 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588480&requestid=0
+2017-01-17 13:11:58,434 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:58,434 - analyzer - ERROR - Fail to Parse Title: 4678988
+2017-01-17 13:11:58,513 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678965&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:11:58,529 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:58,529 - analyzer - ERROR - Fail to Parse Title: 2238122
+2017-01-17 13:11:58,825 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-01-17 13:11:58,825 - analyzer - ERROR - Fail to Parse Title: 3588436
+2017-01-17 13:11:58,934 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:58,934 - analyzer - ERROR - Fail to Parse Title: 4679091
+2017-01-17 13:11:59,184 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:11:59,200 - analyzer - ERROR - Fail to Parse Title: 2238099
+2017-01-17 13:12:01,607 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588236&requestid=0
+2017-01-17 13:12:01,732 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:12:02,944 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588475&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:04,216 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679074&requestid=0
+2017-01-17 13:12:04,690 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679140&requestid=0
+2017-01-17 13:12:04,759 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588403&requestid=0
+2017-01-17 13:12:05,134 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679106&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:05,374 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238109&requestid=0
+2017-01-17 13:12:05,818 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588349&requestid=0
+2017-01-17 13:12:07,055 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679122&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:07,421 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588321&requestid=0
+2017-01-17 13:12:08,237 - crawler - ERROR - case-3588277 download failure after 4 re-trys.
+2017-01-17 13:12:10,355 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238057&requestid=0
+2017-01-17 13:12:12,920 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588237&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:12,934 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588230&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:13,200 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.27', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4678942&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:13,286 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588224&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:14,309 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588261&requestid=0
+2017-01-17 13:12:15,138 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588480&requestid=0
+2017-01-17 13:12:17,180 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588381&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:20,822 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588236&requestid=0
+2017-01-17 13:12:23,411 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679074&requestid=0
+2017-01-17 13:12:24,581 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238109&requestid=0
+2017-01-17 13:12:27,851 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238057&requestid=0
+2017-01-17 13:12:27,960 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588403&requestid=0
+2017-01-17 13:12:34,334 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588480&requestid=0
+2017-01-17 13:12:40,230 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588381&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:12:43,980 - crawler - ERROR - case-3588403 download failure after 4 re-trys.
+2017-01-17 13:12:43,980 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588236&requestid=0
+2017-01-17 13:12:46,592 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679074&requestid=0
+2017-01-17 13:12:59,996 - crawler - ERROR - case-3588236 download failure after 4 re-trys.
+2017-01-17 13:13:02,615 - crawler - ERROR - case-4679074 download failure after 4 re-trys.
+2017-01-17 13:13:11,795 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:17,260 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:18,039 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:20,770 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:20,895 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:20,911 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:23,260 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:23,260 - analyzer - ERROR - Fail to Parse Title: 4679047
+2017-01-17 13:13:23,371 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:23,371 - analyzer - ERROR - Fail to Parse Title: 3588422
+2017-01-17 13:13:23,385 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:23,385 - analyzer - ERROR - Fail to Parse Title: 3588425
+2017-01-17 13:13:24,892 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:25,082 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:27,326 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:28,023 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:29,395 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:29,395 - analyzer - ERROR - Fail to Parse Title: 4679042
+2017-01-17 13:13:30,566 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:31,374 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:31,451 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:33,160 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:33,581 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:33,585 - analyzer - ERROR - Fail to Parse Title: 4679094
+2017-01-17 13:13:34,348 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:34,651 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.119.20.75', port=80): Max retries exceeded with url: http://dish_fiber.dedicated/alogin?dst=http%3A%2F%2Fa810-bisweb.nyc.gov%2Fbisweb%2FOverviewForComplaintServlet%3Fcomplaintno%3D4679078%26requestid%3D0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-01-17 13:13:35,354 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:36,049 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:36,049 - analyzer - ERROR - Fail to Parse Title: 2238075
+2017-01-17 13:13:36,796 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-01-17 13:13:42,549 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:42,549 - analyzer - ERROR - Fail to Parse Title: 2238130
+2017-01-17 13:13:46,375 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:49,361 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:53,441 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:13:55,994 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:55,994 - analyzer - ERROR - Fail to Parse Title: 3588288
+2017-01-17 13:13:56,855 - analyzer - ERROR - Some error happens when parsing title for : mikrotik hotspot > redirect
+2017-01-17 13:13:56,855 - analyzer - ERROR - Fail to Parse Title: 4679127
+2017-01-17 13:13:57,089 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.199.135.47', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238075&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:13:57,894 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238130&requestid=0
+2017-01-17 13:13:59,338 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.75', port=80): Read timed out. (read timeout=120)",),)
+2017-01-17 13:14:15,098 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238130&requestid=0
+2017-01-17 13:14:17,013 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='216.68.76.12', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3588288&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-01-17 13:14:34,426 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238130&requestid=0
+2017-01-17 13:14:57,799 - crawler - ERROR - code 502 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2238130&requestid=0
+2017-01-17 13:15:13,802 - crawler - ERROR - case-2238130 download failure after 4 re-trys.
+2017-01-17 13:15:37,471 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='52.119.20.73', port=80): Read timed out. (read timeout=120)",),)
