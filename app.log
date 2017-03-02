@@ -10639,3 +10639,212 @@ KeyError: (0, None)
 2017-03-01 13:08:35,209 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.116.113.206', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683440&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
 2017-03-01 13:08:38,509 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.116.113.206', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239905&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
 2017-03-01 13:09:03,526 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='199.116.113.206', port=8080): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239905&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-03-02 01:02:33,680 - crawler - ERROR - status code 503 error
+2017-03-02 01:03:14,877 - crawler - ERROR - status code 503 error
+2017-03-02 01:03:33,938 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='12.33.254.195', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593592&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-03-02 01:03:50,296 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:50,296 - analyzer - ERROR - Fail to Parse Title: 2239865
+2017-03-02 01:03:50,484 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:50,484 - analyzer - ERROR - Fail to Parse Title: 3593148
+2017-03-02 01:03:51,155 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:51,155 - analyzer - ERROR - Fail to Parse Title: 4683255
+2017-03-02 01:03:51,405 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3576053&requestid=0
+2017-03-02 01:03:51,405 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4682275&requestid=0
+2017-03-02 01:03:51,405 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593433&requestid=0
+2017-03-02 01:03:51,405 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4679491&requestid=0
+2017-03-02 01:03:51,405 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3591959&requestid=0
+2017-03-02 01:03:51,437 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3572812&requestid=0
+2017-03-02 01:03:51,437 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3512994&requestid=0
+2017-03-02 01:03:51,437 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3591956&requestid=0
+2017-03-02 01:03:51,437 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683359&requestid=0
+2017-03-02 01:03:51,437 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3591951&requestid=0
+2017-03-02 01:03:51,469 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3578928&requestid=0
+2017-03-02 01:03:51,484 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593356&requestid=0
+2017-03-02 01:03:51,516 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4673617&requestid=0
+2017-03-02 01:03:51,516 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239735&requestid=0
+2017-03-02 01:03:51,648 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:51,663 - analyzer - ERROR - Fail to Parse Title: 2235549
+2017-03-02 01:03:52,069 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:52,069 - analyzer - ERROR - Fail to Parse Title: 3593389
+2017-03-02 01:03:52,476 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:52,476 - analyzer - ERROR - Fail to Parse Title: 4671165
+2017-03-02 01:03:52,523 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:52,523 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:52,523 - analyzer - ERROR - Fail to Parse Title: 4683323
+2017-03-02 01:03:52,538 - analyzer - ERROR - Fail to Parse Title: 4683327
+2017-03-02 01:03:52,663 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:52,663 - analyzer - ERROR - Fail to Parse Title: 3593176
+2017-03-02 01:03:52,803 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:52,803 - analyzer - ERROR - Fail to Parse Title: 3593406
+2017-03-02 01:03:53,256 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:53,273 - analyzer - ERROR - Fail to Parse Title: 3517579
+2017-03-02 01:03:54,059 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3572812&requestid=0
+2017-03-02 01:03:54,059 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,092 - analyzer - ERROR - Fail to Parse Title: 4683463
+2017-03-02 01:03:54,092 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593375&requestid=0
+2017-03-02 01:03:54,092 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593376&requestid=0
+2017-03-02 01:03:54,092 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4681410&requestid=0
+2017-03-02 01:03:54,107 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3591956&requestid=0
+2017-03-02 01:03:54,107 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593083&requestid=0
+2017-03-02 01:03:54,122 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593087&requestid=0
+2017-03-02 01:03:54,154 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593379&requestid=0
+2017-03-02 01:03:54,154 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3578928&requestid=0
+2017-03-02 01:03:54,170 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4673617&requestid=0
+2017-03-02 01:03:54,200 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593373&requestid=0
+2017-03-02 01:03:54,200 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239922&requestid=0
+2017-03-02 01:03:54,232 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,232 - analyzer - ERROR - Fail to Parse Title: 4683289
+2017-03-02 01:03:54,263 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,263 - analyzer - ERROR - Fail to Parse Title: 2239803
+2017-03-02 01:03:54,309 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,309 - analyzer - ERROR - Fail to Parse Title: 3512994
+2017-03-02 01:03:54,482 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239921&requestid=0
+2017-03-02 01:03:54,497 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3591950&requestid=0
+2017-03-02 01:03:54,497 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3591035&requestid=0
+2017-03-02 01:03:54,513 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:03:54,592 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,592 - analyzer - ERROR - Fail to Parse Title: 3593371
+2017-03-02 01:03:54,717 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,717 - analyzer - ERROR - Fail to Parse Title: 3593085
+2017-03-02 01:03:54,795 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,795 - analyzer - ERROR - Fail to Parse Title: 4683359
+2017-03-02 01:03:54,982 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:54,982 - analyzer - ERROR - Fail to Parse Title: 4683371
+2017-03-02 01:03:55,107 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:55,107 - analyzer - ERROR - Fail to Parse Title: 4683374
+2017-03-02 01:03:55,138 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:55,138 - analyzer - ERROR - Fail to Parse Title: 4683377
+2017-03-02 01:03:55,342 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593377&requestid=0
+2017-03-02 01:03:55,342 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683201&requestid=0
+2017-03-02 01:03:55,644 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593124&requestid=0
+2017-03-02 01:03:55,785 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:55,785 - analyzer - ERROR - Fail to Parse Title: 3591947
+2017-03-02 01:03:55,848 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:55,848 - analyzer - ERROR - Fail to Parse Title: 4683179
+2017-03-02 01:03:56,378 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683455&requestid=0
+2017-03-02 01:03:57,165 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:57,165 - analyzer - ERROR - Fail to Parse Title: 3578292
+2017-03-02 01:03:57,782 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239905&requestid=0
+2017-03-02 01:03:57,829 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239663&requestid=0
+2017-03-02 01:03:57,907 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239902&requestid=0
+2017-03-02 01:03:57,986 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593377&requestid=0
+2017-03-02 01:03:58,157 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:03:58,188 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:03:58,188 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:03:58,470 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:58,470 - analyzer - ERROR - Fail to Parse Title: 3593312
+2017-03-02 01:03:58,736 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:03:58,736 - analyzer - ERROR - Fail to Parse Title: 3519077
+2017-03-02 01:03:58,907 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683201&requestid=0
+2017-03-02 01:04:00,118 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239904&requestid=0
+2017-03-02 01:04:00,211 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593124&requestid=0
+2017-03-02 01:04:00,430 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:00,430 - analyzer - ERROR - Fail to Parse Title: 2239932
+2017-03-02 01:04:00,493 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:00,493 - analyzer - ERROR - Fail to Parse Title: 2239939
+2017-03-02 01:04:00,586 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:00,602 - analyzer - ERROR - Fail to Parse Title: 4683365
+2017-03-02 01:04:00,696 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:00,696 - analyzer - ERROR - Fail to Parse Title: 3593139
+2017-03-02 01:04:01,336 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:01,336 - analyzer - ERROR - Fail to Parse Title: 4683243
+2017-03-02 01:04:01,461 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593492&requestid=0
+2017-03-02 01:04:01,539 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3578382&requestid=0
+2017-03-02 01:04:01,752 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593493&requestid=0
+2017-03-02 01:04:01,986 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4667625&requestid=0
+2017-03-02 01:04:02,299 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:02,299 - analyzer - ERROR - Fail to Parse Title: 3591010
+2017-03-02 01:04:02,470 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:02,470 - analyzer - ERROR - Fail to Parse Title: 4681958
+2017-03-02 01:04:02,532 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:02,532 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:02,549 - analyzer - ERROR - Fail to Parse Title: 3593279
+2017-03-02 01:04:02,549 - analyzer - ERROR - Fail to Parse Title: 3593496
+2017-03-02 01:04:03,141 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593286&requestid=0
+2017-03-02 01:04:03,157 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593287&requestid=0
+2017-03-02 01:04:03,174 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239891&requestid=0
+2017-03-02 01:04:03,188 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239895&requestid=0
+2017-03-02 01:04:03,454 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683201&requestid=0
+2017-03-02 01:04:03,868 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:03,914 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:03,914 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:04,382 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593493&requestid=0
+2017-03-02 01:04:04,414 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:04,414 - analyzer - ERROR - Fail to Parse Title: 3593289
+2017-03-02 01:04:04,430 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:04,430 - analyzer - ERROR - Fail to Parse Title: 2239890
+2017-03-02 01:04:04,461 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239808&requestid=0
+2017-03-02 01:04:05,148 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593366&requestid=0
+2017-03-02 01:04:05,875 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593124&requestid=0
+2017-03-02 01:04:06,233 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593413&requestid=0
+2017-03-02 01:04:06,296 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593195&requestid=0
+2017-03-02 01:04:06,530 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:06,530 - analyzer - ERROR - Fail to Parse Title: 3593092
+2017-03-02 01:04:06,655 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683381&requestid=0
+2017-03-02 01:04:06,983 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593377&requestid=0
+2017-03-02 01:04:07,030 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593119&requestid=0
+2017-03-02 01:04:07,046 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:07,108 - analyzer - ERROR - Fail to Parse Title: 4683386
+2017-03-02 01:04:07,437 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:07,437 - analyzer - ERROR - Fail to Parse Title: 4679897
+2017-03-02 01:04:07,592 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:07,592 - analyzer - ERROR - Fail to Parse Title: 3593460
+2017-03-02 01:04:07,710 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:07,710 - analyzer - ERROR - Fail to Parse Title: 4683444
+2017-03-02 01:04:08,006 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239808&requestid=0
+2017-03-02 01:04:08,256 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:08,256 - analyzer - ERROR - Fail to Parse Title: 2239945
+2017-03-02 01:04:08,538 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:08,552 - analyzer - ERROR - Fail to Parse Title: 2239953
+2017-03-02 01:04:09,444 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683527&requestid=0
+2017-03-02 01:04:09,569 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:09,631 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593119&requestid=0
+2017-03-02 01:04:09,888 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593413&requestid=0
+2017-03-02 01:04:10,059 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:10,059 - analyzer - ERROR - Fail to Parse Title: 4679569
+2017-03-02 01:04:10,247 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:10,247 - analyzer - ERROR - Fail to Parse Title: 3593535
+2017-03-02 01:04:11,059 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593372&requestid=0
+2017-03-02 01:04:12,082 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683201&requestid=0
+2017-03-02 01:04:12,082 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683527&requestid=0
+2017-03-02 01:04:12,644 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:12,644 - analyzer - ERROR - Fail to Parse Title: 4683504
+2017-03-02 01:04:12,661 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:12,661 - analyzer - ERROR - Fail to Parse Title: 4683508
+2017-03-02 01:04:13,082 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:13,082 - analyzer - ERROR - Fail to Parse Title: 4683547
+2017-03-02 01:04:13,503 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683502&requestid=0
+2017-03-02 01:04:13,598 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239808&requestid=0
+2017-03-02 01:04:13,729 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:13,760 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:13,994 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:13,994 - analyzer - ERROR - Fail to Parse Title: 4683243
+2017-03-02 01:04:14,183 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:14,183 - analyzer - ERROR - Fail to Parse Title: 4679897
+2017-03-02 01:04:14,308 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683504&requestid=0
+2017-03-02 01:04:14,479 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593124&requestid=0
+2017-03-02 01:04:14,479 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593413&requestid=0
+2017-03-02 01:04:14,667 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:14,667 - analyzer - ERROR - Fail to Parse Title: 3517579
+2017-03-02 01:04:14,808 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:14,808 - analyzer - ERROR - Fail to Parse Title: 3517579
+2017-03-02 01:04:15,372 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2239904&requestid=0
+2017-03-02 01:04:21,250 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593569&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-03-02 01:04:23,479 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='76.72.171.176', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3592877&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-03-02 01:04:23,930 - crawler - ERROR - code 503 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593493&requestid=0
+2017-03-02 01:04:27,045 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='76.72.171.176', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3593199&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-03-02 01:04:28,091 - crawler - ERROR - case-4683201 download failure after 4 re-trys.
+2017-03-02 01:04:30,118 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='76.72.171.176', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683541&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-03-02 01:04:30,496 - crawler - ERROR - case-3593124 download failure after 4 re-trys.
+2017-03-02 01:04:32,604 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:32,604 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:32,604 - analyzer - ERROR - Fail to Parse Title: 2239845
+2017-03-02 01:04:32,604 - analyzer - ERROR - Fail to Parse Title: 2239685
+2017-03-02 01:04:36,096 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-03-02 01:04:40,581 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:40,581 - analyzer - ERROR - Fail to Parse Title: 4683503
+2017-03-02 01:04:40,799 - crawler - ERROR - code 408 error when connecting to http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683502&requestid=0
+2017-03-02 01:04:52,125 - crawler - ERROR - case-3593569 download failure after 4 re-trys.
+2017-03-02 01:04:53,138 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='76.72.171.176', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4683541&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-03-02 01:04:56,619 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-03-02 01:04:56,619 - analyzer - ERROR - Fail to Parse Title: 4683469
