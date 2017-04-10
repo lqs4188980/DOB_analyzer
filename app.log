@@ -3427,3 +3427,121 @@
 2017-04-09 13:09:09,739 - analyzer - ERROR - Fail to Parse Title: 3597934
 2017-04-09 13:09:11,884 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
 2017-04-09 13:09:11,884 - analyzer - ERROR - Fail to Parse Title: 3597948
+2017-04-10 01:02:45,292 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='69.64.34.109', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687677&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:14,326 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:14,326 - analyzer - ERROR - Fail to Parse Title: 2241554
+2017-04-10 01:03:14,437 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:14,437 - analyzer - ERROR - Fail to Parse Title: 3597983
+2017-04-10 01:03:14,483 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:14,483 - analyzer - ERROR - Fail to Parse Title: 3597909
+2017-04-10 01:03:14,529 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:14,529 - analyzer - ERROR - Fail to Parse Title: 3597904
+2017-04-10 01:03:15,474 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:15,474 - analyzer - ERROR - Fail to Parse Title: 3526745
+2017-04-10 01:03:16,871 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:16,871 - analyzer - ERROR - Fail to Parse Title: 3597764
+2017-04-10 01:03:17,135 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:17,135 - analyzer - ERROR - Fail to Parse Title: 3597765
+2017-04-10 01:03:17,996 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:17,996 - analyzer - ERROR - Fail to Parse Title: 2241533
+2017-04-10 01:03:18,687 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:18,706 - analyzer - ERROR - Fail to Parse Title: 4687135
+2017-04-10 01:03:19,611 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:19,628 - analyzer - ERROR - Fail to Parse Title: 3597753
+2017-04-10 01:03:19,644 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:19,658 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:19,658 - analyzer - ERROR - Fail to Parse Title: 4687075
+2017-04-10 01:03:19,674 - analyzer - ERROR - Fail to Parse Title: 4687072
+2017-04-10 01:03:19,674 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:19,690 - analyzer - ERROR - Fail to Parse Title: 4686996
+2017-04-10 01:03:19,861 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:19,861 - analyzer - ERROR - Fail to Parse Title: 3597962
+2017-04-10 01:03:19,861 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:19,861 - analyzer - ERROR - Fail to Parse Title: 3597968
+2017-04-10 01:03:21,509 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:21,509 - analyzer - ERROR - Fail to Parse Title: 3597890
+2017-04-10 01:03:22,352 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:22,352 - analyzer - ERROR - Fail to Parse Title: 3597814
+2017-04-10 01:03:22,664 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:22,664 - analyzer - ERROR - Fail to Parse Title: 3597813
+2017-04-10 01:03:22,905 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:22,905 - analyzer - ERROR - Fail to Parse Title: 4687029
+2017-04-10 01:03:24,265 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:24,265 - analyzer - ERROR - Fail to Parse Title: 4665095
+2017-04-10 01:03:24,592 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:24,592 - analyzer - ERROR - Fail to Parse Title: 4687012
+2017-04-10 01:03:24,721 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:24,721 - analyzer - ERROR - Fail to Parse Title: 4687015
+2017-04-10 01:03:25,476 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:25,523 - analyzer - ERROR - Fail to Parse Title: 3597949
+2017-04-10 01:03:25,773 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:25,773 - analyzer - ERROR - Fail to Parse Title: 4687121
+2017-04-10 01:03:25,789 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:25,789 - analyzer - ERROR - Fail to Parse Title: 4687122
+2017-04-10 01:03:25,805 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:25,805 - analyzer - ERROR - Fail to Parse Title: 3589712
+2017-04-10 01:03:26,086 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:26,101 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:26,101 - analyzer - ERROR - Fail to Parse Title: 4686932
+2017-04-10 01:03:26,101 - analyzer - ERROR - Fail to Parse Title: 4686969
+2017-04-10 01:03:26,118 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:26,118 - analyzer - ERROR - Fail to Parse Title: 4687043
+2017-04-10 01:03:26,134 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:26,134 - analyzer - ERROR - Fail to Parse Title: 4687048
+2017-04-10 01:03:26,211 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:26,226 - analyzer - ERROR - Fail to Parse Title: 3597975
+2017-04-10 01:03:26,937 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:26,937 - analyzer - ERROR - Fail to Parse Title: 4666638
+2017-04-10 01:03:27,546 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:27,546 - analyzer - ERROR - Fail to Parse Title: 2241310
+2017-04-10 01:03:27,592 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:27,592 - analyzer - ERROR - Fail to Parse Title: 3597922
+2017-04-10 01:03:27,592 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:27,592 - analyzer - ERROR - Fail to Parse Title: 3597926
+2017-04-10 01:03:27,951 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:27,951 - analyzer - ERROR - Fail to Parse Title: 4687034
+2017-04-10 01:03:28,201 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:28,201 - analyzer - ERROR - Fail to Parse Title: 4687035
+2017-04-10 01:03:28,483 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:28,483 - analyzer - ERROR - Fail to Parse Title: 4687030
+2017-04-10 01:03:28,740 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:28,740 - analyzer - ERROR - Fail to Parse Title: 4686950
+2017-04-10 01:03:28,740 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:28,740 - analyzer - ERROR - Fail to Parse Title: 4686953
+2017-04-10 01:03:29,098 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:29,098 - analyzer - ERROR - Fail to Parse Title: 4687100
+2017-04-10 01:03:29,631 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:29,631 - analyzer - ERROR - Fail to Parse Title: 3597746
+2017-04-10 01:03:29,973 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:29,973 - analyzer - ERROR - Fail to Parse Title: 4687061
+2017-04-10 01:03:29,973 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:29,973 - analyzer - ERROR - Fail to Parse Title: 3597857
+2017-04-10 01:03:30,851 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:30,851 - analyzer - ERROR - Fail to Parse Title: 4687062
+2017-04-10 01:03:31,131 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:31,131 - analyzer - ERROR - Fail to Parse Title: 2241576
+2017-04-10 01:03:31,328 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:31,331 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:31,332 - analyzer - ERROR - Fail to Parse Title: 2241581
+2017-04-10 01:03:31,334 - analyzer - ERROR - Fail to Parse Title: 3598002
+2017-04-10 01:03:31,365 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:31,365 - analyzer - ERROR - Fail to Parse Title: 4687166
+2017-04-10 01:03:32,171 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:32,171 - analyzer - ERROR - Fail to Parse Title: 3597973
+2017-04-10 01:03:32,437 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:32,437 - analyzer - ERROR - Fail to Parse Title: 4687177
+2017-04-10 01:03:32,786 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:32,786 - analyzer - ERROR - Fail to Parse Title: 4687187
+2017-04-10 01:03:32,911 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:32,911 - analyzer - ERROR - Fail to Parse Title: 2241580
+2017-04-10 01:03:34,006 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:34,006 - analyzer - ERROR - Fail to Parse Title: 3597890
+2017-04-10 01:03:34,552 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-10 01:03:34,552 - analyzer - ERROR - Fail to Parse Title: 4686969
+2017-04-10 01:03:36,836 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.232.135.110', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4686990&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:36,959 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='69.64.34.109', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3597966&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:36,990 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='206.251.227.56', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2237806&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:39,631 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='69.64.34.109', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687039&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:40,933 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='69.64.34.109', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687165&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:41,010 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.232.135.110', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687170&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-10 01:03:55,615 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='69.64.34.109', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4686969&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
