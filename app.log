@@ -7657,3 +7657,191 @@
 2017-04-15 13:07:15,214 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
 2017-04-15 13:07:15,214 - analyzer - ERROR - Fail to Parse Title: 3598591
 2017-04-15 13:07:27,177 - crawler - ERROR - case-3598526 download failure after 4 re-trys.
+2017-04-16 01:03:37,444 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:03:52,058 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:04:25,494 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687875&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:06,391 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.84.131.34', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687868&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:08,983 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:09,000 - analyzer - ERROR - Fail to Parse Title: 4687644
+2017-04-16 01:05:09,000 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:09,000 - analyzer - ERROR - Fail to Parse Title: 4687563
+2017-04-16 01:05:09,092 - analyzer - ERROR - Critical error, Analyzer thread failed.
+2017-04-16 01:05:09,092 - analyzer - ERROR - KeyError((0, None),)
+2017-04-16 01:05:09,125 - analyzer - ERROR - Traceback (most recent call last):
+  File "C:\DOBProject\analyzer.py", line 128, in run
+    self.__parseRequiredContent()
+  File "C:\DOBProject\analyzer.py", line 169, in __parseRequiredContent
+    self._dbm.putWarehouseCase(self.info)
+  File "<auto generated wrapper of putWarehouseCase() function>", line 2, in putWarehouseCase
+  File "C:\Python27\lib\site-packages\pony\orm\core.py", line 349, in new_func
+    try: return func(*args, **kwargs)
+  File "C:\DOBProject\database\management.py", line 125, in putWarehouseCase
+    if not exists(p for p in Warehouse if p.complaint_number == \
+  File "<auto generated wrapper of exists() function>", line 2, in exists
+  File "C:\Python27\lib\site-packages\pony\utils.py", line 82, in cut_traceback
+    raise exc  # Set "pony.options.CUT_TRACEBACK = False" to see full traceback
+KeyError: (0, None)
+
+2017-04-16 01:05:09,125 - analyzer - ERROR - (<type 'exceptions.KeyError'>, KeyError((0, None),), <traceback object at 0x0F568328>)
+2017-04-16 01:05:09,217 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:09,233 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:09,328 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:09,437 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:09,842 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:10,187 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:10,187 - analyzer - ERROR - Fail to Parse Title: 4687824
+2017-04-16 01:05:10,280 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:10,280 - analyzer - ERROR - Fail to Parse Title: 4687784
+2017-04-16 01:05:10,770 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:10,770 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:11,709 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:11,709 - analyzer - ERROR - Fail to Parse Title: 2241785
+2017-04-16 01:05:11,723 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:11,834 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:11,848 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:11,973 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:12,193 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:12,193 - analyzer - ERROR - Fail to Parse Title: 3598399
+2017-04-16 01:05:12,240 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:12,318 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:12,334 - analyzer - ERROR - Fail to Parse Title: 3598406
+2017-04-16 01:05:12,411 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:12,584 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:12,645 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:13,401 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:13,401 - analyzer - ERROR - Fail to Parse Title: 3598575
+2017-04-16 01:05:13,448 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:13,683 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:13,683 - analyzer - ERROR - Fail to Parse Title: 4679617
+2017-04-16 01:05:14,026 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:14,042 - analyzer - ERROR - Fail to Parse Title: 4677839
+2017-04-16 01:05:14,588 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:14,621 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:14,683 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:14,734 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:14,750 - analyzer - ERROR - Fail to Parse Title: 3598545
+2017-04-16 01:05:14,828 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:14,937 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:14,937 - analyzer - ERROR - Fail to Parse Title: 4687600
+2017-04-16 01:05:15,062 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:15,062 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:15,062 - analyzer - ERROR - Fail to Parse Title: 4687833
+2017-04-16 01:05:15,173 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:15,298 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:15,641 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:15,641 - analyzer - ERROR - Fail to Parse Title: 3598668
+2017-04-16 01:05:15,673 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:16,016 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:16,157 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:16,187 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,134 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:17,134 - analyzer - ERROR - Fail to Parse Title: 3598510
+2017-04-16 01:05:17,351 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,414 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,430 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,539 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,586 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:17,586 - analyzer - ERROR - Fail to Parse Title: 3598659
+2017-04-16 01:05:17,621 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,871 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:17,917 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:18,042 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:18,059 - analyzer - ERROR - Fail to Parse Title: 3598417
+2017-04-16 01:05:18,075 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:19,019 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:19,285 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:19,285 - analyzer - ERROR - Fail to Parse Title: 3598568
+2017-04-16 01:05:19,426 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:19,426 - analyzer - ERROR - Fail to Parse Title: 4687664
+2017-04-16 01:05:19,582 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:19,644 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:19,660 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:19,660 - analyzer - ERROR - Fail to Parse Title: 3598605
+2017-04-16 01:05:19,691 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:19,769 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:20,176 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:20,176 - analyzer - ERROR - Fail to Parse Title: 4687797
+2017-04-16 01:05:20,191 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:20,332 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:20,566 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:21,010 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:21,121 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:21,417 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:21,683 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:21,683 - analyzer - ERROR - Fail to Parse Title: 3598533
+2017-04-16 01:05:21,948 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:22,246 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:22,246 - analyzer - ERROR - Fail to Parse Title: 3586967
+2017-04-16 01:05:22,323 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:22,401 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:23,469 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:23,500 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:23,707 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:23,739 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:23,739 - analyzer - ERROR - Fail to Parse Title: 3598361
+2017-04-16 01:05:23,895 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:24,005 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:24,052 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:24,068 - analyzer - ERROR - Fail to Parse Title: 3598368
+2017-04-16 01:05:24,584 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:24,964 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:25,042 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:25,651 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:25,651 - analyzer - ERROR - Fail to Parse Title: 4687802
+2017-04-16 01:05:25,746 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:25,823 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:25,823 - analyzer - ERROR - Fail to Parse Title: 4687772
+2017-04-16 01:05:25,839 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:25,839 - analyzer - ERROR - Fail to Parse Title: 3598705
+2017-04-16 01:05:25,933 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:25,964 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:26,089 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:26,292 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:26,292 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:26,605 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:27,128 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:28,095 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:28,628 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:29,073 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-04-16 01:05:29,073 - analyzer - ERROR - Fail to Parse Title: 3598707
+2017-04-16 01:05:29,588 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:29,861 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.156.221', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687645&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:29,892 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.170.206.117', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4680005&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:30,002 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.143.126', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4686090&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:30,017 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.231.241.6', port=8081): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2241737&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:30,220 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.151.126', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598552&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:30,220 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:30,392 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:31,049 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598690&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:31,161 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3574626&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:31,559 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.84.131.34', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687624&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:31,605 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.151.126', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2241475&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:32,256 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598642&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:32,615 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='67.231.241.6', port=8081): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687547&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:32,631 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:33,453 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:36,776 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598599&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:37,730 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.129.5.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687836&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:38,805 - crawler - ERROR - ConnectionError(ProtocolError('Connection aborted.', BadStatusLine("''",)),)
+2017-04-16 01:05:39,733 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.170.206.117', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3581915&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:40,325 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598562&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:40,463 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.84.131.34', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687667&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:40,605 - crawler - ERROR - case-3598508 download failure after 4 re-trys.
+2017-04-16 01:05:42,253 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.84.131.34', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687695&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:42,667 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='74.84.131.34', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598535&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:43,963 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598475&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:45,799 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.143.126', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2241768&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:46,611 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2241845&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:48,111 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='104.129.5.42', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598369&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:49,467 - crawler - ERROR - case-3598655 download failure after 4 re-trys.
+2017-04-16 01:05:52,884 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.156.221', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4687645&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:54,085 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598690&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:54,206 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3574626&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:05:54,822 - crawler - ERROR - case-4687553 download failure after 4 re-trys.
+2017-04-16 01:06:07,003 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598475&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:06:19,128 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598690&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:06:32,016 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598475&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:06:48,161 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598690&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:07:01,075 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='72.255.171.250', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3598475&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-04-16 01:07:04,170 - crawler - ERROR - case-3598690 download failure after 4 re-trys.
+2017-04-16 01:07:17,081 - crawler - ERROR - case-3598475 download failure after 4 re-trys.
