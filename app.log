@@ -3105,3 +3105,200 @@
 2017-06-23 13:09:10,279 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='52.26.145.154', port=80): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245445&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
 2017-06-23 13:09:11,632 - crawler - ERROR - case-4696102 download failure after 4 re-trys.
 2017-06-23 13:09:28,134 - crawler - ERROR - ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='45.32.75.165', port=3128): Read timed out. (read timeout=120)",),)
+2017-06-24 01:03:20,619 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:20,619 - analyzer - ERROR - Fail to Parse Title: 3607741
+2017-06-24 01:03:20,681 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:20,681 - analyzer - ERROR - Fail to Parse Title: 2245401
+2017-06-24 01:03:20,697 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:20,697 - analyzer - ERROR - Fail to Parse Title: 4695772
+2017-06-24 01:03:20,713 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:20,713 - analyzer - ERROR - Fail to Parse Title: 3607501
+2017-06-24 01:03:21,901 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:21,901 - analyzer - ERROR - Fail to Parse Title: 3607282
+2017-06-24 01:03:21,917 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='50.31.14.152', port=8140): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695888&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-06-24 01:03:22,407 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:22,407 - analyzer - ERROR - Fail to Parse Title: 3607604
+2017-06-24 01:03:22,423 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:22,423 - analyzer - ERROR - Fail to Parse Title: 4695882
+2017-06-24 01:03:22,798 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:22,798 - analyzer - ERROR - Fail to Parse Title: 4695924
+2017-06-24 01:03:22,861 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:22,861 - analyzer - ERROR - Fail to Parse Title: 4695923
+2017-06-24 01:03:22,907 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:22,907 - analyzer - ERROR - Fail to Parse Title: 3607358
+2017-06-24 01:03:23,563 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:23,563 - analyzer - ERROR - Fail to Parse Title: 4695799
+2017-06-24 01:03:23,891 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:23,891 - analyzer - ERROR - Fail to Parse Title: 4696069
+2017-06-24 01:03:24,016 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:24,220 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:24,220 - analyzer - ERROR - Fail to Parse Title: 4696115
+2017-06-24 01:03:24,329 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:24,329 - analyzer - ERROR - Fail to Parse Title: 4696111
+2017-06-24 01:03:24,428 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='206.51.35.177', port=53281): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607705&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10054, 'An existing connection was forcibly closed by the remote host')))",),)
+2017-06-24 01:03:25,289 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:25,289 - analyzer - ERROR - Fail to Parse Title: 3606545
+2017-06-24 01:03:25,460 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:25,460 - analyzer - ERROR - Fail to Parse Title: 2245443
+2017-06-24 01:03:25,460 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:25,460 - analyzer - ERROR - Fail to Parse Title: 2245446
+2017-06-24 01:03:25,553 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:25,553 - analyzer - ERROR - Fail to Parse Title: 4695732
+2017-06-24 01:03:26,039 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:26,039 - analyzer - ERROR - Fail to Parse Title: 3607572
+2017-06-24 01:03:26,355 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:26,355 - analyzer - ERROR - Fail to Parse Title: 2245207
+2017-06-24 01:03:26,920 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:26,920 - analyzer - ERROR - Fail to Parse Title: 2245378
+2017-06-24 01:03:27,029 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:27,045 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:27,733 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:27,733 - analyzer - ERROR - Fail to Parse Title: 3607459
+2017-06-24 01:03:28,092 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:28,170 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:28,186 - analyzer - ERROR - Fail to Parse Title: 3596100
+2017-06-24 01:03:28,263 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:28,263 - analyzer - ERROR - Fail to Parse Title: 4695991
+2017-06-24 01:03:28,342 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:28,342 - analyzer - ERROR - Fail to Parse Title: 4695997
+2017-06-24 01:03:28,566 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:28,566 - analyzer - ERROR - Fail to Parse Title: 3607621
+2017-06-24 01:03:28,644 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:28,644 - analyzer - ERROR - Fail to Parse Title: 2245456
+2017-06-24 01:03:28,926 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:28,926 - analyzer - ERROR - Fail to Parse Title: 2245392
+2017-06-24 01:03:29,128 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:29,128 - analyzer - ERROR - Fail to Parse Title: 2243062
+2017-06-24 01:03:29,394 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245307&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:29,661 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:29,864 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696113&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:29,864 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:29,864 - analyzer - ERROR - Fail to Parse Title: 4696007
+2017-06-24 01:03:29,989 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696093&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:30,367 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:30,368 - analyzer - ERROR - Fail to Parse Title: 3607443
+2017-06-24 01:03:30,388 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:30,388 - analyzer - ERROR - Fail to Parse Title: 4691044
+2017-06-24 01:03:30,434 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:30,434 - analyzer - ERROR - Fail to Parse Title: 3607689
+2017-06-24 01:03:30,513 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:30,513 - analyzer - ERROR - Fail to Parse Title: 3607687
+2017-06-24 01:03:31,529 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:32,342 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:32,342 - analyzer - ERROR - Fail to Parse Title: 4687252
+2017-06-24 01:03:32,513 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695758&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:33,339 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:33,339 - analyzer - ERROR - Fail to Parse Title: 4695908
+2017-06-24 01:03:33,621 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:33,698 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:33,698 - analyzer - ERROR - Fail to Parse Title: 4696040
+2017-06-24 01:03:33,698 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:33,698 - analyzer - ERROR - Fail to Parse Title: 4696049
+2017-06-24 01:03:34,355 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:34,355 - analyzer - ERROR - Fail to Parse Title: 2245436
+2017-06-24 01:03:34,829 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:34,829 - analyzer - ERROR - Fail to Parse Title: 3597298
+2017-06-24 01:03:35,141 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:35,141 - analyzer - ERROR - Fail to Parse Title: 3607725
+2017-06-24 01:03:35,299 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607535&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:35,579 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:35,579 - analyzer - ERROR - Fail to Parse Title: 3607292
+2017-06-24 01:03:35,611 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:35,641 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:35,891 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245339&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:36,204 - crawler - ERROR - error(10053, 'An established connection was aborted by the software in your host machine')
+2017-06-24 01:03:36,539 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:36,694 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:37,069 - analyzer - ERROR - Fail to Parse Title: 2245468
+2017-06-24 01:03:37,069 - analyzer - ERROR - Fail to Parse Title: 2245463
+2017-06-24 01:03:37,256 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695859&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:37,398 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607309&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:37,710 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:37,979 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245307&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:38,244 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:38,322 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:38,338 - analyzer - ERROR - Fail to Parse Title: 3607557
+2017-06-24 01:03:38,438 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:38,438 - analyzer - ERROR - Fail to Parse Title: 4695915
+2017-06-24 01:03:38,453 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696113&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:38,548 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696093&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:39,361 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:39,361 - analyzer - ERROR - Fail to Parse Title: 3607809
+2017-06-24 01:03:39,891 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:39,891 - analyzer - ERROR - Fail to Parse Title: 4696180
+2017-06-24 01:03:40,173 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:40,173 - analyzer - ERROR - Fail to Parse Title: 4696217
+2017-06-24 01:03:40,345 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:40,345 - analyzer - ERROR - Fail to Parse Title: 3607358
+2017-06-24 01:03:41,148 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695758&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:41,178 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4623982&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:41,776 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='206.51.35.177', port=53281): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696086&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-06-24 01:03:42,174 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:43,868 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607535&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:44,513 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245339&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:45,806 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:45,854 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695859&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:45,983 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607309&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:46,201 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:46,217 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:48,549 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245307&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:48,813 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:49,053 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696113&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:49,131 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696093&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:49,769 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4623982&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:50,732 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:51,732 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695758&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:51,973 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:51,973 - analyzer - ERROR - Fail to Parse Title: 2242124
+2017-06-24 01:03:52,213 - crawler - ERROR - case-4695888 download failure after 4 re-trys.
+2017-06-24 01:03:52,885 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:52,885 - analyzer - ERROR - Fail to Parse Title: 4696098
+2017-06-24 01:03:53,198 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='70.32.89.160', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245435&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-06-24 01:03:53,461 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='70.32.89.160', port=3128): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695761&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-06-24 01:03:54,441 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607535&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:54,634 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:03:54,634 - analyzer - ERROR - Fail to Parse Title: 4691649
+2017-06-24 01:03:54,713 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:03:55,088 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245339&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:56,457 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695859&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:56,585 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607309&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:03:56,819 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:04:00,346 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4623982&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:00,769 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:00,801 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607749&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:00,894 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:04:01,313 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:01,812 - crawler - ERROR - case-4695906 download failure after 4 re-trys.
+2017-06-24 01:04:03,148 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245307&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:03,390 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695747&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:03,634 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696113&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:03,713 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696093&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:04,821 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='206.51.35.177', port=53281): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4696086&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond')))",),)
+2017-06-24 01:04:06,318 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695758&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:08,377 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695906&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:09,000 - crawler - ERROR - error(10054, 'An existing connection was forcibly closed by the remote host')
+2017-06-24 01:04:09,030 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607535&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:09,664 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=2245339&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:11,025 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695859&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:11,171 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607309&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:14,930 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4623982&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:15,880 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=3607787&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:16,789 - crawler - ERROR - case-3607747 download failure after 4 re-trys.
+2017-06-24 01:04:16,819 - crawler - ERROR - case-3607749 download failure after 4 re-trys.
+2017-06-24 01:04:16,960 - crawler - ERROR - ConnectionError(MaxRetryError("HTTPConnectionPool(host='204.14.188.53', port=7004): Max retries exceeded with url: http://a810-bisweb.nyc.gov/bisweb/OverviewForComplaintServlet?complaintno=4695906&requestid=0 (Caused by ProxyError('Cannot connect to proxy.', error(10061, 'No connection could be made because the target machine actively refused it')))",),)
+2017-06-24 01:04:19,161 - crawler - ERROR - case-2245307 download failure after 4 re-trys.
+2017-06-24 01:04:19,401 - crawler - ERROR - case-4695747 download failure after 4 re-trys.
+2017-06-24 01:04:19,635 - crawler - ERROR - case-4696113 download failure after 4 re-trys.
+2017-06-24 01:04:19,714 - crawler - ERROR - case-4696093 download failure after 4 re-trys.
+2017-06-24 01:04:22,332 - crawler - ERROR - case-4695758 download failure after 4 re-trys.
+2017-06-24 01:04:22,573 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:04:22,573 - analyzer - ERROR - Fail to Parse Title: 4695906
+2017-06-24 01:04:25,012 - crawler - ERROR - case-4691649 download failure after 4 re-trys.
+2017-06-24 01:04:25,042 - crawler - ERROR - case-3607535 download failure after 4 re-trys.
+2017-06-24 01:04:25,687 - crawler - ERROR - case-2245339 download failure after 4 re-trys.
+2017-06-24 01:04:27,042 - crawler - ERROR - case-4695859 download failure after 4 re-trys.
+2017-06-24 01:04:27,184 - crawler - ERROR - case-3607309 download failure after 4 re-trys.
+2017-06-24 01:04:30,931 - crawler - ERROR - case-4623982 download failure after 4 re-trys.
+2017-06-24 01:04:31,164 - analyzer - ERROR - Some error happens when parsing title for : Visitor Prioritization - NYC Department of Buildings
+2017-06-24 01:04:31,164 - analyzer - ERROR - Fail to Parse Title: 4623982
+2017-06-24 01:04:31,890 - crawler - ERROR - case-3607787 download failure after 4 re-trys.
