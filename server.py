@@ -7,7 +7,7 @@ from bottle import post, request, Bottle
 from bottle import static_file
 from openpyxl import Workbook
 from openpyxl.compat import range
-from openpyxl.cell import get_column_letter
+from openpyxl.utils import get_column_letter
 from pony.orm import *
 
 from database.management import DBM
