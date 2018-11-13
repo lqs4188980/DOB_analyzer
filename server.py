@@ -105,7 +105,7 @@ def exportResolve(fileName):
 
     # Write column head
     for col_index in range(1, keySize + 1):
-        s.cell("%s1"%get_column_letter(col_index)).value = keys[col_index - 1]
+        s["%s1"%get_column_letter(col_index)] = keys[col_index - 1]
 
     # Write data from second row
     i = 0
@@ -113,7 +113,7 @@ def exportResolve(fileName):
         # Reduce index calculation when access a data
         data = resolve[i]
         for col_index in range(1, keySize + 1):
-            s.cell("%s%s"%(get_column_letter(col_index), row_index)).value = \
+            s["%s%s"%(get_column_letter(col_index), row_index)] = \
                         data[keys[col_index - 1]]
                 
         i += 1
