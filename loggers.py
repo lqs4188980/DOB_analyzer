@@ -13,8 +13,11 @@ def rotateLogFile(filename, maxByte=8388608, rotate=5):
     
     for pid in psutil.pids():
         p = psutil.Process(pid)
-        if 'server.py' in p.cmdline():
-            p.terminate()
+        try:
+            if 'server.py' in p.cmdline():
+                p.terminate()
+        except Exception:
+            continue
             
     rt_fils = []
     for i in range(rotate):
